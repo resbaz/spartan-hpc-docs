@@ -35,6 +35,13 @@ Spartan has a number of partitions available for general usage.
 3 nodes, each with 12 cores, 251 GB of RAM, and four NVidia K80 GPUs. This partition also makes use of high-speed networking.
 
 
+## Citing Spartan
+
+If you use Spartan to obtain results for a publication, we'd appreciate if you'd cite our service, including the DOI below. This makes it easy for us demonstrate research impact, helping to secure ongoing funding.
+
+`University of Melbourne (2017) Spartan HPC-Cloud Hybrid: Delivering Performance and Flexibility. https://doi.org/10.4225/49/58ead90dceaaa`
+
+
 ## Other Resources
 
 Spartan is just one of many research IT resources offered by The University of Melbourne, or available from other institutions.

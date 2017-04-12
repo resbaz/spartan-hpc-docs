@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Getting Started - Spartan Documentation</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">Spartan Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="./">Getting Started</a>
+                    </li>
+                    <li >
+                        <a href="../managing_data/">Managing Data</a>
+                    </li>
+                    <li >
+                        <a href="../faq/">FAQ</a>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="..">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../managing_data/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#getting-started">Getting Started</a></li>
+            <li><a href="#1-create-an-account">1. Create an account</a></li>
+            <li><a href="#2-login-to-spartan-via-ssh">2. Login to Spartan via SSH</a></li>
+            <li><a href="#3-create-a-job">3. Create a job</a></li>
+            <li><a href="#3-submit-your-job">3. Submit your job</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="getting-started">Getting Started</h1>
+<p><em>Prerequisite:</em> You'll need a basic understanding of the Linux command line to use Spartan. But don't worry, you don't need to be an expert, and there are many resources out there to help you. <a href="http://www.ee.surrey.ac.uk/Teaching/Unix/">This tutorial</a> is a good place to start.</p>
+<h4 id="1-create-an-account">1. Create an account</h4>
+<p>Go to <a href="https://dashboard.hpc.unimelb.edu.au/karaage">Karaage</a> to request a Spartan account using your University of Melbourne login. You can either join an existing project, or create a new one.</p>
+<p><br></p>
+<h4 id="2-login-to-spartan-via-ssh">2. Login to Spartan via SSH</h4>
+<p><em>Note that your password for Spartan is created during sign-up, and is different to your university password.</em></p>
+<p><strong>Windows</strong></p>
+<p>Download an SSH client such as <a href="http://www.putty.org/">PuTTY</a>, set hostname as <code>spartan.hpc.unimelb.edu.au</code>  and click Open. You'll be asked for your Spartan username and password.</p>
+<p><strong>Posix (Linux, OS X)</strong></p>
+<p>You'll already have an SSH client installed. Easy! Open a terminal and enter:</p>
+<p><code>$ ssh yourUsername@spartan.hpc.unimelb.edu.au</code></p>
+<p><br></p>
+<h4 id="3-create-a-job">3. Create a job</h4>
+<p>Spartan has some shared example code that we can borrow. We'll use the Python example which searches a Twitter dataset.</p>
+<p>Copy the example into your home directory, and change working directory:</p>
+<p><code>$ cp -r /usr/local/common/Python ~/</code></p>
+<p><code>$ cd ~/Python</code></p>
+<p>The dataset is in <code>minitwitter.csv</code>, and the analysis code in <code>twitter_search_541635.py</code>. The files ending in <code>.slurm</code> tell Spartan how to run your job. For example, <code>twitter_one_node_eight_cores.slurm</code> requests 8 cores, and a wall time of 12 hours (i.e. maximum time job will run for).</p>
+<pre><code>#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks=8
+#SBATCH --time=0-12:00:00
+
+# Load required modules
+module load Python
+
+# Launch multiple process python code
+echo &quot;Searching for mentions&quot;
+time mpiexec -n 16 python3 twitter_search_541635.py -i /data/projects/COMP90024/twitter.csv -m
+echo &quot;Searching for topics&quot;
+time mpiexec -n 16 python3 twitter_search_541635.py -i /data/projects/COMP90024/twitter.csv -t
+echo &quot;Searching for the keyword 'jumping'&quot;
+time mpiexec -n 16 python3 twitter_search_541635.py -i /data/projects/COMP90024/twitter.csv -s jumping
+</code></pre>
+
+<p><br></p>
+<h4 id="3-submit-your-job">3. Submit your job</h4>
+<p>First off, when you connect to Spartan, you're connecting to the login node (shared by all users), not an actual computing node. <strong>Please don't run jobs on the login node!</strong></p>
+<p>Instead, use the scheduling tool <a href="http://slurm.schedmd.com/">Slurm</a>, and scripts like the above. They tell Slurm where to run your job, how many cores you need, and how long it will take. Slurm will then allocate resources for your job, placing it in a queue if they're not yet available.</p>
+<p>Go ahead and launch your job using <code>sbatch</code>:</p>
+<pre><code>$ sbatch twitter_one_node_sixteen_cores.slurm
+&gt; Submitted batch job 27300
+</code></pre>
+
+<p>We can check how it's progressing using <code>squeue</code>:</p>
+<pre><code>$ squeue --job 27300
+&gt;            JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+             27300     cloud twitter_   perryd  R      10:48      1 spartan040
+</code></pre>
+
+<p>When complete, an output file is created which logs the output from your job, for the above this has the filename <code>slurm-27300.out</code>.</p>
+<p>You can also perform interactive work using the <code>sinteractive</code> command. This is handy for testing and debugging. This will allocate and log you in to a computing node.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
