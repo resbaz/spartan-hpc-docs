@@ -42,6 +42,7 @@ If you use Spartan to obtain results for a publication, we'd appreciate if you'd
 `University of Melbourne (2017) Spartan HPC-Cloud Hybrid: Delivering Performance and Flexibility. https://doi.org/10.4225/49/58ead90dceaaa`
 
 
+
 ## Other Resources
 
 Spartan is just one of many research IT resources offered by The University of Melbourne, or available from other institutions.
