@@ -15,6 +15,12 @@ Accounts are associated with a particular project; you can either join an existi
 
 New projects are subject to approval by the Head of Research Compute Services. Projects must demonstrate an approved research goal or goals, or demonstrate potential to support research activity. Projects require a Principle Investigator and may have additional Research Collaborators.
 
+### My password isn't working!
+
+1. Make sure you're using your Spartan password that you set in [Karaage](https://dashboard.hpc.unimelb.edu.au/karaage). ** Your Spartan password is not the same as your central university password.**
+
+2. You can request a password reset [here](https://dashboard.hpc.unimelb.edu.au/karaage/profile/password_request/).
+
 
 ### What are Spartan's specifications?
 
