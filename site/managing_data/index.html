@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Managing Data - Spartan Documentation</title>
+        <title>Managing Data - Spartan</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -47,7 +47,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="..">Spartan Documentation</a>
+            <a class="navbar-brand" href="..">Spartan</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -56,6 +56,9 @@
                 <ul class="nav navbar-nav">
                     <li >
                         <a href="..">Home</a>
+                    </li>
+                    <li >
+                        <a href="../status/">Status</a>
                     </li>
                     <li >
                         <a href="../getting_started/">Getting Started</a>
@@ -104,7 +107,7 @@
 <h1 id="managing-your-data">Managing your Data</h1>
 <p>Chances are you need to run your HPC job against a dataset, perhaps quite a sizable one. There are a number of places to store data on Spartan while you're working with it, and ways to get data in and out.</p>
 <h3 id="not-for-long-term-storage">Not for Long-Term Storage</h3>
-<p>While it's often essential to have fast nearby storage while working on your data, take care that you don't use Spartan as your long-term data repository. It's not designed for that, and may not conform to the requirements set by your institution or funding body. </p>
+<p>While it's often essential to have fast nearby storage while working on your data, don't use Spartan as your long-term data repository. It's not designed for that, may not conform to the requirements set by your institution or funding body, and don't guarantee that we can store your data indefinitely (though we certainly won't get rid of it without asking you first). </p>
 <p><a href="https://vicnode.org.au/">VicNode</a> offers a range of data storage services that may suit your needs. If you're unsure, get in <a href="mailto:hpc-support@unimelb.edu.au">contact</a> with us.</p>
 <h3 id="where-to-store-your-data-on-spartan">Where to Store Your Data on Spartan</h3>
 <p><strong>Projects Directory</strong></p>
@@ -112,7 +115,7 @@
 <p>Others in your project can access it, and 500 GB of storage is available per project. If you need more than this, <a href="mailto:hpc-support@unimelb.edu.au">get in touch</a> and we'll try to find a solution.</p>
 <p><strong>Home Directory</strong></p>
 <p>Your home directory, i.e. <code>/home/yourusername</code> can be used to store small amounts of data, however this is generally discouraged. It's best suited to short-lived and non-critical data, for example while working through our <a href="../getting_started/">getting started</a> tutorial or testing out new software.</p>
-<p>Others in your project won't have access, and you're limited to ??GB of storage.</p>
+<p>Others in your project won't have access, and you're limited to 50GB of storage.</p>
 <p><strong>Scratch Space</strong></p>
 <p>You can store temporary working data while your job is running at <code>/scratch/</code>. This is handy if your job generates large files while it's running that you don't need to keep. Total scratch space is limited to 8 TB, shared among all users.</p>
 <h3 id="how-to-transfer-data-in-and-out-of-spartan">How to Transfer Data In and Out of Spartan</h3>
@@ -122,14 +125,16 @@
 <p>You can transfer files from Spartan to your local machine by reversing the order of the arguments like so:</p>
 <p><code># scp myusername@spartan.hpc.unimelb.edu.au:/data/projects/myproject/remote.dat  local.dat</code></p>
 <p>For Windows users, PuTTY provides an equivalent tool called <code>pscp</code>. If you're data is located on a remote machine, you can SSH into that system first, and then use <code>scp</code> from that machine to transfer your data into Spartan.</p>
-<p>If you'd prefer a GUI interface rather than the command line, you can use tools like <a href="https://filezilla-project.org/">FileZilla</a> (cross-platform) or <a href="https://cyberduck.io/?l=en">CyberDuck</a> (OS X &amp; Windows).</p>
+<p>If you'd prefer a GUI interface, you can use tools like <a href="https://filezilla-project.org/">FileZilla</a> (cross-platform) or <a href="https://cyberduck.io/?l=en">CyberDuck</a> (OS X &amp; Windows).</p>
 <p><strong>rsync</strong></p>
 <p>Repeatedly transferring large files in and out of Spartan via <code>scp</code> can be tedious. A good alternative is <a href="https://download.samba.org/pub/rsync/rsync.html">rsync</a>, which only transfers the parts that have changed. It can work on single files, or whole directories, and the syntax is much same as for <code>scp</code>.</p>
 <p><code># rsync local.dat myusername@spartan.hpc.unimelb.edu.au:/data/projects/myproject/remote.dat</code></p>
 <p>Note that the first argument is the source, and the second is the destination which will be modified to match the source.</p>
 <p><strong>VicNode</strong></p>
 <p>VicNode provides data storage that can be mounted on Spartan. It's then very easy to transfer files back and fourth as needed. <a href="mailto:hpc-support@unimelb.edu.au">Contact us</a> with details of the VicNode resources you'd like to mount, and we can arrange this for you.</p>
-<h3 id="use-the-io-node-for-large-data-transfer-jobs">Use the IO Node for Large Data Transfer Jobs</h3></div>
+<h3 id="use-the-io-node-for-large-data-transfer-jobs">Use the IO Node for Large Data Transfer Jobs</h3>
+<p>The approach above transfers files via the login node, which is fine for small files. For bigger transfers, we encourage you to use <code>spartan-io.hpc.unimelb.edu.au</code> instead. That will prevent resources on the login node being tied up (slowing things down for everyone), and is likely to result in faster transfers for you.</p>
+<p>The IO node has access to the same home and project directories on Spartan. Simply substitute <code>spartan-io</code> in the commands above, for example <code>scp local.dat myusername@spartan-io.hpc.unimelb.edu.au:/data/projects/myproject/remote.dat</code> to transfer <code>local.dat</code> to Spartan via the IO node.</p></div>
         </div>
 
         <footer class="col-md-12">

@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Getting Started - Spartan</title>
+        <title>Status - Spartan</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -57,11 +57,11 @@
                     <li >
                         <a href="..">Home</a>
                     </li>
-                    <li >
-                        <a href="../status/">Status</a>
-                    </li>
                     <li class="active">
-                        <a href="./">Getting Started</a>
+                        <a href="./">Status</a>
+                    </li>
+                    <li >
+                        <a href="../getting_started/">Getting Started</a>
                     </li>
                     <li >
                         <a href="../managing_data/">Managing Data</a>
@@ -78,12 +78,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../status/">
+                        <a rel="next" href="..">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../managing_data/">
+                        <a rel="prev" href="../getting_started/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -95,68 +95,24 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#getting-started">Getting Started</a></li>
-            <li><a href="#1-create-an-account">1. Create an account</a></li>
-            <li><a href="#2-login-to-spartan-via-ssh">2. Login to Spartan via SSH</a></li>
-            <li><a href="#3-create-a-job">3. Create a job</a></li>
-            <li><a href="#3-submit-your-job">3. Submit your job</a></li>
+        <li class="main active"><a href="#status">Status</a></li>
+            <li><a href="#availability">Availability</a></li>
+            <li><a href="#current-usage">Current Usage</a></li>
+            <li><a href="#wait-time">Wait Time</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="getting-started">Getting Started</h1>
-<p><em>Prerequisite:</em> You'll need a basic understanding of the Linux command line to use Spartan. But don't worry, you don't need to be an expert, and there are many resources out there to help you. <a href="http://www.ee.surrey.ac.uk/Teaching/Unix/">This tutorial</a> is a good place to start.</p>
-<h4 id="1-create-an-account">1. Create an account</h4>
-<p>Go to <a href="https://dashboard.hpc.unimelb.edu.au/karaage">Karaage</a> to request a Spartan account using your University of Melbourne login. You can either join an existing project, or create a new one.</p>
-<p><br></p>
-<h4 id="2-login-to-spartan-via-ssh">2. Login to Spartan via SSH</h4>
-<p><em>Note that your password for Spartan is created during sign-up, and is different to your university password.</em></p>
-<p><strong>Windows</strong></p>
-<p>Download an SSH client such as <a href="http://www.putty.org/">PuTTY</a>, set hostname as <code>spartan.hpc.unimelb.edu.au</code>  and click Open. You'll be asked for your Spartan username and password.</p>
-<p><strong>Posix (Linux, OS X)</strong></p>
-<p>You'll already have an SSH client installed. Easy! Open a terminal and enter:</p>
-<p><code>$ ssh yourUsername@spartan.hpc.unimelb.edu.au</code></p>
-<p><br></p>
-<h4 id="3-create-a-job">3. Create a job</h4>
-<p>Spartan has some shared example code that we can borrow. We'll use the Python example which searches a Twitter dataset.</p>
-<p>Copy the example into your home directory, and change working directory:</p>
-<p><code>$ cp -r /usr/local/common/Python ~/</code></p>
-<p><code>$ cd ~/Python</code></p>
-<p>The dataset is in <code>minitwitter.csv</code>, and the analysis code in <code>twitter_search_541635.py</code>. The files ending in <code>.slurm</code> tell Spartan how to run your job. For example, <code>twitter_one_node_eight_cores.slurm</code> requests 8 cores, and a wall time of 12 hours (i.e. maximum time job will run for).</p>
-<pre><code>#!/bin/bash
-#SBATCH --nodes=1
-#SBATCH --ntasks=8
-#SBATCH --time=0-12:00:00
+<h1 id="status">Status</h1>
+<h2 id="availability">Availability</h2>
+<p><em>Is Spartan operating normally?</em></p>
+<p>(statuspage.io widget here)</p>
+<h2 id="current-usage">Current Usage</h2>
+<p><em>How busy is Spartan today?</em></p>
+<iframe width="900" height="400" frameborder="0" scrolling="no" src="//plot.ly/~spartan_hpc/5.embed?link=false"></iframe>
 
-# Load required modules
-module load Python
-
-# Launch multiple process python code
-echo &quot;Searching for mentions&quot;
-time mpiexec -n 16 python3 twitter_search_541635.py -i /data/projects/COMP90024/twitter.csv -m
-echo &quot;Searching for topics&quot;
-time mpiexec -n 16 python3 twitter_search_541635.py -i /data/projects/COMP90024/twitter.csv -t
-echo &quot;Searching for the keyword 'jumping'&quot;
-time mpiexec -n 16 python3 twitter_search_541635.py -i /data/projects/COMP90024/twitter.csv -s jumping
-</code></pre>
-
-<p><br></p>
-<h4 id="3-submit-your-job">3. Submit your job</h4>
-<p>First off, when you connect to Spartan, you're connecting to the login node (shared by all users), not an actual computing node. <strong>Please don't run jobs on the login node!</strong></p>
-<p>Instead, use the scheduling tool <a href="http://slurm.schedmd.com/">Slurm</a>, and scripts like the above. They tell Slurm where to run your job, how many cores you need, and how long it will take. Slurm will then allocate resources for your job, placing it in a queue if they're not yet available.</p>
-<p>Go ahead and launch your job using <code>sbatch</code>:</p>
-<pre><code>$ sbatch twitter_one_node_sixteen_cores.slurm
-&gt; Submitted batch job 27300
-</code></pre>
-
-<p>We can check how it's progressing using <code>squeue</code>:</p>
-<pre><code>$ squeue --job 27300
-&gt;            JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-             27300     cloud twitter_   perryd  R      10:48      1 spartan040
-</code></pre>
-
-<p>When complete, an output file is created which logs the output from your job, for the above this has the filename <code>slurm-27300.out</code>.</p>
-<p>You can also perform interactive work using the <code>sinteractive</code> command. This is handy for testing and debugging. This will allocate and log you in to a computing node.</p></div>
+<h2 id="wait-time">Wait Time</h2>
+<p><em>How long will my job take to start?</em></p></div>
         </div>
 
         <footer class="col-md-12">
