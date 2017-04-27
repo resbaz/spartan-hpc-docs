@@ -1,9 +1,8 @@
-# Spartan Documentation
+# Spartan
 
 Spartan is High Performance Computing (HPC) system operated by Research Platform Services (ResPlat) at The University of Melbourne. It combines a high performance bare-metal compute with flexible cloud infrastructure to suit a wide range of use-cases.
 
 If your computing jobs take too long on your desktop computer, or are simply not possible due to a lack of speed and memory, a HPC system like Spartan can help.
-
 
 ## Getting Help
 
@@ -24,7 +23,7 @@ Spartan has a number of partitions available for general usage.
  
 **Cloud**
 
-100 nodes, each with 8 cores and 62 GB of RAM, allocated from the Melbourne node of the Nectar research cloud. This node is best suited for general-purpose single-node jobs.
+100 nodes, each with 8 cores and 62 GB of RAM, allocated from the Melbourne node of the Nectar research cloud. This partition is best suited for general-purpose single-node jobs. Multiple node jobs will work, but communication between nodes will be comparatively slow.
 
 **Physical**
 
@@ -32,12 +31,12 @@ Spartan has a number of partitions available for general usage.
 
 **GPU**
 
-3 nodes, each with 12 cores, 251 GB of RAM, and four NVidia K80 GPUs. This partition also makes use of high-speed networking.
+3 nodes, each with 12 cores, 251 GB of RAM, and four NVidia K80 GPUs. This partition also makes use of high-speed networking. This is the partition to use if your software takes advantage of GPU acceleration (e.g. using CUDA).
 
 
 ## Citing Spartan
 
-If you use Spartan to obtain results for a publication, we'd appreciate if you'd cite our service, including the DOI below. This makes it easy for us demonstrate research impact, helping to secure ongoing funding.
+If you use Spartan to obtain results for a publication, we'd appreciate if you'd cite our service, including the DOI below. This makes it easy for us demonstrate research impact, helping to secure ongoing funding for expansion and user support.
 
 `University of Melbourne (2017) Spartan HPC-Cloud Hybrid: Delivering Performance and Flexibility. https://doi.org/10.4225/49/58ead90dceaaa`
 

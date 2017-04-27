@@ -1,6 +1,7 @@
-site_name: Spartan Documentation
+site_name: Spartan
 pages:
     - Home: index.md
+    - Status: status.md
     - Getting Started: getting_started.md
     - Managing Data: managing_data.md
     - FAQ: faq.md

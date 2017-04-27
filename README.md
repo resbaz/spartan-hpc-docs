@@ -1,5 +1,8 @@
 ## Documentation for the Spartan HPC cluster, using mkdocs.
 
+# Contributing
+Fork/clone this repo, and make a pull request to master, which will automatically deploy changes once accepted.
+
 # Deployment
 We automatically deploy to a Swift bucket on Nectar upon pushing to master.
 
