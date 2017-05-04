@@ -23,7 +23,7 @@ For Windows, you'll need to download an SSH client such as [PuTTY](http://www.pu
 
 ### My password isn't working!
 
-1. Make sure you're using your Spartan password that you set in [Karaage](https://dashboard.hpc.unimelb.edu.au/karaage). ** Your Spartan password is not the same as your central university password.**
+1. Make sure you're using your Spartan password that you set in [Karaage](https://dashboard.hpc.unimelb.edu.au/karaage). ** Your Spartan password is not necessarily the same as your central university password.**
 
 2. You can request a password reset [here](https://dashboard.hpc.unimelb.edu.au/karaage/profile/password_request/).
 
@@ -72,17 +72,76 @@ You'll need your data files and scripts, the software you want to run installed 
 
 
 ### Do I need to know how to use Linux?
-Just the basics to get started. We teach this in our introductory training course, and there are many online resources available to get you started, such as [this tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/). 
-
+Just the basics to get started. We cover this in our introductory training course, and there are many online resources available to get you started, such as [this tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/). 
 
 
 ### How do I create a multi-core job?
+There are two options here. If you want to run a single instance of your program and have that program access 8 cores, you can do this:
 
 
-### How do I creare a multi-node job?
+```
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=8
+```
+
+This is the typical approach if your program makes use of multi-threading or subprocesses to make use of the additional cores.
+
+
+Alternatively, if you'd like to run multiple instances (tasks) of your program, each on their own core:
+
+```
+#SBATCH --nodes=1
+#SBATCH --ntasks=8
+#SBATCH --cpus-per-task=1
+```
+
+This approach might be used for jobs where there are multiple instances of a program running at once, but they communicate with each other (e.g. using OpenMPI) and so should be kept within a single node so that communication between tasks is quick.
+
+Keep in mind the number of cores that actually exist within a node, eight for the cloud partition and twelve for physical -- you can't request more than this.
+
+
+### How do I create a multi-node job?
+
+Here's an example of a job with two nodes, each using 12 cores.
+
+```
+#SBATCH --nodes=2
+#SBATCH --ntasks=2
+#SBATCH --cpus-per-task=12
+```
+
+Note that you can't have a single instance of a program running across different nodes. Instead, you would usually run two instances of a program (one on each node), and have them pass messages between each other so they can work in parallel using a framework like OpenMPI.
+
+For multi-node jobs, it is usually preferable to use the physical partition, because this partition has faster networking between nodes. 
+
+
+### What other options are there for running my job?
+
+Many different permutations of cores, memory, nodes, tasks and dependencies are possible to suit different use cases. Refer to the documentation for [Slurm](https://slurm.schedmd.com/) (the job manager we use on Spartan) for details.
+
 
 
 ### How do I create a job array?
 
+Job arrays are great for kicking off a large number of independent jobs at once. For instance, if you're batch processing a series of files, and the processing for each file can be performed independently of any other.
+
+Say we have an array of files, `data_1.dat` to `data_50.dat` to process with `myProgram`:
+
+```
+#!/bin/bash
+#SBATCH --ntasks=1
+#SBATCH --time=0-00:15:00
+#SBATCH --array=1-50
+
+myProgram data_${SLURM_ARRAY_TASK_ID}.dat
+```
+
+This will create 50 jobs, each calling `myProgram` with a different data file. These jobs will run in any order, as soon as resources are available (potentially, all at the same time!)
+
+
 
 ### Are there more examples I can look at?
+
+If you go to `/usr/local/common/` on Spartan there are examples for a wide range of programs. You can copy these into your home directory and run them for yourself.
+
+

@@ -4,5 +4,6 @@ pages:
     - Status: status.md
     - Getting Started: getting_started.md
     - Managing Data: managing_data.md
+    - Software: software.md
     - FAQ: faq.md
 google_analytics: ['UA-97236408-1', 'auto']
