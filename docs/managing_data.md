@@ -3,7 +3,7 @@
 Chances are you need to run your HPC job against a dataset, perhaps quite a sizable one. There are a number of places to store data on Spartan while you're working with it, and ways to get data in and out.
 
 ### Not for Long-Term Storage
-While it's often essential to have fast nearby storage while working on your data, don't use Spartan as your long-term data repository. It's not designed for that, may not conform to the requirements set by your institution or funding body, and don't guarantee that we can store your data indefinitely (though we certainly won't get rid of it without asking you first). 
+While it's often essential to have fast nearby storage while working on your data, don't use Spartan as your long-term data repository. It's not designed for that, may not conform to the requirements set by your institution or funding body, and we don't guarantee to store your data indefinitely (though we certainly won't get rid of it without asking you first). 
 
 [VicNode](https://vicnode.org.au/) offers a range of data storage services that may suit your needs. If you're unsure, get in [contact](mailto:hpc-support@unimelb.edu.au) with us.
 
@@ -25,7 +25,7 @@ Others in your project won't have access, and you're limited to 50GB of storage.
 
 **Scratch Space**
 
-You can store temporary working data while your job is running at `/scratch/`. This is handy if your job generates large files while it's running that you don't need to keep. Total scratch space is limited to 8 TB, shared among all users.
+You can store temporary working data while your job is running at `/scratch/`. This is handy if your job generates large files while it's running that you don't need to keep. Total scratch space is limited to 8TB, shared among all users.
 
 
 

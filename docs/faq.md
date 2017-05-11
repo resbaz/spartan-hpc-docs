@@ -145,3 +145,9 @@ This will create 50 jobs, each calling `myProgram` with a different data file. T
 If you go to `/usr/local/common/` on Spartan there are examples for a wide range of programs. You can copy these into your home directory and run them for yourself.
 
 
+
+### How do I make my program run fast on Spartan?
+
+Spartan, like almost all modern HPC systems, delivers high-performance by combining lots of smaller computers (nodes) together in a cluster. Each core within a node probably isn't much faster than on your own personal computer, and so getting things to 
+
+The individual cores within Spartan aren't much faster than those

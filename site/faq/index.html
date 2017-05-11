@@ -115,6 +115,7 @@
             <li><a href="#what-other-options-are-there-for-running-my-job">What other options are there for running my job?</a></li>
             <li><a href="#how-do-i-create-a-job-array">How do I create a job array?</a></li>
             <li><a href="#are-there-more-examples-i-can-look-at">Are there more examples I can look at?</a></li>
+            <li><a href="#how-do-i-make-my-program-run-fast-on-spartan">How do I make my program run fast on Spartan?</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -205,7 +206,10 @@ myProgram data_${SLURM_ARRAY_TASK_ID}.dat
 
 <p>This will create 50 jobs, each calling <code>myProgram</code> with a different data file. These jobs will run in any order, as soon as resources are available (potentially, all at the same time!)</p>
 <h3 id="are-there-more-examples-i-can-look-at">Are there more examples I can look at?</h3>
-<p>If you go to <code>/usr/local/common/</code> on Spartan there are examples for a wide range of programs. You can copy these into your home directory and run them for yourself.</p></div>
+<p>If you go to <code>/usr/local/common/</code> on Spartan there are examples for a wide range of programs. You can copy these into your home directory and run them for yourself.</p>
+<h3 id="how-do-i-make-my-program-run-fast-on-spartan">How do I make my program run fast on Spartan?</h3>
+<p>Spartan, like almost all modern HPC systems, delivers high-performance by combining lots of smaller computers (nodes) together in a cluster. Each core within a node probably isn't much faster than on your own personal computer, and so getting things to </p>
+<p>The individual cores within Spartan aren't much faster than those</p></div>
         </div>
 
         <footer class="col-md-12">
