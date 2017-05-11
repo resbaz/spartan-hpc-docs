@@ -35,11 +35,11 @@ You can store temporary working data while your job is running at `/scratch/`. T
 
 You can use the `scp` command to move data from your local machine to Spartan. For example, to move `mydata.dat` from your current working directory to your project directory on Spartan:
 
-```# scp local.dat myusername@spartan.hpc.unimelb.edu.au:/data/projects/myproject/remote.dat```
+```$ scp local.dat myusername@spartan.hpc.unimelb.edu.au:/data/projects/myproject/remote.dat```
 
 You can transfer files from Spartan to your local machine by reversing the order of the arguments like so:
 
-```# scp myusername@spartan.hpc.unimelb.edu.au:/data/projects/myproject/remote.dat  local.dat```
+```$ scp myusername@spartan.hpc.unimelb.edu.au:/data/projects/myproject/remote.dat  local.dat```
 
 For Windows users, PuTTY provides an equivalent tool called `pscp`. If you're data is located on a remote machine, you can SSH into that system first, and then use `scp` from that machine to transfer your data into Spartan.
 
@@ -50,7 +50,7 @@ If you'd prefer a GUI interface, you can use tools like [FileZilla](https://file
 
 Repeatedly transferring large files in and out of Spartan via `scp` can be tedious. A good alternative is [rsync](https://download.samba.org/pub/rsync/rsync.html), which only transfers the parts that have changed. It can work on single files, or whole directories, and the syntax is much same as for `scp`.
 
-```# rsync local.dat myusername@spartan.hpc.unimelb.edu.au:/data/projects/myproject/remote.dat  ```
+```$ rsync local.dat myusername@spartan.hpc.unimelb.edu.au:/data/projects/myproject/remote.dat  ```
 
 Note that the first argument is the source, and the second is the destination which will be modified to match the source.
 
