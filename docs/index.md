@@ -46,10 +46,6 @@ If you use Spartan to obtain results for a publication, we'd appreciate if you'd
 
 Spartan is just one of many research IT resources offered by The University of Melbourne, or available from other institutions.
 
-**MATLAB Distributed Compute Server (MDCS)**
-
-ResPlat offers a 256 core [MDCS](http://au.mathworks.com/products/distriben/) service for researchers. This offers a very simple way for MATLAB users to perform parallel calculations using [parfor](http://au.mathworks.com/help/distcomp/introduction-to-parfor.html) loops. Setup details are available [here](https://github.com/resbaz/mdcs-setup/wiki).
-
 **Nectar**
 
 [Nectar](https://nectar.org.au/) is a national initiative to provide cloud-based Infrastructure as a Service (IaaS) resources to researchers. It's based on OpenStack, and allows researchers on-demand access to computation instances, storage, and a variety of application platforms and Virtual Laboratories.

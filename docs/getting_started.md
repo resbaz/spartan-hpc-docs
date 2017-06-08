@@ -46,7 +46,7 @@ The dataset is in ```minitwitter.csv```, and the analysis code in ```twitter_sea
 #SBATCH --time=0-12:00:00
 
 # Load required modules
-module load Python
+module load Python/3.5.2-intel-2016.u3
 
 # Launch multiple process python code
 echo "Searching for mentions"

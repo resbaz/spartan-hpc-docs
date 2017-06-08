@@ -2,6 +2,13 @@
 
 This page outlines usage and tips for some of the most popular software being used on Spartan. 
 
+Spartan uses a modules system ([lmod](http://lmod.readthedocs.io/en/latest/)) to load and unload different packages, including different versions of the same software. This allows many different software packages to be installed on Spartan at once without interfering with each other
+
+You can check what's currently installed using the `module avail` command, search using `module spider`, and load a particular module with the `module load` command. For example, to load MATLAB 2016a, use `module load MATLAB/2016a`.
+
+Generally you shouldn't load modules from the login node, instead working on a compute node, either via an interactive session (launched with `sinteractive`), or from within your Slurm script.
+
+
 ## Python
 
 There are multiple versions of Python installed on Spartan, which you can check using `module spider Python`. 
@@ -11,23 +18,12 @@ Common packages like numpy are already installed with some versions, but may be 
 
 ## R
 
+R version 3.2.1 and 3.4.0 are installed on Spartan, along with some common packages. If a package you need is missing, you can either install it locally, or contact us to install it system-wide.
+
 
 ## MATLAB
 
 MATLAB 2016a is installed on Spartan, along with all of the standard toolboxes. 
 
-MATLAB can be invoked with a particular script using `matlab ...`. You may need to add particular working directories so MATLAB can find your scripts.
+MATLAB can be invoked with a particular script using `matlab -nodisplay -nodesktop -r "run my_script.m"`. You may need to add particular working directories so MATLAB can find all the scripts necessary for your job.
 
-## Gaussian
-
-
-## Singularity
-
-Singularity is a container technology, much like Docker, that allows you to run software in an isolated environment. Singularity containers include not only the software you want to run, but also the operating system and dependencies. This makes them relatively portable across different compute resources, and can be helpful in dealing with legacy or extremely complex dependencies for niche software.
-
-Unlike Docker, Singularity images can run without root (administrator) access, making them suitable for a shared HPC environment.
-
-### Creating an Image
-
-
-### Running an Image
