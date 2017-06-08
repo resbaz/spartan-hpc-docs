@@ -2,13 +2,13 @@
 
 Chances are you need to run your HPC job against a dataset, perhaps quite a sizable one. There are a number of places to store data on Spartan while you're working with it, and ways to get data in and out.
 
-### Not for Long-Term Storage
+## Not for Long-Term Storage
 While it's often essential to have fast nearby storage while working on your data, don't use Spartan as your long-term data repository. It's not designed for that, may not conform to the requirements set by your institution or funding body, and we don't guarantee to store your data indefinitely (though we certainly won't get rid of it without asking you first). 
 
 [VicNode](https://vicnode.org.au/) offers a range of data storage services that may suit your needs. If you're unsure, get in [contact](mailto:hpc-support@unimelb.edu.au) with us.
 
 
-### Where to Store Your Data on Spartan
+## Where to Store Your Data on Spartan
 
 **Projects Directory**
 
@@ -29,7 +29,7 @@ You can store temporary working data while your job is running at `/scratch/`. T
 
 
 
-### How to Transfer Data In and Out of Spartan
+## How to Transfer Data In and Out of Spartan
 
 **Secure Copy (scp)**
 
@@ -60,7 +60,7 @@ Note that the first argument is the source, and the second is the destination wh
 VicNode provides data storage that can be mounted on Spartan. It's then very easy to transfer files back and fourth as needed. [Contact us](mailto:hpc-support@unimelb.edu.au) with details of the VicNode resources you'd like to mount, and we can arrange this for you.
 
 
-### Use the IO Node for Large Data Transfer Jobs
+## Use the IO Node for Large Data Transfer Jobs
 The approach above transfers files via the login node, which is fine for small files. For bigger transfers, we encourage you to use `spartan-io.hpc.unimelb.edu.au` instead. That will prevent resources on the login node being tied up (slowing things down for everyone), and is likely to result in faster transfers for you.
 
 The IO node has access to the same home and project directories on Spartan. Simply substitute `spartan-io` in the commands above, for example `scp local.dat myusername@spartan-io.hpc.unimelb.edu.au:/data/projects/myproject/remote.dat` to transfer `local.dat` to Spartan via the IO node.
