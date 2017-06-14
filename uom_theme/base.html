@@ -4,6 +4,7 @@
   <link rel="stylesheet" href="{{ base_url }}/css/theme.css">
   <link rel="stylesheet" href="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.css">
   <script src="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <script src="{{ base_url }}/js/theme.js"></script>
 
@@ -70,19 +71,20 @@
           <nav role="tablist">
             {% for nav_item in nav %}
             <!--<li {% if nav_item.active %}class=""{% endif %}>-->
-              <a data-current="" role="tab" href="{{ nav_item.url }}">{{ nav_item.title }}</a>
+              <a role="tab" href="{{ nav_item.url }}" {% if nav_item.active %}id="activeTab"{% endif %}>{{ nav_item.title }}</a>
             <!--</li>-->
             <!--TODO: Explictly set selected tab (sticks to home at the moment).-->
             {% endfor %}
           </nav>
         </div>
+      </div>
 
         <p>
         {% block content %}
         {{ content }}
         {% endblock %}
         </p>
-      </div>
+
 
       <!--UoM CSS handles local nav for us instead of mkdocs-->
       <div class="jumpnav"></div>
@@ -91,4 +93,14 @@
 
   </div>
 </body>
+
+<script>
+
+  $(document).ready(function(){
+      // Force tab link markers/highlighting to shift for external links (not supported out of the box).
+      $('a').removeAttr('data-current');
+      $('#activeTab').attr({'data-current': ''});
+  });
+
+</script>
 </html>
