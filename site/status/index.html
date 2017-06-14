@@ -1,153 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        
-        <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Status - Spartan</title>
-        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="../css/highlight.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
-	
-	<script src="../js/jquery-1.10.2.min.js"></script>
-        <script src="../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../js/highlight.pack.js"></script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<head>
+  <title>Status - Spartan Documentation</title>
+  <link rel="stylesheet" href="../css/theme.css">
+  <link rel="stylesheet" href="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.css">
+  <script src="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.js"></script>
 
-            ga('create', 'UA-97236408-1', 'auto');
-            ga('send', 'pageview');
-        </script> 
-    </head>
+  <script src="../js/theme.js"></script>
 
-    <body>
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+  
 
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="..">Spartan</a>
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-97236408-1', 'auto');
+      ga('send', 'pageview');
+  </script>
+
+  
+  
+</head>
+
+<body>
+
+<div class="uomcontent">
+
+  <div class="page-inner">
+    <ol class="page-local-history" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+      <li class="root" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+        <a href="/" title="Spartan Documentation" itemprop="item">
+          <span itemprop="name">Spartan Documentation</span>
+        </a>
+        <meta content="1" itemprop="position" />
+      </li>
+      
+      <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+        <span itemprop="name">Status</span>
+        <meta content="2" itemprop="position" />
+      </li>
+      
+
+    </ol>
+    <div role="main">
+
+      <header>
+        <form action="../search.html" class="search" method="get">
+          <fieldset>
+            <div class="inline attached">
+              <span class="fill">
+                <input aria-label="Search" aria-required="true" autocomplete="off" data-error="Please enter a keyword" name="q" placeholder="Search Spartan Documentation" type="search" id="mkdocs-search-query"/>
+              </span>
+              <span>
+              <button class="inline-button" type="submit"><span class="small icon--hide-label" data-icon="search">Go</span></button>
+            </span>
+            </div>
+          </fieldset>
+        </form>
+
+
+      </header>
+
+      <div class="tabbed-nav" data-tabbed="" id="nav">
+        <div class="full-width">
+          <nav role="tablist">
+            
+            <!--<li >-->
+              <a data-current="" role="tab" href="..">Home</a>
+            <!--</li>-->
+            <!--TODO: Explictly set selected tab (sticks to home at the moment).-->
+            
+            <!--<li class="">-->
+              <a data-current="" role="tab" href="./">Status</a>
+            <!--</li>-->
+            <!--TODO: Explictly set selected tab (sticks to home at the moment).-->
+            
+            <!--<li >-->
+              <a data-current="" role="tab" href="../getting_started/">Getting Started</a>
+            <!--</li>-->
+            <!--TODO: Explictly set selected tab (sticks to home at the moment).-->
+            
+            <!--<li >-->
+              <a data-current="" role="tab" href="../managing_data/">Managing Data</a>
+            <!--</li>-->
+            <!--TODO: Explictly set selected tab (sticks to home at the moment).-->
+            
+            <!--<li >-->
+              <a data-current="" role="tab" href="../software/">Software</a>
+            <!--</li>-->
+            <!--TODO: Explictly set selected tab (sticks to home at the moment).-->
+            
+            <!--<li >-->
+              <a data-current="" role="tab" href="../faq/">FAQ</a>
+            <!--</li>-->
+            <!--TODO: Explictly set selected tab (sticks to home at the moment).-->
+            
+          </nav>
         </div>
 
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-                <!-- Main navigation -->
-                <ul class="nav navbar-nav">
-                    <li >
-                        <a href="..">Home</a>
-                    </li>
-                    <li class="active">
-                        <a href="./">Status</a>
-                    </li>
-                    <li >
-                        <a href="../getting_started/">Getting Started</a>
-                    </li>
-                    <li >
-                        <a href="../managing_data/">Managing Data</a>
-                    </li>
-                    <li >
-                        <a href="../software/">Software</a>
-                    </li>
-                    <li >
-                        <a href="../faq/">FAQ</a>
-                    </li>
-                </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                        <i class="fa fa-search"></i> Search
-                    </a>
-                </li>
-                    <li >
-                        <a rel="next" href="..">
-                            <i class="fa fa-arrow-left"></i> Previous
-                        </a>
-                    </li>
-                    <li >
-                        <a rel="prev" href="../getting_started/">
-                            Next <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-        <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#status">Status</a></li>
-            <li><a href="#availability">Availability</a></li>
-            <li><a href="#current-usage">Current Usage</a></li>
-            <li><a href="#wait-time">Wait Time</a></li>
-    </ul>
-</div></div>
-                <div class="col-md-9" role="main">
-
-<h1 id="status">Status</h1>
-<h2 id="availability">Availability</h2>
+        <p>
+        
+        <h2 id="availability">Availability</h2>
 <p><em>Is Spartan operating normally?</em></p>
 <p>(statuspage.io widget here)</p>
 <h2 id="current-usage">Current Usage</h2>
 <p><em>How busy is Spartan today?</em></p>
-<iframe width="900" height="400" frameborder="0" scrolling="no" src="//plot.ly/~spartan_hpc/5.embed?link=false"></iframe>
+<p>
+<iframe width="700" height="400" frameborder="0" scrolling="no" src="//plot.ly/~spartan_hpc/5.embed?link=false"></iframe>
+</p>
 
 <h2 id="wait-time">Wait Time</h2>
-<p><em>How long will my job take to start?</em></p></div>
-        </div>
+<p><em>How long will my job take to start?</em></p>
+        
+        </p>
+      </div>
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>var base_url = '..';</script>
-        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
-        <script src="../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+      <!--UoM CSS handles local nav for us instead of mkdocs-->
+      <div class="jumpnav"></div>
+
     </div>
-</div>
 
-    </body>
+  </div>
+</body>
 </html>
