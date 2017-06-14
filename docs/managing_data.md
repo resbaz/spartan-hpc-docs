@@ -1,4 +1,3 @@
-# Managing your Data
 
 Chances are you need to run your HPC job against a dataset, perhaps quite a sizable one. There are a number of places to store data on Spartan while you're working with it, and ways to get data in and out.
 

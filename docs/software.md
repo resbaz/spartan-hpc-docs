@@ -1,4 +1,3 @@
-# Software
 
 This page outlines usage and tips for some of the most popular software being used on Spartan. 
 

@@ -1,4 +1,3 @@
-# Frequently Asked Questions
 
 ## What's special about Spartan?
 Most modern HPC systems are built around a cluster of commodity computers tied together with very-fast networking. This allows computation to run across multiple cores in parallel, quickly sharing data between themselves as needed.
@@ -30,7 +29,7 @@ For Windows, you'll need to download an SSH client such as [PuTTY](http://www.pu
 
 ## What are Spartan's specifications?
 
-Spartan consists of 21 bare-metal nodes with 12 cores connected via 56GigE ethernet, achieving a latency of 1.15 µsec.
+Spartan consists of 21 bare-metal nodes with 12 cores connected via 56GigE ethernet, achieving a latency of 1.15 us.
 
 The cloud partition nominally consists of 100 nodes with 8 cores each from the [Nectar](http://nectar.org.au/) research cloud, however it is capable of accessing more as the load on Spartan grows.
 

@@ -1,4 +1,4 @@
-site_name: Spartan
+site_name: Spartan Documentation
 pages:
     - Home: index.md
     - Status: status.md

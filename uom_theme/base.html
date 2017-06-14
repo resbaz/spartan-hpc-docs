@@ -1,75 +1,17 @@
-<!--
-  This Basic theme serves as an example for how to create other
-  themes by demonstrating the features with minimal HTML and CSS.
-  Comments like this will be through the code to explain briefly
-  what each feature is and point you to the MkDocs documentation
-  to find out more.
--->
 <!DOCTYPE html>
 <head>
-
-  <!--
-    The page_title contains the title for a page as shown in the navigation.
-    Site name contains the name as defined in the mkdocs.yml
-  -->
   <title>{% if page_title %}{{ page_title }} - {% endif %}{{ site_name }}</title>
-
-  <!--
-    Support custom favicon support.
-    http://www.mkdocs.org/user-guide/configuration/#site_favicon
-  -->
-  {% if favicon %}
-  <link rel="shortcut icon" href="{{ favicon }}">
-  {% else %}
-  <link rel="shortcut icon" href="{{ base_url }}/img/favicon.ico">
-  {% endif %}
-
-  <!--
-    You can include external assets of course, but be aware that it means the
-    documentation may not work well offline.
-  -->
-  <link rel="stylesheet" href="https://yui-s.yahooapis.com/pure/0.6.0/pure-min.css">
-
+  <link rel="stylesheet" href="{{ base_url }}/css/theme.css">
   <link rel="stylesheet" href="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.css">
   <script src="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.js"></script>
 
-  <link rel="stylesheet" href="{{ base_url }}/css/theme.css">
-
-  <!--
-    extra_ess contains paths to CSS files in the users
-    documentation directory or a list of CSS files defined in
-    their mkdocs.yml.
-
-    http://www.mkdocs.org/user-guide/configuration/#extra_css
-  -->
-  {% for path in extra_css %}
-  <link href="{{ path }}" rel="stylesheet">
-  {% endfor %}
-
-  <!--
-    To include static assets from our theme, just add
-    {{ base_url }} beforehand which will be the relative path to
-    the root of the documentation.
-  -->
   <script src="{{ base_url }}/js/theme.js"></script>
 
-  <!--
-    extra_javascript contains paths to JavaScript files in the
-    users documentation directory or a list of JavaScript files
-    defined in their mkdocs.yml.
 
-    http://www.mkdocs.org/user-guide/configuration/#extra_javascript
-  -->
   {% for path in extra_javascript %}
   <script src="{{ path }}"></script>
   {% endfor %}
 
-  <!--
-    Include Google Analytics tracking code.
-
-    http://www.mkdocs.org/user-guide/configuration/#google_analytics
-  -->
-  {% if google_analytics %}
   <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
               (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -79,7 +21,6 @@
       ga('create', '{{ google_analytics[0] }}', '{{ google_analytics[1] }}');
       ga('send', 'pageview');
   </script>
-  {% endif %}
 
   {% block extrahead %}
   {% endblock %}
@@ -90,59 +31,63 @@
 <div class="uomcontent">
 
   <div class="page-inner">
+    <ol class="page-local-history" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+      <li class="root" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+        <a href="/" title="Spartan Documentation" itemprop="item">
+          <span itemprop="name">{{ site_name }}</span>
+        </a>
+        <meta content="1" itemprop="position" />
+      </li>
+      {% if page_title %}
+      <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+        <span itemprop="name">{{ page_title }}</span>
+        <meta content="2" itemprop="position" />
+      </li>
+      {% endif %}
 
+    </ol>
     <div role="main">
 
-      <header >
-        <h1>
-        Spartan
-      </h1>
-        <p>
-          Hybrid HPC Cluster
-        </p>
+      <header>
+        <form action="{{ base_url }}/search.html" class="search" method="get">
+          <fieldset>
+            <div class="inline attached">
+              <span class="fill">
+                <input aria-label="Search" aria-required="true" autocomplete="off" data-error="Please enter a keyword" name="q" placeholder="Search Spartan Documentation" type="search" id="mkdocs-search-query"/>
+              </span>
+              <span>
+              <button class="inline-button" type="submit"><span class="small icon--hide-label" data-icon="search">Go</span></button>
+            </span>
+            </div>
+          </fieldset>
+        </form>
+
 
       </header>
-
 
       <div class="tabbed-nav" data-tabbed="" id="nav">
         <div class="full-width">
           <nav role="tablist">
             {% for nav_item in nav %}
-            <li {% if nav_item.active %}class="active"{% endif %}>
-              <a href="{{ nav_item.url }}">{{ nav_item.title }}</a>
-            </li>
+            <!--<li {% if nav_item.active %}class=""{% endif %}>-->
+              <a data-current="" role="tab" href="{{ nav_item.url }}">{{ nav_item.title }}</a>
+            <!--</li>-->
+            <!--TODO: Explictly set selected tab (sticks to home at the moment).-->
             {% endfor %}
-            <li>
-              <a href="">
-              <div class="small" data-icon="search">
-                Search Documentation
-              </div>
-                </a>
-            </li>
           </nav>
         </div>
 
-        <div role="search">
-          <form action="{{ base_url }}/search.html" method="get">
-            <input type="search" name="q" placeholder="Search Spartan Docs" />
-          </form>
-        </div>
-
-
+        <p>
         {% block content %}
         {{ content }}
         {% endblock %}
+        </p>
       </div>
-
-
 
       <!--UoM CSS handles local nav for us instead of mkdocs-->
       <div class="jumpnav"></div>
 
-
-
     </div>
-
 
   </div>
 </body>
