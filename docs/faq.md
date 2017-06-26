@@ -150,3 +150,9 @@ If you go to `/usr/local/common/` on Spartan there are examples for a wide range
 Spartan, like almost all modern HPC systems, delivers high-performance by combining lots of smaller computers (nodes) together in a cluster. Each core within a node probably isn't much faster than on your own personal computer, and so getting things to 
 
 The individual cores within Spartan aren't much faster than those
+
+## How do I cite Spartan in my publications?
+
+If you use Spartan to obtain results, we'd very much appreciate if you'd cite our service, including the DOI below. This makes it easy for us demonstrate research impact, helping to secure ongoing funding for expansion and user support.
+
+`University of Melbourne (2017) Spartan HPC-Cloud Hybrid: Delivering Performance and Flexibility. https://doi.org/10.4225/49/58ead90dceaaa`
