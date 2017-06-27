@@ -6,5 +6,6 @@ pages:
     - Managing Data: managing_data.md
     - Software: software.md
     - FAQ: faq.md
+    - _Edward Transition: edward_transition.md
 theme_dir: uom_theme
 google_analytics: ['UA-97236408-1', 'auto']

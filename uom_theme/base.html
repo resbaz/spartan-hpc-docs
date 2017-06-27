@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>{% if page_title %}{{ page_title }} - {% endif %}{{ site_name }}</title>
+  <title>{% if page_title %}{{ page_title | replace('_', '') }} - {% endif %}{{ site_name }}</title>
   <link rel="stylesheet" href="{{ base_url }}/css/theme.css">
   <link rel="stylesheet" href="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.css">
   <script src="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.js"></script>
@@ -41,7 +41,7 @@
       </li>
       {% if page_title %}
       <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-        <span itemprop="name">{{ page_title }}</span>
+        <span itemprop="name">{{ page_title | replace('_', '') }}</span>
         <meta content="2" itemprop="position" />
       </li>
       {% endif %}
@@ -70,10 +70,9 @@
         <div class="full-width">
           <nav role="tablist">
             {% for nav_item in nav %}
-            <!--<li {% if nav_item.active %}class=""{% endif %}>-->
+              {% if not nav_item.title.startswith("_") %}
               <a role="tab" href="{{ nav_item.url }}" {% if nav_item.active %}id="activeTab"{% endif %}>{{ nav_item.title }}</a>
-            <!--</li>-->
-            <!--TODO: Explictly set selected tab (sticks to home at the moment).-->
+              {% endif %}
             {% endfor %}
           </nav>
         </div>
