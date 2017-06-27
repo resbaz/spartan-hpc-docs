@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<head>
+  <title>Edward Transition - Spartan Documentation</title>
+  <link rel="stylesheet" href="../css/theme.css">
+  <link rel="stylesheet" href="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.css">
+  <script src="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="../js/theme.js"></script>
+
+
+  
+
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-97236408-1', 'auto');
+      ga('send', 'pageview');
+  </script>
+
+  
+  
+</head>
+
+<body>
+
+<div class="uomcontent">
+
+  <div class="page-inner">
+    <ol class="page-local-history" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+      <li class="root" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+        <a href="/" title="Spartan Documentation" itemprop="item">
+          <span itemprop="name">Spartan Documentation</span>
+        </a>
+        <meta content="1" itemprop="position" />
+      </li>
+      
+      <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+        <span itemprop="name">Edward Transition</span>
+        <meta content="2" itemprop="position" />
+      </li>
+      
+
+    </ol>
+    <div role="main">
+
+      <header>
+        <form action="../search.html" class="search" method="get">
+          <fieldset>
+            <div class="inline attached">
+              <span class="fill">
+                <input aria-label="Search" aria-required="true" autocomplete="off" data-error="Please enter a keyword" name="q" placeholder="Search Spartan Documentation" type="search" id="mkdocs-search-query"/>
+              </span>
+              <span>
+              <button class="inline-button" type="submit"><span class="small icon--hide-label" data-icon="search">Go</span></button>
+            </span>
+            </div>
+          </fieldset>
+        </form>
+
+
+      </header>
+
+      <div class="tabbed-nav" data-tabbed="" id="nav">
+        <div class="full-width">
+          <nav role="tablist">
+            
+              
+              <a role="tab" href=".." >Home</a>
+              
+            
+              
+              <a role="tab" href="../status/" >Status</a>
+              
+            
+              
+              <a role="tab" href="../getting_started/" >Getting Started</a>
+              
+            
+              
+              <a role="tab" href="../managing_data/" >Managing Data</a>
+              
+            
+              
+              <a role="tab" href="../software/" >Software</a>
+              
+            
+              
+              <a role="tab" href="../faq/" >FAQ</a>
+              
+            
+              
+            
+          </nav>
+        </div>
+      </div>
+
+        <p>
+        
+        <h1 id="edward-to-spartan-a-short-transition-guide">Edward to Spartan : A Short Transition Guide</h1>
+<h2 id="when-is-edward-being-retired">When is Edward Being Retired?</h2>
+<p>Edward, the University of Melbourne's general purpose High Performance Computer (HPC), has been operating since 2011, replacing the even older Alfred system. As of May 13th, Edward has run for a total compute time 19,810,086 hours over 1,260,177 jobs, serving 864 researchers over 368 projects.</p>
+<p>Edward will operate until November 2016, when the MOAB license expires and will be replaced by Spartan for general purpose HPC tasks. No new software will be installed on Edward.</p>
+<h2 id="how-is-spartan-different">How is Spartan Different?</h2>
+<p>Spartan is a hybrid HPC/Cloud system. The design is the result of a thorough review of usage on the Edward system which revealed that it was being used for large numbers of single-core (76.35%) and low memory (96.83% under 4GB) of jobs. As a result, the new Spartan system will have a large number (c4000 cores, with 16 cores per node) from the NeCTAR Research cloud as one partition, and a much smaller traditional HPC "physical" partition.</p>
+<p>Spartan uses the lmod modules system instead of the traditional tcl-based modules system. In nearly all cases the same commands apply.</p>
+<p>However, Spartan will also use Simple Linux Utility for Resource Management (SLURM) for job management, whereas Edward used Terascale Open-source Resource and QUEue Manager (TORQUE), as the resource manager and Moab for job scheduling.</p>
+<p>This means that job scripts will be different between the two systems and translation will be required.</p>
+<h2 id="how-do-we-submit-jobs-in-slurm">How do we submit jobs in SLURM?</h2>
+<p>Job submission in SLURM is conceptual identical in SLURM as it in PBS and the structure is very similar as well. Setup and launch consists of writing a short script that initially makes resource requests (walltime, processors, memory, queues) and then commands (loading modules, changing directories, running executables against datasets etc), and optionally checking queueing system.</p>
+<p>Core command for checking queue is: showq (TORQUE) or squeue (SLURM)</p>
+<p>Core command for job submission is qsub&lt; [jobscript] (TORQUE), or sbatch [jobscript] (SLURM)</p>
+<h2 id="what-about-working-directories-and-environments">What About Working Directories and Environments?</h2>
+<p>TORQUE jobs must include cd $PBS_O_WORKDIR to change to the directory where they were launched. SLURM jobs do not require this.</p>
+<p>TORQUE jobs do not parse the user's environment to the compute node by default; the #$PBS -V command is required. SLURM does this by default.</p>
+<h2 id="what-about-job-status-and-output">What about Job Status and Output?</h2>
+<p>Core command for checking job qstat [jobid] (TORQUE), checkjob [jobid] (Moab), squeue -j [jobid] (SLURM), detailed command scontrol show job [jobid] (SLURM) Core command for deleting job qdel [jobid] (TORQUE), scancel [jobid] (SLURM)</p>
+<p>Both TORQUE and Slurm provide error and output files (combined into one by default in SLURM, like the <code>-j oe</code> option in PBS).</p>
+<h2 id="what-are-the-user-command-differences">What are the user command differences?</h2>
+<table>
+<thead>
+<tr>
+<th>User Command</th>
+<th>TORQUE (Edward)</th>
+<th>SLURM (Spartan)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Job submission</td>
+<td>qsub [script_file]</td>
+<td>sbatch [script_file]</td>
+</tr>
+<tr>
+<td>Job delete</td>
+<td>qdel [job_id]</td>
+<td>scancel [job_id]</td>
+</tr>
+<tr>
+<td>Job status</td>
+<td>qstat [job_id]</td>
+<td>squeue [job_id]</td>
+</tr>
+<tr>
+<td>Job status</td>
+<td>qstat -u [user_name]</td>
+<td>squeue -u [user_name]</td>
+</tr>
+<tr>
+<td>Node list</td>
+<td>pbsnodes -a</td>
+<td>sinfo -N</td>
+</tr>
+<tr>
+<td>Queue list</td>
+<td>qstat -Q</td>
+<td>squeue</td>
+</tr>
+<tr>
+<td>Cluster status</td>
+<td>showq</td>
+<td>qstatus -a</td>
+</tr>
+</tbody>
+</table>
+<h2 id="what-are-the-job-command-differences">What are the job command differences?</h2>
+<table>
+<thead>
+<tr>
+<th>Job Specification</th>
+<th>TORQUE (Edward)</th>
+<th>SLURM (Spartan)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Script directive</td>
+<td>#PBS</td>
+<td>#SBATCH</td>
+</tr>
+<tr>
+<td>Queue</td>
+<td>-q [queue]</td>
+<td>-p [queue]</td>
+</tr>
+<tr>
+<td>Job Name</td>
+<td>-N [name]</td>
+<td>--job-name=[name]</td>
+</tr>
+<tr>
+<td>Nodes</td>
+<td>-l nodes=[count]</td>
+<td>-N [min[-max]]</td>
+</tr>
+<tr>
+<td>CPU Count</td>
+<td>-l ppn=[count]</td>
+<td>-n [count]</td>
+</tr>
+<tr>
+<td>Wall Clock Limit</td>
+<td>-l walltime=[hh:mm:ss]</td>
+<td>-t [days-hh:mm:ss]</td>
+</tr>
+<tr>
+<td>Event Address</td>
+<td>-M [address]</td>
+<td>--mail-user=[address]</td>
+</tr>
+<tr>
+<td>Event Notification</td>
+<td>-m abe</td>
+<td>--mail-type=[events]</td>
+</tr>
+<tr>
+<td>Memory Size</td>
+<td>-l mem=[MB]</td>
+<td>--mem=[mem][M G T]</td>
+</tr>
+<tr>
+<td>Proc Memory Size</td>
+<td>-l pmem=[MB]</td>
+<td>--mem-per-cpu=[mem][M G T]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="what-are-the-environment-commands-differences">What are the environment commands differences?</h2>
+<table>
+<thead>
+<tr>
+<th>Environment</th>
+<th>Command TORQUE (Edward)</th>
+<th>SLURM (Spartan)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Job ID</td>
+<td>$PBS_JOBID</td>
+<td>$SLURM_JOBID</td>
+</tr>
+<tr>
+<td>Submit Directory</td>
+<td>$PBS_O_WORKDIR</td>
+<td>$SLURM_SUBMIT_DIR</td>
+</tr>
+<tr>
+<td>Submit Host</td>
+<td>$PBS_O_HOST</td>
+<td>$SLURM_SUBMIT_HOST</td>
+</tr>
+<tr>
+<td>Node List</td>
+<td>$PBS_NODEFILE</td>
+<td>$SLURM_JOB_NODELIST</td>
+</tr>
+<tr>
+<td>Job Array</td>
+<td>Index $PBS_ARRAYID</td>
+<td>$SLURM_ARRAY_TASK_ID</td>
+</tr>
+</tbody>
+</table>
+<h2 id="automation-and-acknowledgements">Automation and Acknowledgements</h2>
+<p>There is a git repository for converting PBS to SLURM: https://github.com/bjpop/pbs2slurm</p>
+<p>This guide was written by Lev Lafayette for Research Platforms, University of Melbourne. Version 0.2, June 30 , 2016</p>
+        
+        </p>
+
+
+      <!--UoM CSS handles local nav for us instead of mkdocs-->
+      <div class="jumpnav"></div>
+
+    </div>
+
+  </div>
+</body>
+
+<script>
+
+  $(document).ready(function(){
+      // Force tab link markers/highlighting to shift for external links (not supported out of the box).
+      $('a').removeAttr('data-current');
+      $('#activeTab').attr({'data-current': ''});
+  });
+
+</script>
+</html>
