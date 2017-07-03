@@ -1,6 +1,6 @@
 {
     "resbaz/spartan-hpc-docs": {
         "path": "/home/ubuntu",
-    	"action": [["./deploy_docs_to_swift.sh"]]
+    	"action": [["./deploy_docs_to_dashboard.sh"]]
 	}
 }
