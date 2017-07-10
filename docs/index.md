@@ -51,9 +51,9 @@ Spartan is just one of many research IT resources offered by The University of M
 
 Spartan runs some of it's computation resources in the Nectar cloud.
 
-**Victorian Life Sciences Computation Initiative (VLSCI)**
+**Melbourne Bioinformatics**
 
-[VLSCI](https://www.vlsci.org.au/) run three large HPC systems for life sciences researchers.
+[Melbourne Bioinformatics](https://www.melbournebioinformatics.org.au/) run two large HPC systems for life sciences researchers.
 
 
 ** Multi-modal Australian ScienceS Imaging and Visualisation Environment (MASSIVE) ** 
