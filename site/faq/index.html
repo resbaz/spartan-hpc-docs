@@ -194,6 +194,50 @@ myProgram data_${SLURM_ARRAY_TASK_ID}.dat
 <p><code>University of Melbourne (2017) Spartan HPC-Cloud Hybrid: Delivering Performance and Flexibility. https://doi.org/10.4225/49/58ead90dceaaa</code></p>
 <h2 id="how-do-i-transition-my-work-from-the-old-hpc-system-edward-to-spartan">How do I transition my work from the old HPC system Edward to Spartan?</h2>
 <p>Here's a <a href="../edward_transition/">guide</a> to help you.</p>
+<h2 id="how-do-setup-passwordless-ssh-login">How do setup passwordless SSH login?</h2>
+<p>A passwordless SSH for Spartan will make your life easier. You won't
+even need to remember your password!</p>
+<p>If you have a *nix system (e.g., UNIX, Linux, MacOS X) open up a
+terminal on your <em>local</em> system and generate a keypair.</p>
+<pre><code>$ ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/user/.ssh/id_rsa): 
+Created directory '/home/a/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/a/.ssh/id_rsa.
+Your public key has been saved in /home/a/.ssh/id_rsa.pub.
+The key fingerprint is:
+43:51:43:a1:b5:fc:8b:b7:0a:3a:a9:b1:0f:66:73:a8 user@localhost
+</code></pre>
+
+<p>Now append the new public key to <code>~/.ssh/authorized_keys</code> on Spartan (you'll be asked for your password one last time).</p>
+<pre><code>$ cat .ssh/id_rsa.pub | ssh username@spartan.hpc.unimelb.edu.au 'cat &gt;&gt; .ssh/authorized_keys'
+</code></pre>
+
+<p>Depending on your version of SSH you might also have to do the following
+changes:</p>
+<ul>
+<li>Put the public key in .ssh/authorized_keys2</li>
+<li>Change the permissions of .ssh to 700</li>
+<li>Change the permissions of .ssh/authorized_keys2 to 640</li>
+</ul>
+<p>You can now SSH to Spartan without having to enter your password!</p>
+<h2 id="how-can-i-avoid-typing-myusernamespartanhpcunimelbeduau-everytime-i-connect">How can I avoid typing myUsername@spartan.hpc.unimelb.edu.au everytime I connect?</h2>
+<p>An SSH config file will also make your life easier. It allows you to create alises (i.e. shortcuts) for a given hostname. </p>
+<p>Create the text file in your <code>~/.ssh</code> directory with your preferred text editor, for example, <code>nano</code>.</p>
+<pre><code>nano .ssh/config
+</code></pre>
+
+<p>Enter the following (replacing <code>username</code> with your actual username of course!):</p>
+<pre><code>Host *
+ServerAliveInterval 120
+Host spartan
+       Hostname spartan.hpc.unimelb.edu.au
+       User username
+</code></pre>
+
+<p>Now to connect to Spartan, you need only type <code>ssh spartan</code>.</p>
         
         </p>
 

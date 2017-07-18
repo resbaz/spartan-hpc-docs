@@ -162,3 +162,63 @@ If you use Spartan to obtain results, we'd very much appreciate if you'd cite ou
 ## How do I transition my work from the old HPC system Edward to Spartan?
 
 Here's a [guide](edward_transition.md) to help you.
+
+
+## How do setup passwordless SSH login?
+
+A passwordless SSH for Spartan will make your life easier. You won't
+even need to remember your password!
+
+If you have a *nix system (e.g., UNIX, Linux, MacOS X) open up a
+terminal on your _local_ system and generate a keypair.
+
+```
+$ ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/user/.ssh/id_rsa): 
+Created directory '/home/a/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/a/.ssh/id_rsa.
+Your public key has been saved in /home/a/.ssh/id_rsa.pub.
+The key fingerprint is:
+43:51:43:a1:b5:fc:8b:b7:0a:3a:a9:b1:0f:66:73:a8 user@localhost
+```
+
+Now append the new public key to `~/.ssh/authorized_keys` on Spartan (you'll be asked for your password one last time).
+
+```
+$ cat .ssh/id_rsa.pub | ssh username@spartan.hpc.unimelb.edu.au 'cat >> .ssh/authorized_keys'
+```
+
+Depending on your version of SSH you might also have to do the following
+changes:
+
+* Put the public key in .ssh/authorized_keys2
+* Change the permissions of .ssh to 700
+* Change the permissions of .ssh/authorized_keys2 to 640
+
+You can now SSH to Spartan without having to enter your password!
+
+
+## How can I avoid typing myUsername@spartan.hpc.unimelb.edu.au everytime I connect?
+
+An SSH config file will also make your life easier. It allows you to create alises (i.e. shortcuts) for a given hostname. 
+
+Create the text file in your `~/.ssh` directory with your preferred text editor, for example, `nano`.
+
+```
+nano .ssh/config
+```
+
+Enter the following (replacing `username` with your actual username of course!):
+
+```
+Host *
+ServerAliveInterval 120
+Host spartan
+       Hostname spartan.hpc.unimelb.edu.au
+       User username
+```
+
+Now to connect to Spartan, you need only type `ssh spartan`.
