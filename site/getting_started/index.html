@@ -128,11 +128,11 @@ module load Python/3.5.2-intel-2016.u3
 
 # Launch multiple process python code
 echo &quot;Searching for mentions&quot;
-time mpiexec -n 16 python3 twitter_search_541635.py -i /data/projects/COMP90024/twitter.csv -m
+time mpiexec -n 8 python3 twitter_search_541635.py -i /data/projects/COMP90024/twitter.csv -m
 echo &quot;Searching for topics&quot;
-time mpiexec -n 16 python3 twitter_search_541635.py -i /data/projects/COMP90024/twitter.csv -t
+time mpiexec -n 8 python3 twitter_search_541635.py -i /data/projects/COMP90024/twitter.csv -t
 echo &quot;Searching for the keyword 'jumping'&quot;
-time mpiexec -n 16 python3 twitter_search_541635.py -i /data/projects/COMP90024/twitter.csv -s jumping
+time mpiexec -n 8 python3 twitter_search_541635.py -i /data/projects/COMP90024/twitter.csv -s jumping
 </code></pre>
 
 <p><br></p>
@@ -140,7 +140,7 @@ time mpiexec -n 16 python3 twitter_search_541635.py -i /data/projects/COMP90024/
 <p>First off, when you connect to Spartan, you're connecting to the login node (shared by all users), not an actual computing node. <strong>Please don't run jobs on the login node!</strong></p>
 <p>Instead, use the scheduling tool <a href="http://slurm.schedmd.com/">Slurm</a>, and scripts like the above. They tell Slurm where to run your job, how many cores you need, and how long it will take. Slurm will then allocate resources for your job, placing it in a queue if they're not yet available.</p>
 <p>Go ahead and launch your job using <code>sbatch</code>:</p>
-<pre><code>$ sbatch twitter_one_node_sixteen_cores.slurm
+<pre><code>$ sbatch twitter_one_node_eight_cores.slurm
 &gt; Submitted batch job 27300
 </code></pre>
 

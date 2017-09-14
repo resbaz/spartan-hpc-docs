@@ -51,11 +51,11 @@ module load Python/3.5.2-intel-2016.u3
 
 # Launch multiple process python code
 echo "Searching for mentions"
-time mpiexec -n 16 python3 twitter_search_541635.py -i /data/projects/COMP90024/twitter.csv -m
+time mpiexec -n 8 python3 twitter_search_541635.py -i /data/projects/COMP90024/twitter.csv -m
 echo "Searching for topics"
-time mpiexec -n 16 python3 twitter_search_541635.py -i /data/projects/COMP90024/twitter.csv -t
+time mpiexec -n 8 python3 twitter_search_541635.py -i /data/projects/COMP90024/twitter.csv -t
 echo "Searching for the keyword 'jumping'"
-time mpiexec -n 16 python3 twitter_search_541635.py -i /data/projects/COMP90024/twitter.csv -s jumping
+time mpiexec -n 8 python3 twitter_search_541635.py -i /data/projects/COMP90024/twitter.csv -s jumping
 ```
 
 <br>
@@ -69,7 +69,7 @@ Instead, use the scheduling tool [Slurm](http://slurm.schedmd.com/), and scripts
 Go ahead and launch your job using `sbatch`:
 
 ```
-$ sbatch twitter_one_node_sixteen_cores.slurm
+$ sbatch twitter_one_node_eight_cores.slurm
 > Submitted batch job 27300
 ```
 
