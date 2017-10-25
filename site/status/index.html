@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.css">
   <script src="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+  <script src="https://cdn.statuspage.io/se-v2.js"></script>
   <script src="../js/theme.js"></script>
 
 
@@ -102,7 +102,10 @@
         
         <h2 id="availability">Availability</h2>
 <p><em>Is Spartan operating normally?</em></p>
-<p>(statuspage.io widget here)</p>
+<p><a href="https://spartanhpc.statuspage.io/" target="_blank">
+    <span class="color-dot"></span>
+    <span class="color-description"></span>
+</a></p>
 <h2 id="current-usage">Current Usage</h2>
 <p><em>How busy is Spartan today?</em></p>
 <p>
@@ -111,6 +114,18 @@
 
 <h2 id="wait-time">Wait Time</h2>
 <p><em>How long will my job take to start?</em></p>
+<script>
+var sp = new StatusPage.page({ page: 'zxld2sws8c9x'});
+
+sp.summary({
+  success: function(data) {
+    // adds the text description to the dropdown
+    $('.color-description').text(data.status.description);
+    // appends the status indicator as a class name so we can use the right color for the status light thing
+    $('.color-dot').addClass(data.status.indicator);
+  }
+});
+</script>
         
         </p>
 

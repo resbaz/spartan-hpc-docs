@@ -37,12 +37,12 @@
         }, 
         {
             "location": "/status/", 
-            "text": "Availability\n\n\nIs Spartan operating normally?\n\n\n(statuspage.io widget here)\n\n\nCurrent Usage\n\n\nHow busy is Spartan today?\n\n\n\n\n\n\n\n\n\nWait Time\n\n\nHow long will my job take to start?", 
+            "text": "Availability\n\n\nIs Spartan operating normally?\n\n\n\n    \n\n    \n\n\n\n\nCurrent Usage\n\n\nHow busy is Spartan today?\n\n\n\n\n\n\n\n\n\nWait Time\n\n\nHow long will my job take to start?\n\n\n\nvar sp = new StatusPage.page({ page: 'zxld2sws8c9x'});\n\nsp.summary({\n  success: function(data) {\n    // adds the text description to the dropdown\n    $('.color-description').text(data.status.description);\n    // appends the status indicator as a class name so we can use the right color for the status light thing\n    $('.color-dot').addClass(data.status.indicator);\n  }\n});", 
             "title": "Status"
         }, 
         {
             "location": "/status/#availability", 
-            "text": "Is Spartan operating normally?  (statuspage.io widget here)", 
+            "text": "Is Spartan operating normally?", 
             "title": "Availability"
         }, 
         {
@@ -52,7 +52,7 @@
         }, 
         {
             "location": "/status/#wait-time", 
-            "text": "How long will my job take to start?", 
+            "text": "How long will my job take to start?  \nvar sp = new StatusPage.page({ page: 'zxld2sws8c9x'});\n\nsp.summary({\n  success: function(data) {\n    // adds the text description to the dropdown\n    $('.color-description').text(data.status.description);\n    // appends the status indicator as a class name so we can use the right color for the status light thing\n    $('.color-dot').addClass(data.status.indicator);\n  }\n});", 
             "title": "Wait Time"
         }, 
         {
