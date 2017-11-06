@@ -61,7 +61,12 @@ Finally, if you ever get stuck, please feel free to [email HPC support](mailto:h
 
 
 ## How do I get access to GPUs?
-You'll need to add two parameters to your Slurm script, `#SBATCH --partition gpu` and `#SBATCH --gres=gpu`. You can access up four GPUs in a single job using `#SBATCH --gres=gpu:4`.
+You'll need to add two parameters to your Slurm script, `#SBATCH --partition gpu` and `#SBATCH --gres=gpu`. You can access up four GPUs in a single job using `#SBATCH --gres=gpu:4`. There is also a specialist partition which can be accessed with `#SBATCH --partition gpgpu`. 
+
+Note that with the generic resource request `gpu` you will be allocated gpus without differentiation. If you need specific gpus these can be specified by type.  We have two different types on the Spartan gpgpu partion, `k80` and `p100`.
+
+For example when submitting a a job that requests `--gres=gpu` for 1 GPU or `--gres=gpu:2` for 2 GPUs per task then that can be satisfied by either type. But if a specific type (for example P100) is neededthen the submission will require `--gres=gpu:p100` and if 2 per task is desired then `--gres=gpu:p100:2` is required.
+
 
 CUDA 7, 7.5 and 8 are available, along with NVidia driver 367.48. 
 
