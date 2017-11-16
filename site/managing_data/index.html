@@ -127,9 +127,6 @@
 <p>Note that the first argument is the source, and the second is the destination which will be modified to match the source.</p>
 <p><strong>VicNode</strong></p>
 <p>VicNode provides data storage that can be mounted on Spartan. It's then very easy to transfer files back and fourth as needed. <a href="mailto:hpc-support@unimelb.edu.au">Contact us</a> with details of the VicNode resources you'd like to mount, and we can arrange this for you.</p>
-<h2 id="use-the-io-node-for-large-data-transfer-jobs">Use the IO Node for Large Data Transfer Jobs</h2>
-<p>The approach above transfers files via the login node, which is fine for small files. For bigger transfers, we encourage you to use <code>spartan-io.hpc.unimelb.edu.au</code> instead. That will prevent resources on the login node being tied up (slowing things down for everyone), and is likely to result in faster transfers for you.</p>
-<p>The IO node has access to the same home and project directories on Spartan. Simply substitute <code>spartan-io</code> in the commands above, for example <code>scp local.dat myusername@spartan-io.hpc.unimelb.edu.au:/data/projects/myproject/remote.dat</code> to transfer <code>local.dat</code> to Spartan via the IO node.</p>
         
         </p>
 
