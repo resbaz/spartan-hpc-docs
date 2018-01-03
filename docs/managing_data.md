@@ -4,8 +4,8 @@ Chances are you need to run your HPC job against a dataset, perhaps quite a siza
 ## Not for Long-Term Storage
 While it's often essential to have fast nearby storage while working on your data, don't use Spartan as your long-term data repository. It's not designed for that, may not conform to the requirements set by your institution or funding body, and we don't guarantee to store your data indefinitely (though we certainly won't get rid of it without asking you first). 
 
-[VicNode](https://vicnode.org.au/) offers a range of data storage services that may suit your needs. If you're unsure, get in [contact](mailto:hpc-support@unimelb.edu.au) with us.
-
+## Data Storage and Tools
+Research Platforms has a dedicated team of experts to assist in you in <a href="http://research.unimelb.edu.au/infrastructure/research-platform-services/services/data-storage-management">data tools and storage</>.
 
 ## Where to Store Your Data on Spartan
 
@@ -52,7 +52,6 @@ Repeatedly transferring large files in and out of Spartan via `scp` can be tedio
 ```$ rsync local.dat myusername@spartan.hpc.unimelb.edu.au:/data/projects/myproject/remote.dat  ```
 
 Note that the first argument is the source, and the second is the destination which will be modified to match the source.
-
 
 **VicNode**
 
