@@ -5,7 +5,7 @@ Chances are you need to run your HPC job against a dataset, perhaps quite a siza
 While it's often essential to have fast nearby storage while working on your data, don't use Spartan as your long-term data repository. It's not designed for that, may not conform to the requirements set by your institution or funding body, and we don't guarantee to store your data indefinitely (though we certainly won't get rid of it without asking you first). 
 
 ## Data Storage and Tools
-Research Platforms has a dedicated team of experts to assist in you in <a href="http://research.unimelb.edu.au/infrastructure/research-platform-services/services/data-storage-management">data tools and storage</>.
+Research Platforms has a dedicated team of experts to assist in you in [data tools and storage](http://research.unimelb.edu.au/infrastructure/research-platform-services/services/data-storage-management).
 
 ## Where to Store Your Data on Spartan
 
