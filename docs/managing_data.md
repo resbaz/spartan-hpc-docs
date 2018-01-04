@@ -2,9 +2,13 @@
 Chances are you need to run your HPC job against a dataset, perhaps quite a sizable one. There are a number of places to store data on Spartan while you're working with it, and ways to get data in and out.
 
 ## Not for Long-Term Storage
-While it's often essential to have fast nearby storage while working on your data, don't use Spartan as your long-term data repository. It's not designed for that, may not conform to the requirements set by your institution or funding body, and we don't guarantee to store your data indefinitely (though we certainly won't get rid of it without asking you first). 
+While it's often essential to have fast nearby storage while working on your data, please don't use Spartan as your long-term data repository. It's not designed for that, may not conform to the requirements set by your institution or funding body, and we don't guarantee to store your data indefinitely (though we certainly won't get rid of it without asking you first). 
 
-[VicNode](https://vicnode.org.au/) offers a range of data storage services that may suit your needs. If you're unsure, get in [contact](mailto:hpc-support@unimelb.edu.au) with us.
+## Data and Storage Solutions Beyond Spartan
+
+The University offers a range of other data storage and management solutions to meet your needs, beyond the short-term storage available on Spartan, which are described [here](http://research.unimelb.edu.au/infrastructure/research-platform-services/services/data-storage-management). 
+
+In some cases it's possible to integrate these resources with your account on Spartan to streamline your workflow. [Get in touch](mailto:hpc-support@unimelb.edu.au) if you'd like to find out more for your particular application.
 
 
 ## Where to Store Your Data on Spartan
@@ -54,12 +58,3 @@ Repeatedly transferring large files in and out of Spartan via `scp` can be tedio
 Note that the first argument is the source, and the second is the destination which will be modified to match the source.
 
 
-**VicNode**
-
-VicNode provides data storage that can be mounted on Spartan. It's then very easy to transfer files back and fourth as needed. [Contact us](mailto:hpc-support@unimelb.edu.au) with details of the VicNode resources you'd like to mount, and we can arrange this for you.
-
-
-## Use the IO Node for Large Data Transfer Jobs
-The approach above transfers files via the login node, which is fine for small files. For bigger transfers, we encourage you to use `spartan-io.hpc.unimelb.edu.au` instead. That will prevent resources on the login node being tied up (slowing things down for everyone), and is likely to result in faster transfers for you.
-
-The IO node has access to the same home and project directories on Spartan. Simply substitute `spartan-io` in the commands above, for example `scp local.dat myusername@spartan-io.hpc.unimelb.edu.au:/data/projects/myproject/remote.dat` to transfer `local.dat` to Spartan via the IO node.
