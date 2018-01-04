@@ -56,5 +56,3 @@ Repeatedly transferring large files in and out of Spartan via `scp` can be tedio
 ```$ rsync local.dat myusername@spartan.hpc.unimelb.edu.au:/data/projects/myproject/remote.dat  ```
 
 Note that the first argument is the source, and the second is the destination which will be modified to match the source.
-
-

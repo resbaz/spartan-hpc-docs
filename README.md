@@ -1,4 +1,3 @@
-## Documentation for the Spartan HPC cluster, using mkdocs.
 
 # Contributing
 Fork/clone this repo, and make a pull request to master, which will automatically deploy changes once accepted. Remember to `mkdocs build` before committing.

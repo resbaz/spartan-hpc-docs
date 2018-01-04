@@ -140,7 +140,9 @@
 <p>Second, check the documentation here, as well as for the software you're running on Spartan (like Slurm).</p>
 <p>Finally, if you ever get stuck, please feel free to <a href="mailto:hpc-support@unimelb.edu.au">email HPC support</a>. We're here to help make your research more productive and enjoyable, and we'll do everything we can to help. </p>
 <h2 id="how-do-i-get-access-to-gpus">How do I get access to GPUs?</h2>
-<p>You'll need to add two parameters to your Slurm script, <code>#SBATCH --partition gpu</code> and <code>#SBATCH --gres=gpu</code>. You can access up four GPUs in a single job using <code>#SBATCH --gres=gpu:4</code>.</p>
+<p>You'll need to add two parameters to your Slurm script, <code>#SBATCH --partition gpu</code> and <code>#SBATCH --gres=gpu</code>. You can access up four GPUs in a single job using <code>#SBATCH --gres=gpu:4</code>. There is also a specialist partition which can be accessed with <code>#SBATCH --partition gpgpu</code>. </p>
+<p>Note that with the generic resource request <code>gpu</code> you will be allocated gpus without differentiation. If you need specific gpus these can be specified by type.  We have two different types on the Spartan gpgpu partion, <code>k80</code> and <code>p100</code>.</p>
+<p>For example when submitting a a job that requests <code>--gres=gpu</code> for 1 GPU or <code>--gres=gpu:2</code> for 2 GPUs per task then that can be satisfied by either type. But if a specific type (for example P100) is neededthen the submission will require <code>--gres=gpu:p100</code> and if 2 per task is desired then <code>--gres=gpu:p100:2</code> is required.</p>
 <p>CUDA 7, 7.5 and 8 are available, along with NVidia driver 367.48. </p>
 <h2 id="how-do-i-submit-a-job">How do I submit a job?</h2>
 <p>You'll need your data files and scripts, the software you want to run installed on Spartan, and a job script so that Spartan knows how to put everything together. Check out <a href="../getting_started/">Getting Started</a> for an example.</p>
