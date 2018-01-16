@@ -13,7 +13,7 @@ In some cases it's possible to integrate these resources with your account on Sp
 
 There is a mismatched MTU between the Spartan physical nodes and their VLAN, which will be fixed in the next maintenance window. If downloads to Spartan are not working it is recommended that a proxy is established before using `wget` or `curl` etc. For example:
 
-`export http_proxy|https_proxy|ftp_proxy=http://wwwproxy.unimelb.edu.au:8000`
+`export http_proxy|https_proxy|ftp_proxy=http://wwwproxy.unimelb.edu.au:8000`    
 `wget --no-check-certificate ftp://ftp.broadinstitute.org/distribution/83RC2_q_image.tgz`
 
 ## Where to Store Your Data on Spartan
