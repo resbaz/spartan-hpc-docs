@@ -1,4 +1,3 @@
-
 Spartan is High Performance Computing (HPC) system operated by Research Platform Services (ResPlat) at The University of Melbourne. It combines a high performance bare-metal compute with flexible cloud infrastructure to suit a wide range of use-cases.
 
 If your computing jobs take too long on your desktop computer, or are simply not possible due to a lack of speed and memory, a HPC system like Spartan can help.
@@ -11,10 +10,11 @@ We run regular one-day courses on HPC, shell scripting and parallel programming.
 
 Signup here: [http://melbourne.resbaz.edu.au/participate](http://melbourne.resbaz.edu.au/participate)
 
-
 ### Helpdesk
 
 If you can't find an answer here, need advice, or otherwise stuck, you can contact our support team at [hpc-support@unimelb.edu.au](mailto:hpc-support@unimelb.edu.au)
+
+Please submit one topic per ticket. If you require a assistance with a separate matter, compose a new ticket. Do not reply to existing or closed tickets.
 
 ## Specifications
 

@@ -1,6 +1,8 @@
 
 # Contributing
-Fork/clone this repo, and make a pull request to master, which will automatically deploy changes once accepted. Remember to `mkdocs build` before committing.
+Fork/clone this repo, and make a pull request to master, which will automatically deploy changes once accepted. 
+
+Remember to `mkdocs build` before committing.
 
 # Deployment
 We automatically deploy to dashboard web host upon pushing to master.

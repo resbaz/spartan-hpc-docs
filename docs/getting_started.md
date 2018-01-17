@@ -1,7 +1,4 @@
-
 *Prerequisite:* You'll need a basic understanding of the Linux command line to use Spartan. But don't worry, you don't need to be an expert, and there are many resources out there to help you. [This tutorial](http://www.ee.surrey.ac.uk/Teaching/Unix/) is a good place to start.
-
-
 
 ### 1. Create an account
 
@@ -9,14 +6,12 @@ Go to [Karaage](https://dashboard.hpc.unimelb.edu.au/karaage) to request a Spart
 
 <br>
 
-
 ### 2. Login to Spartan via SSH
 Note that your password for Spartan is created during sign-up, and is different to your university password.
 
 *Windows*
 
 Download an SSH client such as [PuTTY](http://www.putty.org/), set hostname as `spartan.hpc.unimelb.edu.au`  and click Open. You'll be asked for your Spartan username and password.
-
 
 *Posix (Linux, OS X)*
 
@@ -83,4 +78,3 @@ $ squeue --job 27300
 When complete, an output file is created which logs the output from your job, for the above this has the filename `slurm-27300.out`.
 
 You can also perform interactive work using the ```sinteractive``` command. This is handy for testing and debugging. This will allocate and log you in to a computing node.
-
