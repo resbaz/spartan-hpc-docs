@@ -144,6 +144,15 @@ This will create 50 jobs, each calling `myProgram` with a different data file. T
 
 
 
+## How do I request more memory?
+
+By default the scheduler will set memory equal to the total amount on a compute node divided by the number of cores requested. In some cases this might not be enough (e.g., very large dataset that needs to be loaded with low level of parallelisation).
+
+Additional memory can be allocated with the `--mem=[mem][M|G|T]` directive (entire job) or `--mem-per-cpu=[mem][M|G|T]` (per core). Maximum should be based around total cores -1 (for system processes). The --mem-per-cpu directive is for threads for OpenMP applications and processor ranks for MPI.
+
+It is best to reserve some memory (about 1 core's worth) for system processes.
+
+
 ## Are there more examples I can look at?
 
 If you go to `/usr/local/common/` on Spartan there are examples for a wide range of programs. You can copy these into your home directory and run them for yourself.
@@ -152,9 +161,7 @@ If you go to `/usr/local/common/` on Spartan there are examples for a wide range
 
 ## How do I make my program run fast on Spartan?
 
-Spartan, like almost all modern HPC systems, delivers high-performance by combining lots of smaller computers (nodes) together in a cluster. Each core within a node probably isn't much faster than on your own personal computer, and so getting things to 
-
-The individual cores within Spartan aren't much faster than those
+Spartan, like almost all modern HPC systems, delivers high-performance by combining lots of smaller computers (nodes) together in a cluster. Each core within a node probably isn't much faster than on your own personal computer, so improved performance is dependent on using parallel processing (MPI or OpenMP) or job arrays. 
 
 
 ## How do I cite Spartan in my publications?
@@ -181,11 +188,11 @@ terminal on your _local_ system and generate a keypair.
 $ ssh-keygen -t rsa
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa): 
-Created directory '/home/a/.ssh'.
+Created directory '/home/user/.ssh'.
 Enter passphrase (empty for no passphrase): 
 Enter same passphrase again: 
-Your identification has been saved in /home/a/.ssh/id_rsa.
-Your public key has been saved in /home/a/.ssh/id_rsa.pub.
+Your identification has been saved in /home/user/.ssh/id_rsa.
+Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:
 43:51:43:a1:b5:fc:8b:b7:0a:3a:a9:b1:0f:66:73:a8 user@localhost
 ```
