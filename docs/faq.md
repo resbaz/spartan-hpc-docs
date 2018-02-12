@@ -67,8 +67,9 @@ Note that with the generic resource request `gpu` you will be allocated gpus wit
 
 For example when submitting a a job that requests `--gres=gpu` for 1 GPU or `--gres=gpu:2` for 2 GPUs per task then that can be satisfied by either type. But if a specific type (for example P100) is neededthen the submission will require `--gres=gpu:p100` and if 2 per task is desired then `--gres=gpu:p100:2` is required.
 
-
 CUDA 7, 7.5 and 8 are available, along with NVidia driver 367.48. 
+
+_Note:_: As of February 2018, the GPGPU parition (utilising NVidia P100 GPUs), is still undergoing testing and is not yet available for general use.
 
 
 ## How do I submit a job?

@@ -144,6 +144,7 @@
 <p>Note that with the generic resource request <code>gpu</code> you will be allocated gpus without differentiation. If you need specific gpus these can be specified by type.  We have two different types on the Spartan gpgpu partion, <code>k80</code> and <code>p100</code>.</p>
 <p>For example when submitting a a job that requests <code>--gres=gpu</code> for 1 GPU or <code>--gres=gpu:2</code> for 2 GPUs per task then that can be satisfied by either type. But if a specific type (for example P100) is neededthen the submission will require <code>--gres=gpu:p100</code> and if 2 per task is desired then <code>--gres=gpu:p100:2</code> is required.</p>
 <p>CUDA 7, 7.5 and 8 are available, along with NVidia driver 367.48. </p>
+<p><em>Note:</em>: As of February 2018, the GPGPU parition (utilising NVidia P100 GPUs), is still undergoing testing and is not yet available for general use.</p>
 <h2 id="how-do-i-submit-a-job">How do I submit a job?</h2>
 <p>You'll need your data files and scripts, the software you want to run installed on Spartan, and a job script so that Spartan knows how to put everything together. Check out <a href="../getting_started/">Getting Started</a> for an example.</p>
 <h2 id="do-i-need-to-know-how-to-use-linux">Do I need to know how to use Linux?</h2>
