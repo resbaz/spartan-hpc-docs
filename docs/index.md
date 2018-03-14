@@ -16,6 +16,8 @@ If you can't find an answer here, need advice, or otherwise stuck, you can conta
 
 Please submit one topic per ticket. If you require a assistance with a separate matter, compose a new ticket. Do not reply to existing or closed tickets.
 
+For password resets please see [https://dashboard.hpc.unimelb.edu.au/faq/](the FAQ) or contact University Services on x40888.
+
 ## Specifications
 
 Spartan has a number of partitions available for general usage.
