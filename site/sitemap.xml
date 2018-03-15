@@ -3,7 +3,7 @@
 
     
     <url>
-     <loc>/</loc>
+     <loc>None/</loc>
      <lastmod>2018-03-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -11,7 +11,7 @@
 
     
     <url>
-     <loc>/status/</loc>
+     <loc>None/status/</loc>
      <lastmod>2018-03-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -19,7 +19,7 @@
 
     
     <url>
-     <loc>/getting_started/</loc>
+     <loc>None/getting_started/</loc>
      <lastmod>2018-03-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -27,7 +27,7 @@
 
     
     <url>
-     <loc>/managing_data/</loc>
+     <loc>None/managing_data/</loc>
      <lastmod>2018-03-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -35,7 +35,7 @@
 
     
     <url>
-     <loc>/software/</loc>
+     <loc>None/software/</loc>
      <lastmod>2018-03-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -43,7 +43,7 @@
 
     
     <url>
-     <loc>/faq/</loc>
+     <loc>None/faq/</loc>
      <lastmod>2018-03-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -51,7 +51,7 @@
 
     
     <url>
-     <loc>/edward_transition/</loc>
+     <loc>None/edward_transition/</loc>
      <lastmod>2018-03-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
