@@ -17,7 +17,7 @@ New projects are subject to approval by the Head of Research Compute Services. P
 ## How do I access Spartan once I have an account?
 You'll need an SSH client. Mac and Linux computers will already have one installed, just use the command `ssh yourUsername@spartan.hpc.unimelb.edu.au` at your terminal.
 
-For Windows, you'll need to download an SSH client such as [PuTTY](http://www.putty.org/), set hostname as `spartan.hpc.unimelb.edu.au`  and click Open. You'll be asked for your Spartan username and password.
+For Windows, you'll need to download an SSH client such as [PuTTY](http://www.putty.org/), set hostname as `spartan.hpc.unimelb.edu.au` and select Open. You'll be asked for your Spartan username and password.
 
 
 ## My password isn't working!
@@ -26,7 +26,7 @@ For Windows, you'll need to download an SSH client such as [PuTTY](http://www.pu
 
 2. You can request a password reset [here](https://dashboard.hpc.unimelb.edu.au/karaage/profile/password_request/).
 
-3. If you are still having trouble, contact the University of Melbourne Service Desk on x40888 or email or [service-centre@unimelb.edu.au](service-centre@unimelb.edu.au).
+3. If you are still having trouble, contact the University of Melbourne Service Desk on x40888 or email or [service-centre@unimelb.edu.au](mailto:service-centre@unimelb.edu.au).
 
 
 ## What are Spartan's specifications?
