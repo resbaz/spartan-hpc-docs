@@ -16,7 +16,7 @@ If you can't find an answer here, need advice, or otherwise stuck, you can conta
 
 Please submit one topic per ticket. If you require a assistance with a separate matter, compose a new ticket. Do not reply to existing or closed tickets.
 
-For password resets please see [the FAQ](https://dashboard.hpc.unimelb.edu.au/faq/) or contact University Services on x40888 or [service-centre@unimelb.edu.au](mailto:service-centre@unimelb.edu.au).
+For password resets please see [the FAQ](https://dashboard.hpc.unimelb.edu.au/faq/) or contact University Services on +61 3 8344 0999 or ext 40999 or email [service-centre@unimelb.edu.au](mailto:service-centre@unimelb.edu.au).
 
 ## Specifications
 

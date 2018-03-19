@@ -26,7 +26,7 @@ For Windows, you'll need to download an SSH client such as [PuTTY](http://www.pu
 
 2. You can request a password reset [here](https://dashboard.hpc.unimelb.edu.au/karaage/profile/password_request/).
 
-3. If you are still having trouble, contact the University of Melbourne Service Desk on x40888 or email or [service-centre@unimelb.edu.au](mailto:service-centre@unimelb.edu.au).
+3. If you are still having trouble, contact the University of Melbourne Service Desk on +61 3 8344 0999 or ext 40999 or email or [service-centre@unimelb.edu.au](mailto:service-centre@unimelb.edu.au).
 
 
 ## What are Spartan's specifications?
