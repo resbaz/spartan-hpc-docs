@@ -121,6 +121,7 @@
 <ul>
 <li>This plot provides indicates how many CPUs (cores) are in-use on Spartan.</li>
 <li>Utilization may occasionally exceed 100% as resources are added/removed from service (utilization is always relative to the most recent available CPU count).</li>
+<li>This data is acquired using the <code>sacct</code> command in Slurm to get a list of all recent jobs and their start/end times, and counting how many cores are allocated relative to total capacity.</li>
 </ul>
 </div>
 </li>
@@ -153,6 +154,7 @@
 <li>This plot provides data on how long previous jobs have taken to start, which can be used as guidance on how long your job might take to start.</li>
 <li>Note however that "Past performance is no guarantee of future results"; wait times can fluctuate quickly due to changes in usage or outages, and wait time could be considerably more or less than the historic average.</li>
 <li>Daily averages are shown, but points may be missing for days where there were no jobs matching the selected characteristics.</li>
+<li>This data is acquired using the <code>sacct</code> command in Slurm to get a list of all recent jobs and their start/end times.</li>
 </ul>
 </div>
 </li>
