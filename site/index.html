@@ -108,13 +108,14 @@
 <p>Please submit one topic per ticket. If you require a assistance with a separate matter, compose a new ticket. Do not reply to existing or closed tickets.</p>
 <p>For password resets please see <a href="https://dashboard.hpc.unimelb.edu.au/faq/">the FAQ</a> or contact University Services on +61 3 8344 0999 or ext 40999 or email <a href="mailto:service-centre@unimelb.edu.au">service-centre@unimelb.edu.au</a>.</p>
 <h2 id="specifications">Specifications</h2>
-<p>Spartan has a number of partitions available for general usage.</p>
+<p>Spartan has a number of partitions available for general usage. A full list of partitions can be viewed with the command <code>sinfo -s</code>.</p>
 <p><strong>Cloud</strong></p>
 <p>100 nodes, each with 8 cores and 62 GB of RAM, allocated from the Melbourne node of the Nectar research cloud. This partition is best suited for general-purpose single-node jobs. Multiple node jobs will work, but communication between nodes will be comparatively slow.</p>
 <p><strong>Physical</strong></p>
 <p>21 nodes, each with 12 cores and 251 GB of RAM. Each node is connected by high-speed 56GigE networking with 1.15 µsec latency, making this partition suited to multi-node jobs (e.g. those using OpenMPI).</p>
 <p><strong>GPU</strong></p>
 <p>3 nodes, each with 12 cores, 251 GB of RAM, and four NVidia K80 GPUs. This partition also makes use of high-speed networking. This is the partition to use if your software takes advantage of GPU acceleration (e.g. using CUDA).</p>
+<p>There are also special partitions which are outside normal walltime constraints. In particular, <code>shortcloud</code> and <code>shortgpgpu</code> should be used for quick test cases; the partitions have a maximum time constraint of one hour.</p>
 <h2 id="citing-spartan">Citing Spartan</h2>
 <p>If you use Spartan to obtain results for a publication, we'd appreciate if you'd cite our service, including the DOI below. This makes it easy for us demonstrate research impact, helping to secure ongoing funding for expansion and user support.</p>
 <p><code>University of Melbourne (2017) Spartan HPC-Cloud Hybrid: Delivering Performance and Flexibility. https://doi.org/10.4225/49/58ead90dceaaa</code></p>

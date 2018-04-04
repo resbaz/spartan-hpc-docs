@@ -20,7 +20,7 @@ For password resets please see [the FAQ](https://dashboard.hpc.unimelb.edu.au/fa
 
 ## Specifications
 
-Spartan has a number of partitions available for general usage.
+Spartan has a number of partitions available for general usage. A full list of partitions can be viewed with the command `sinfo -s`.
  
 **Cloud**
 
@@ -34,6 +34,7 @@ Spartan has a number of partitions available for general usage.
 
 3 nodes, each with 12 cores, 251 GB of RAM, and four NVidia K80 GPUs. This partition also makes use of high-speed networking. This is the partition to use if your software takes advantage of GPU acceleration (e.g. using CUDA).
 
+There are also special partitions which are outside normal walltime constraints. In particular, `shortcloud` and `shortgpgpu` should be used for quick test cases; the partitions have a maximum time constraint of one hour.
 
 ## Citing Spartan
 
