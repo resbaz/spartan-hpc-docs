@@ -4,9 +4,9 @@ If your computing jobs take too long on your desktop computer, or are simply not
 
 ## Spartan Daily Weather Report (20180424)
 
-* Utilisation of /projects at 74%, and /home is at 84%
-* Spartan is very busy; physical and cloud partitions close to fully allocated. Over 2500 jobs in the queue.
-* Lots of cloud nodes out (73), mainly due to qh2-uom migration
+* Utilisation of /projects at 77%, and /home is at 83%
+* Spartan is very busy; physical and cloud partitions close to fully allocated. Over 1200 jobs in the queue.
+* Lots of cloud nodes out (122), mainly due to qh2-uom migration
 * Lots of gpgpu nodes out (47), mainly due to recabling 
 
 ## Getting Help
