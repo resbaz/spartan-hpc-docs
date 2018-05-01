@@ -1,11 +1,9 @@
-
 ## What's special about Spartan?
 Most modern HPC systems are built around a cluster of commodity computers tied together with very-fast networking. This allows computation to run across multiple cores in parallel, quickly sharing data between themselves as needed.
 
 For certain jobs, this architecture is essential to achieving high-performance. For others, however, this is not the case, and each node can run without communicating with the others in the cluster. This class of problems often comes under the guise of *[embarrassingly parallel](https://en.wikipedia.org/wiki/Embarrassingly_parallel)*. That is, they can be run as independent parallel tasks by splitting up the data or calculation into discrete chunks. In this case, high speed networking is unnecessary, and the resources can be better spent on utilizing more cores to achieve high performance.
 
 Spartan combines both approaches. By default, jobs run in the flexible cloud partition. For those that need it, there's a physical partition running on bare-metal hardware, interconnected with low-latency 56 GigE networking.
-
 
 ## How do I get an account?
 Access to Spartan requires an an account, which you can request using [Karaage](https://dashboard.hpc.unimelb.edu.au/karaage). 
@@ -19,7 +17,6 @@ You'll need an SSH client. Mac and Linux computers will already have one install
 
 For Windows, you'll need to download an SSH client such as [PuTTY](http://www.putty.org/), set hostname as `spartan.hpc.unimelb.edu.au` and select Open. You'll be asked for your Spartan username and password.
 
-
 ## My password isn't working!
 
 1. Make sure you're using your Spartan password that you set in [Karaage](https://dashboard.hpc.unimelb.edu.au/karaage). ** Your Spartan password is not necessarily the same as your central university password.**
@@ -28,6 +25,11 @@ For Windows, you'll need to download an SSH client such as [PuTTY](http://www.pu
 
 3. If you are still having trouble, contact the University of Melbourne Service Desk on +61 3 8344 0999 or ext 40999 or email or [service-centre@unimelb.edu.au](mailto:service-centre@unimelb.edu.au).
 
+## How do I add people to a project?
+
+If you are a project leader you may invite people to join your project. Login to Karaage, and go to your [Karaage project list](https://dashboard.hpc.unimelb.edu.au/karaage/profile/projects/), select the appropriate project, and select the "Invite a new user" option. The user will then receive an invitation link to join the project and set up an account. 
+
+*However* if the belong to an institution that does not have a SAML login process (e.g., international researchers) it is worthwhile contacting the Spartan at [hpc-support@unimelb.edu.au](mailto:hpc-support@unimelb.edu.au). Then the sysadmins will add the person manually to the project and reset their password.
 
 ## What are Spartan's specifications?
 
