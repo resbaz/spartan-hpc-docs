@@ -1,4 +1,4 @@
-# Using Spartan's GPGPU Partition
+## Using Spartan's GPGPU Partition
 
 Recipients of appropriate LIEF grants are able to access the new GPGPU partition on Spartan. This provides a summary for access and use of the Spartan environment.
 
