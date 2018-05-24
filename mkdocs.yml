@@ -5,6 +5,7 @@ pages:
     - Getting Started: getting_started.md
     - Managing Data: managing_data.md
     - Software: software.md
+    - GPGPU: gpu.md
     - FAQ: faq.md
     - _Edward Transition: edward_transition.md
 theme_dir: uom_theme

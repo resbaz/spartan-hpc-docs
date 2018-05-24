@@ -43,6 +43,14 @@
 
     
     <url>
+     <loc>None/gpu/</loc>
+     <lastmod>2018-05-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
      <loc>None/faq/</loc>
      <lastmod>2018-05-24</lastmod>
      <changefreq>daily</changefreq>

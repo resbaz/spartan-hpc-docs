@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<head>
+  <title>GPGPU - Spartan Documentation</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link rel="stylesheet" href="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.css">
+  <script src="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.statuspage.io/se-v2.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="../js/theme.js"></script>
+
+
+  
+
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-97236408-1', 'auto');
+      ga('send', 'pageview');
+  </script>
+
+  
+  
+</head>
+
+<body>
+
+<div class="uomcontent">
+
+  <div class="page-inner">
+    <ol class="page-local-history" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+      <li class="root" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+        <a href="/" title="Spartan Documentation" itemprop="item">
+          <span itemprop="name">Spartan Documentation</span>
+        </a>
+        <meta content="1" itemprop="position" />
+      </li>
+      
+      <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+        <span itemprop="name">GPGPU</span>
+        <meta content="2" itemprop="position" />
+      </li>
+      
+
+    </ol>
+    <div role="main">
+
+      <header>
+        <form action="../search.html" class="search" method="get">
+          <fieldset>
+            <div class="inline attached">
+              <span class="fill">
+                <input aria-label="Search" aria-required="true" autocomplete="off" data-error="Please enter a keyword" name="q" placeholder="Search Spartan Documentation" type="search" id="mkdocs-search-query"/>
+              </span>
+              <span>
+              <button class="inline-button" type="submit"><span class="small icon--hide-label" data-icon="search">Go</span></button>
+            </span>
+            </div>
+          </fieldset>
+        </form>
+
+
+      </header>
+
+      <div class="tabbed-nav" data-tabbed="" id="nav">
+        <div class="full-width">
+          <nav role="tablist">
+            
+              
+              <a role="tab" href=".." >Home</a>
+              
+            
+              
+              <a role="tab" href="../status/" >Status</a>
+              
+            
+              
+              <a role="tab" href="../getting_started/" >Getting Started</a>
+              
+            
+              
+              <a role="tab" href="../managing_data/" >Managing Data</a>
+              
+            
+              
+              <a role="tab" href="../software/" >Software</a>
+              
+            
+              
+              <a role="tab" href="./" id="activeTab">GPGPU</a>
+              
+            
+              
+              <a role="tab" href="../faq/" >FAQ</a>
+              
+            
+              
+            
+          </nav>
+        </div>
+      </div>
+
+        <p>
+        
+        <h2 id="using-spartans-gpgpu-partition">Using Spartan's GPGPU Partition</h2>
+<p>Recipients of appropriate LIEF grants are able to access the new GPGPU partition on Spartan. This provides a summary for access and use of the Spartan environment.</p>
+<h2 id="projects-and-accounts">Projects and Accounts</h2>
+<p>User accounts and projects can be established at <code>https://dashboard.hpc.unimelb.edu.au/karaage</code>. All users must belong to a project. A project may have one or more project leaders. Project leaders may invite others to join their project. Projects must be approved by the head of Research Compute Services at the University of Melbourne. </p>
+<p>When applying for a project be explicit in what the project is about. Users may have one account and one account only, however they may belong to multiple projects.</p>
+<p>Karaage also provides users the opportunity to change their shell, password etc. Note that your username and password on Spartan is not the same as the username and password that you have for other university authentication services (unless you set it as such). They are separate systems.</p>
+<h2 id="access">Access</h2>
+<p>A user will have an account name and password. To access Spartan use of ssh is required. This is built-in to Linux and MacOS X clients. For MS-
+Windows systems an application such as PuTTY (http://putty.org) is required. The general syntax is:</p>
+<p><code>ssh username@spartan.hpc.unimelb.edu.au</code>.</p>
+<p>When logging in you you will be given the Message of the Day, which includes highlights usage rules and system updates.</p>
+<p>Once logged in you will be in your home directory (<code>/home/$username</code>) on the login node (aka head node). You will also have project directory established (<code>/data/cephfs/$projectID</code>). Both the home directories and project directories have default quotas (50GB and 500GB respectively).</p>
+<h2 id="partitions">Partitions</h2>
+<p>Spartan has multiple partitions, which can be viewed with the <code>sinfo -s</code> command. The main partitions are 'cloud' (the default), which is useful for single-node jobs, 'physical' which has more powerful systems with a higher speed interconnect, and 'gpgpu', which is large but restricted partition of GPUs.</p>
+<h2 id="job-submission">Job Submission</h2>
+<p>Spartan is a shared environment. As a result, compute tasks should be run using the job submission system, known as Slurm. Users need to write a small script file which indicates the resources they wish to
+use (processors, memory etc), how long they wish to use them for (walltime), where they wish to use them (partitions), the applications
+the wish to use (modules), and the commands they wish to run. </p>
+<p>There are many example jobscripts in the directory <code>/usr/local/common</code>. These include multicore jobs, multinode jobs, job arrays, job dependencies, and interactive jobs, with examples across many applications. Note that a Slurm job script invokes a shell, and as such, shell commands and structures (e.g., functions) can be included in a job submission script.</p>
+<p>You will need to add some additional parameters to your script to make use of the gpgpu partition, to make use of the specified account, and to request the use of gpu resources. Respectively, those are:</p>
+<pre><code>#SBATCH -p gpgpu
+#SBATCH -A $projectID
+#SBATCH --gres=gpu:4    #this will request 4 gpus, 1 whole node.
+</code></pre>
+
+<p>Once such as script is written they can launch it with <code>sbatch $scriptname</code>, where it will go into the queue. The status of all jobs in a partition can be checked with <code>showq -p $queuename | less</code>. A specific user's jobs can be checked with <code>squeue -u $username</code>. </p>
+<p><strong>Do not run jobs on the login node. Use the queueing system</strong></p>
+<h2 id="modules">Modules</h2>
+<p>Spartan makes use of environment modules. This allows multiple versions of applications to be installed on a single system with the application paths added to the user's environment. </p>
+<p>Modules ensure that the system provides application consistency and replication in a research project, different compiler toolchains, and version-specific features. Specific modules can be included in a job submission script with <code>module load $application/toolchain-version</code>.</p>
+<h2 id="help">Help</h2>
+<p>There are many sources of help for the Spartan system. Firstly, there is the information on the website, <code>https://dashboard.hpc.unimelb.edu.au</code>. On the system itself the command <code>man spartan</code> will provide various job submission suggestions.</p>
+<p>There is also the helpdesk, which can be used to report incidents, general job submission scripting assistance, and feature requests (e.g., software installs). The email for this is : hpc-support@unimelb.edu.au</p>
+<p>Please submit one topic per ticket. Try to provide significant information in your ticket (e.g., jobIDs, location of scripts, URL for software to install). If you require a assistance with a separate matter, compose a new ticket. Please do not reply to existing or closed tickets or email individual systems administrators directly.</p>
+<p>In addition to this Research Platforms regularly runs training classes for an Introduction to Linux and HPC, Advanced Linux and Shell Scripting, and an Introduction to Parallel Processing. Sign up here: <code>http://melbourne.resbaz.edu.au/participate</code></p>
+        
+        </p>
+
+
+      <!--UoM CSS handles local nav for us instead of mkdocs-->
+      <div class="jumpnav"></div>
+
+    </div>
+
+  </div>
+</body>
+
+<script>
+
+  $(document).ready(function(){
+      // Force tab link markers/highlighting to shift for external links (not supported out of the box).
+      $('a').removeAttr('data-current');
+      $('#activeTab').attr({'data-current': ''});
+  });
+
+</script>
+</html>
