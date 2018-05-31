@@ -5,7 +5,7 @@ If your computing jobs take too long on your desktop computer, or are simply not
 ## Spartan Daily Weather Report (20180531)
 * Utilisation of /projects at 91%, and /home is at 72%
 * Spartan is busy; physical and cloud partitions are close to fully allocated. There is 336 jobs in the queue.
-* The physical-cx4 partition has about 494 free cores.
+* The physical-cx4 partition has about 161 free cores.
 * Many cloud nodes out (74), mainly due to qh2-uom migration.
 * GPGPU nodes are back for Spartan admins to do the final testing and benchmarking. Users will get access to them in around 1 week.
 
