@@ -8,6 +8,11 @@ You can check what's currently installed using the `module avail` command, searc
 Generally you shouldn't load modules from the login node, instead working on a compute node, either via an interactive session (launched with `sinteractive`), or from within your Slurm script.
 
 
+## Job Script Examples
+
+We maintain example job scripts for various software packages on Spartan. You can browse these at `/usr/local/common` or at https://github.com/resbaz/spartan-examples
+
+
 ## Python
 
 There are multiple versions of Python installed on Spartan, which you can check using `module spider Python`. 
