@@ -51,6 +51,14 @@
 
     
     <url>
+     <loc>/desktop/</loc>
+     <lastmod>2018-06-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
      <loc>/faq/</loc>
      <lastmod>2018-06-19</lastmod>
      <changefreq>daily</changefreq>
