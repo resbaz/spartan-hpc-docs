@@ -9,19 +9,12 @@ The University offers a range of other data storage and management solutions to 
 
 In some cases it's possible to integrate these resources with your account on Spartan to streamline your workflow. [Get in touch](mailto:hpc-support@unimelb.edu.au) if you'd like to find out more for your particular application.
 
-## Transferring Files to Spartan
-
-There is a mismatched MTU between the Spartan physical nodes and their VLAN, which will be fixed in the next maintenance window. If downloads to Spartan are not working it is recommended that a proxy is established before using `wget` or `curl` etc. For example:
-
-`export http_proxy|https_proxy|ftp_proxy=http://wwwproxy.unimelb.edu.au:8000`    
-
-`wget --no-check-certificate ftp://ftp.broadinstitute.org/distribution/83RC2_q_image.tgz`
 
 ## Where to Store Your Data on Spartan
 
 **Projects Directory**
 
-Your projects directory is the best place to store research data while you're working on it. It's located at `/data/projects/myprojectname`.
+Your projects directory is the best place to store research data while you're working on it. It's located at `/data/projects/<projectid>` for older projects, or `/data/cephfs/<projectid>` for newer ones.
 
 Others in your project can access it, and 500 GB of storage is available per project. If you need more than this, [get in touch](mailto:hpc-support@unimelb.edu.au) and we'll try to find a solution.
 
