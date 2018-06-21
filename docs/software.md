@@ -10,7 +10,7 @@ Generally you shouldn't load modules from the login node, instead working on a c
 
 ## Job Script Examples
 
-We maintain example job scripts for various software packages on Spartan. You can browse these at `/usr/local/common` or at https://github.com/resbaz/spartan-examples
+We maintain example job scripts for various software packages on Spartan. You can browse these at `/usr/local/common` or at [https://github.com/resbaz/spartan-examples](https://github.com/resbaz/spartan-examples)
 
 
 ## Python
