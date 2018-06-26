@@ -2,11 +2,10 @@ Spartan is High Performance Computing (HPC) system operated by Research Platform
 
 If your computing jobs take too long on your desktop computer, or are simply not possible due to a lack of speed and memory, a HPC system like Spartan can help.
 
-## Spartan Daily Weather Report (20180619)
-* Utilisation of /projects at 92%, and /home is at 75% - Disk currently recovering from outage event.
-* Spartan is not busy, but nodes are in drain. There are 75 jobs in the queue.
-* Many cloud nodes out (65), mainly due to qh2-uom migration.
-* GPGPU nodes are back for Spartan admins to do the final testing and benchmarking. Users will get access to them in around 1 week.
+## Spartan Daily Weather Report (20180626)
+* Utilisation of /projects at 93%, and /home is at 19% (new CephFS partition).
+* Spartan is busy, with close to 100% node allocation.
+* Many cloud nodes out (111), mainly due to qh2-uom migration and outage.
 
 ## Getting Help
 
