@@ -37,7 +37,12 @@ Spartan has a number of partitions available for general usage. A full list of p
 
 **GPU**
 
-3 nodes, each with 12 cores, 251 GB of RAM, and four NVidia K80 GPUs. This partition also makes use of high-speed networking. This is the partition to use if your software takes advantage of GPU acceleration (e.g. using CUDA).
+3 nodes, each with 12 cores, 251 GB of RAM, and four NVidia K80 GPUs. This partition also makes use of high-speed networking.
+
+**GPGPU**
+72 nodes, each with four NVIDIA P100 GPUs. See [here](gpu.md) for more details.
+
+**Other Partitions**
 
 There are also special partitions which are outside normal walltime constraints. In particular, `shortcloud` and `shortgpgpu` should be used for quick test cases; the partitions have a maximum time constraint of one hour.
 
@@ -62,11 +67,7 @@ Spartan runs some of it's computation resources in the Nectar cloud.
 [Melbourne Bioinformatics](https://www.melbournebioinformatics.org.au/) run two large HPC systems for life sciences researchers.
 
 
-** Multi-modal Australian ScienceS Imaging and Visualisation Environment (MASSIVE) ** 
+**Multi-modal Australian ScienceS Imaging and Visualisation Environment (MASSIVE)** 
 
 [MASSIVE](https://www.massive.org.au/) is a HPC system at Monash University and the Australian Synchrotron which is optimized for imaging and visualization. It can run batched jobs, as well as provide a desktop environment for interactive work.
 
-
-** VicNode **
-
-[VicNode](https://vicnode.org.au/) provides data storage and sharing services to Victorian researchers and their collaborators. 

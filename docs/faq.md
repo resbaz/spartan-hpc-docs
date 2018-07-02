@@ -65,15 +65,18 @@ Finally, if you ever get stuck, please feel free to [email HPC support](mailto:h
 
 
 ## How do I get access to GPUs?
-You'll need to add two parameters to your Slurm script, `#SBATCH --partition gpu` and `#SBATCH --gres=gpu`. You can access up four GPUs in a single job using `#SBATCH --gres=gpu:4`. There is also a specialist partition which can be accessed with `#SBATCH --partition gpgpu`. 
 
-Note that with the generic resource request `gpu` you will be allocated gpus without differentiation. If you need specific gpus these can be specified by type.  We have two different types on the Spartan gpgpu partion, `k80` and `p100`.
+Spartan includes two partitions with GPUs (as well as a third private `physics-gpu` partition). 
 
-For example when submitting a a job that requests `--gres=gpu` for 1 GPU or `--gres=gpu:2` for 2 GPUs per task then that can be satisfied by either type. But if a specific type (for example P100) is neededthen the submission will require `--gres=gpu:p100` and if 2 per task is desired then `--gres=gpu:p100:2` is required.
+The legacy `gpu` partition includes four Nvidia K80 GPUs per node, while the newer `gpgpu` partition includes four Nvidia P100 GPUs per node. 
 
-CUDA 7, 7.5 and 8 are available, along with NVidia driver 367.48. 
+They can be specified in your job script with `#SBATCH --partition gpu` and `#SBATCH --partition gpgpu`, respectively.
 
-_Note:_: As of February 2018, the GPGPU parition (utilising NVidia P100 GPUs), is still undergoing testing and is not yet available for general use.
+You'll also need to include a generic resource request in your job script, for example `#SBATCH --gres=gpu:2` will request two GPUs for your job.
+
+A range of GPU-accelerated software such as TensorFlow is available on Spartan, as well as CUDA for developing your own GPU applications.
+
+__N.B. The GPGPU partition is not automatically available to all Spartan users, and a dedicated project must be created to request access. See [here](gpu.md) for more details.__
 
 
 ## How do I submit a job?
