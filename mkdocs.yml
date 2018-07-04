@@ -1,6 +1,7 @@
 site_name: Spartan Documentation
 pages:
     - Home: index.md
+    - _Access and Service Denial Policy: access_policy.md
     - Status: status.md
     - Getting Started: getting_started.md
     - Managing Data: managing_data.md

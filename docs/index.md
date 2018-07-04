@@ -2,6 +2,8 @@ Spartan is High Performance Computing (HPC) system operated by Research Platform
 
 If your computing jobs take too long on your desktop computer, or are simply not possible due to a lack of speed and memory, a HPC system like Spartan can help.
 
+Usage of Spartan is governed by an [Access and Service Denial Policy](access_policy.md).
+
 ## Spartan Daily Weather Report (20180626)
 * Utilisation of /projects at 93%, and /home is at 19% (new CephFS partition).
 * Spartan is busy, with close to 100% node allocation.
