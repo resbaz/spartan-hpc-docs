@@ -1,4 +1,5 @@
-Spartan hosts a GPGPU service, developed in conjunction with Research Platform Services, the Melbourne School of Engineering, Melbourne Bioinformatics, RMIT, La Trobe University and Deakin University. It was funded through [ARC LIEF](http://www.arc.gov.au/linkage-infrastructure-equipment-and-facilities) grant LE170100200.
+Spartan hosts a GPGPU service, developed in conjunction with Research Platform Services, the Melbourne School of Engineering, Melbourne Bioinformatics, RMIT, La Trobe University, St Vincent's Institute of Medical
+Research and Deakin University. It was funded through [ARC LIEF](http://www.arc.gov.au/linkage-infrastructure-equipment-and-facilities) grant LE170100200.
 
 It consists of 72 nodes, each with four NVIDIA P100 graphics cards, which can provide a theoretical maximum of around 900 teraflops.  These nodes will be presented in 3 subclusters and will be released in stages.  The first subcluster consisting of 28 nodes is available immediately.  The remaining subclusters will come online as demand increases.
 
