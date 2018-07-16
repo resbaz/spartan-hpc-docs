@@ -16,7 +16,7 @@ In some cases it's possible to integrate these resources with your account on Sp
 
 Your projects directory is the best place to store research data while you're working on it. It's located at `/data/projects/<projectid>` for older projects, or `/data/cephfs/<projectid>` for newer ones.
 
-Others in your project can access it, and 500 GB of storage is available per project. If you need more than this, [get in touch](mailto:hpc-support@unimelb.edu.au) and we'll try to find a solution.
+Others in your project can access it, and 500 GB of storage is available per project. If you need more than this, [get in touch](mailto:hpc-support@unimelb.edu.au) and we'll try to find a solution. In general 1 TB of project storage is available upon request, and up to 10 TB is possible if needed. Project storage beyond 10 TB will generally require some sort of co-investment, but this may be waived in some circumstances, particularly for high-value shared datasets.
 
 **Home Directory**
 
@@ -27,7 +27,11 @@ Others in your project won't have access, and you're limited to 50GB of storage.
 
 **Scratch Space**
 
-You can store temporary working data while your job is running at `/scratch/`. This is handy if your job generates large files while it's running that you don't need to keep. Total scratch space is limited to 8TB, shared among all users.
+You can store temporary working data while your job is running at `/tmp`. This will map to a directory on our fast scratch network storage specific to your job ID, and clean up once your job is complete. It's also possible to write directly to `/scratch/`, for instance if you would like to share your working files across multiple nodes. In this case it's your own responsibility to avoid collisions (i.e. two processes writing to the same file at the same time), and clean up afterwards.
+
+
+**N.B.** Note that home, project and scratch are all network-based storage that can be accessed by multiple nodes and processes at the same time. Take care that you don't inadvertently write to the same file from multiple jobs at the same time.
+
 
 ## How to Transfer Data In and Out of Spartan
 
