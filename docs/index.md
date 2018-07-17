@@ -42,7 +42,12 @@ Spartan has a number of partitions available for general usage. A full list of p
 3 nodes, each with 12 cores, 251 GB of RAM, and four NVidia K80 GPUs. This partition also makes use of high-speed networking.
 
 **GPGPU**
+
 72 nodes, each with four NVIDIA P100 GPUs. See [here](gpu.md) for more details.
+
+**bigmem**
+
+2 nodes, each with 36 cores and 1.5 TB of RAM. This partition is suited to memory-intensive single-node workloads.
 
 **Other Partitions**
 
