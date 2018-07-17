@@ -53,6 +53,7 @@ Spartan has a number of partitions available for general usage. A full list of p
 
 There are also special partitions which are outside normal walltime constraints. In particular, `shortcloud` and `shortgpgpu` should be used for quick test cases; the partitions have a maximum time constraint of one hour.
 
+
 ## Citing Spartan
 
 If you use Spartan to obtain results for a publication, we'd appreciate if you'd cite our service, including the DOI below. This makes it easy for us demonstrate research impact, helping to secure ongoing funding for expansion and user support.
