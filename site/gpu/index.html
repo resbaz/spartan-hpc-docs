@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>GPGPU - Spartan Documentation</title>
+  <title>Spartan Documentation</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/theme.css">
   <link rel="stylesheet" href="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.css">
@@ -11,6 +11,10 @@
   <script src="../js/theme.js"></script>
 
 
+  
+  <script src="../search/require.js"></script>
+  
+  <script src="../search/search.js"></script>
   
 
   <script>
@@ -40,11 +44,6 @@
         <meta content="1" itemprop="position" />
       </li>
       
-      <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-        <span itemprop="name">GPGPU</span>
-        <meta content="2" itemprop="position" />
-      </li>
-      
 
     </ol>
     <div role="main">
@@ -64,6 +63,13 @@
         </form>
 
 
+        <div style="text-align: center; font-size: small">
+            Status:
+              <span class="color-dot"></span>
+              <span class="color-description"></span>
+            <a href="/status/"> (more...)</a>
+        </div>
+
       </header>
 
       <div class="tabbed-nav" data-tabbed="" id="nav">
@@ -72,12 +78,6 @@
             
               
               <a role="tab" href=".." >Home</a>
-              
-            
-              
-            
-              
-              <a role="tab" href="../status/" >Status</a>
               
             
               
@@ -93,15 +93,21 @@
               
             
               
-              <a role="tab" href="./" id="activeTab">GPGPU</a>
+              <a role="tab" href="../guides/" >Guides</a>
               
             
               
-              <a role="tab" href="../desktop/" >Spartan Desktop</a>
+            
               
             
               
               <a role="tab" href="../faq/" >FAQ</a>
+              
+            
+              
+            
+              
+            
               
             
               
@@ -112,7 +118,7 @@
 
         <p>
         
-        <p>Spartan hosts a GPGPU service, developed in conjunction with Research Platform Services, the Melbourne School of Engineering, Melbourne Bioinformatics, RMIT, La Trobe University, St Vincent's Institute of Medical
+          <p>Spartan hosts a GPGPU service, developed in conjunction with Research Platform Services, the Melbourne School of Engineering, Melbourne Bioinformatics, RMIT, La Trobe University, St Vincent's Institute of Medical
 Research and Deakin University. It was funded through <a href="http://www.arc.gov.au/linkage-infrastructure-equipment-and-facilities">ARC LIEF</a> grant LE170100200.</p>
 <p>It consists of 72 nodes, each with four NVIDIA P100 graphics cards, which can provide a theoretical maximum of around 900 teraflops.  These nodes will be presented in 3 subclusters and will be released in stages.  The first subcluster consisting of 28 nodes is available immediately.  The remaining subclusters will come online as demand increases.</p>
 <h2 id="access">Access</h2>
@@ -142,5 +148,19 @@ Research and Deakin University. It was funded through <a href="http://www.arc.go
       $('#activeTab').attr({'data-current': ''});
   });
 
+</script>
+
+
+<script>
+  var sp = new StatusPage.page({ page: 'zxld2sws8c9x'});
+
+  sp.summary({
+    success: function(data) {
+      // adds the text description to the dropdown
+      $('.color-description').text(data.status.description);
+      // appends the status indicator as a class name so we can use the right color for the status light thing
+      $('.color-dot').addClass(data.status.indicator);
+    }
+  });
 </script>
 </html>

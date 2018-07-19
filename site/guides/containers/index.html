@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>
+  <title>Spartan Documentation</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../css/theme.css">
+  <link rel="stylesheet" href="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.css">
+  <script src="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.statuspage.io/se-v2.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="../../js/theme.js"></script>
+
+
+  
+  <script src="../../search/require.js"></script>
+  
+  <script src="../../search/search.js"></script>
+  
+
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-97236408-1', 'auto');
+      ga('send', 'pageview');
+  </script>
+
+  
+  
+</head>
+
+<body>
+
+<div class="uomcontent">
+
+  <div class="page-inner">
+    <ol class="page-local-history" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+      <li class="root" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+        <a href="/" title="Spartan Documentation" itemprop="item">
+          <span itemprop="name">Spartan Documentation</span>
+        </a>
+        <meta content="1" itemprop="position" />
+      </li>
+      
+
+    </ol>
+    <div role="main">
+
+      <header>
+        <form action="../../search.html" class="search" method="get">
+          <fieldset>
+            <div class="inline attached">
+              <span class="fill">
+                <input aria-label="Search" aria-required="true" autocomplete="off" data-error="Please enter a keyword" name="q" placeholder="Search Spartan Documentation" type="search" id="mkdocs-search-query"/>
+              </span>
+              <span>
+              <button class="inline-button" type="submit"><span class="small icon--hide-label" data-icon="search">Go</span></button>
+            </span>
+            </div>
+          </fieldset>
+        </form>
+
+
+        <div style="text-align: center; font-size: small">
+            Status:
+              <span class="color-dot"></span>
+              <span class="color-description"></span>
+            <a href="/status/"> (more...)</a>
+        </div>
+
+      </header>
+
+      <div class="tabbed-nav" data-tabbed="" id="nav">
+        <div class="full-width">
+          <nav role="tablist">
+            
+              
+              <a role="tab" href="../.." >Home</a>
+              
+            
+              
+              <a role="tab" href="../../getting_started/" >Getting Started</a>
+              
+            
+              
+              <a role="tab" href="../../managing_data/" >Managing Data</a>
+              
+            
+              
+              <a role="tab" href="../../software/" >Software</a>
+              
+            
+              
+              <a role="tab" href="../" >Guides</a>
+              
+            
+              
+            
+              
+            
+              
+              <a role="tab" href="../../faq/" >FAQ</a>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </nav>
+        </div>
+      </div>
+
+        <p>
+        
+          <p>Container frameworks such as Docker allow your application, its dependencies and operating system to be encapsulated in a single file that can then be run in isolation from the host system. It's a bit like a light-weight virtual machine. This allows your software to be more portable, for example if you need to share your analysis environment with a colleague, but the dependencies are complex to install and keep consistent. </p>
+<p>In general, we recommend that you <a href="../../software/md">check</a> if the software you need is already installed directly on Spartan, and if it's not, or the wrong version, get in contact to see if it can be installed for you. By allowing us to manage software for you, we can make sure that it's optimised for our particular hardware, and is available for everyone. </p>
+<p>However, there are cases when it might be more practical to bring your own container instead.</p>
+<h2 id="when-should-i-consider-a-container">When should I consider a container?</h2>
+<p>When your software:</p>
+<ul>
+<li>Has complex or out-of-date dependencies that aren't easily installed on Spartan.</li>
+<li>Assumes a particular operating system, e.g. requires Ubuntu, but Spartan runs on Red Hat.</li>
+<li>Is highly-modified or a legacy version that isn't likely to be of use to other researchers.</li>
+<li>Is being run across heterogeneous infrastructure (e.g. Spartan, your laptop, other HPC systems and/or cloud), and containers make it easier to maintain consistency.</li>
+</ul>
+<h2 id="what-are-the-downsides-of-containers">What are the downsides of containers?</h2>
+<ul>
+<li>The images themselves can be very large, consuming your storage quota, and being slow to transfer to/from Spartan.</li>
+<li>The container might be optimized for a particular processor architecture, running slowly (or not at all) on systems that differ.</li>
+<li>Their makeup and integrity can be opaque (although many common software packages will have officially supported container images).</li>
+</ul>
+<h2 id="containers-on-spartan">Containers on Spartan</h2>
+<p>It general Docker isn't appropriate for HPC environments like Spartan in which regular users don't have administrator (root) access. A good alternative is <a href="https://www.sylabs.io/docs/">Singularity</a>, a container framework targeted for research use, which many HPC centres support (including Spartan). Check out <a href="https://www.sylabs.io/docs/">Singularity's documentation</a> to learn more, in conjunction with below which is specific to Spartan.</p>
+<h3 id="creating-a-container">Creating a Container</h3>
+<p>In general, it's not possible to build a new container on Spartan. Instead, you would fetch an existing container (from Docker or Singularity Hub), build one on your own computer, or on a computer in the cloud. For the latter, the <a href="https://research.unimelb.edu.au/infrastructure/research-platform-services/services/research-cloud">Melbourne Research Cloud</a> is suitable, and often quite convenient as file transfer between Spartan and cloud instances are fast since they are in the same data centre.</p>
+<h3 id="running-a-container-on-spartan">Running a Container on Spartan</h3>
+<p>You can load Singularity using our modules system like so:</p>
+<p><code>module load Singularity/2.5.0-intel-2017.u2</code></p>
+<p>An example job script is available at <code>/usr/local/common/Singularity</code>, which is also <a href="https://github.com/resbaz/spartan-examples/tree/master/Singularity">mirrored</a> on GitHub. </p>
+        
+        </p>
+
+
+      <!--UoM CSS handles local nav for us instead of mkdocs-->
+      <div class="jumpnav"></div>
+
+    </div>
+
+  </div>
+</body>
+
+<script>
+
+  $(document).ready(function(){
+      // Force tab link markers/highlighting to shift for external links (not supported out of the box).
+      $('a').removeAttr('data-current');
+      $('#activeTab').attr({'data-current': ''});
+  });
+
+</script>
+
+
+<script>
+  var sp = new StatusPage.page({ page: 'zxld2sws8c9x'});
+
+  sp.summary({
+    success: function(data) {
+      // adds the text description to the dropdown
+      $('.color-description').text(data.status.description);
+      // appends the status indicator as a class name so we can use the right color for the status light thing
+      $('.color-dot').addClass(data.status.indicator);
+    }
+  });
+</script>
+</html>

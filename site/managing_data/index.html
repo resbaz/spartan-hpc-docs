@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>Managing Data - Spartan Documentation</title>
+  <title>Spartan Documentation</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/theme.css">
   <link rel="stylesheet" href="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.css">
@@ -11,6 +11,10 @@
   <script src="../js/theme.js"></script>
 
 
+  
+  <script src="../search/require.js"></script>
+  
+  <script src="../search/search.js"></script>
   
 
   <script>
@@ -40,11 +44,6 @@
         <meta content="1" itemprop="position" />
       </li>
       
-      <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-        <span itemprop="name">Managing Data</span>
-        <meta content="2" itemprop="position" />
-      </li>
-      
 
     </ol>
     <div role="main">
@@ -64,6 +63,13 @@
         </form>
 
 
+        <div style="text-align: center; font-size: small">
+            Status:
+              <span class="color-dot"></span>
+              <span class="color-description"></span>
+            <a href="/status/"> (more...)</a>
+        </div>
+
       </header>
 
       <div class="tabbed-nav" data-tabbed="" id="nav">
@@ -72,12 +78,6 @@
             
               
               <a role="tab" href=".." >Home</a>
-              
-            
-              
-            
-              
-              <a role="tab" href="../status/" >Status</a>
               
             
               
@@ -93,15 +93,21 @@
               
             
               
-              <a role="tab" href="../gpu/" >GPGPU</a>
+              <a role="tab" href="../guides/" >Guides</a>
               
             
               
-              <a role="tab" href="../desktop/" >Spartan Desktop</a>
+            
               
             
               
               <a role="tab" href="../faq/" >FAQ</a>
+              
+            
+              
+            
+              
+            
               
             
               
@@ -112,12 +118,7 @@
 
         <p>
         
-        <p>Chances are you need to run your HPC job against a dataset, perhaps quite a sizable one. There are a number of places to store data on Spartan while you're working with it, and ways to get data in and out.</p>
-<h2 id="not-for-long-term-storage">Not for Long-Term Storage</h2>
-<p>While it's often essential to have fast nearby storage while working on your data, please don't use Spartan as your long-term data repository. It's not designed for that, may not conform to the requirements set by your institution or funding body, and we don't guarantee to store your data indefinitely (though we certainly won't get rid of it without asking you first). </p>
-<h2 id="data-and-storage-solutions-beyond-spartan">Data and Storage Solutions Beyond Spartan</h2>
-<p>The University offers a range of other data storage and management solutions to meet your needs, beyond the short-term storage available on Spartan, which are described <a href="http://research.unimelb.edu.au/infrastructure/research-platform-services/services/data-storage-management">here</a>. </p>
-<p>In some cases it's possible to integrate these resources with your account on Spartan to streamline your workflow. <a href="mailto:hpc-support@unimelb.edu.au">Get in touch</a> if you'd like to find out more for your particular application.</p>
+          <p>Chances are you need to run your HPC job against a dataset, perhaps quite a sizable one. There are a number of places to store data on Spartan while you're working with it, and ways to get data in and out.</p>
 <h2 id="where-to-store-your-data-on-spartan">Where to Store Your Data on Spartan</h2>
 <p><strong>Projects Directory</strong></p>
 <p>Your projects directory is the best place to store research data while you're working on it. It's located at <code>/data/projects/&lt;projectid&gt;</code> for older projects, or <code>/data/cephfs/&lt;projectid&gt;</code> for newer ones.</p>
@@ -140,6 +141,11 @@
 <p>Repeatedly transferring large files in and out of Spartan via <code>scp</code> can be tedious. A good alternative is <a href="https://download.samba.org/pub/rsync/rsync.html">rsync</a>, which only transfers the parts that have changed. It can work on single files, or whole directories, and the syntax is much same as for <code>scp</code>.</p>
 <p><code>$ rsync local.dat myusername@spartan.hpc.unimelb.edu.au:/data/projects/myproject/remote.dat</code></p>
 <p>Note that the first argument is the source, and the second is the destination which will be modified to match the source.</p>
+<h2 id="not-for-long-term-storage">Not for Long-Term Storage</h2>
+<p>While it's often essential to have fast nearby storage while working on your data, please don't use Spartan as your long-term data repository. It's not designed for that, may not conform to the requirements set by your institution or funding body, and we don't guarantee to store your data indefinitely (though we certainly won't get rid of it without asking you first). </p>
+<h2 id="data-and-storage-solutions-beyond-spartan">Data and Storage Solutions Beyond Spartan</h2>
+<p>The University offers a range of other data storage and management solutions to meet your needs, beyond the short-term storage available on Spartan, which are described <a href="http://research.unimelb.edu.au/infrastructure/research-platform-services/services/data-storage-management">here</a>. </p>
+<p>In some cases it's possible to integrate these resources with your account on Spartan to streamline your workflow. <a href="mailto:hpc-support@unimelb.edu.au">Get in touch</a> if you'd like to find out more for your particular application.</p>
         
         </p>
 
@@ -160,5 +166,19 @@
       $('#activeTab').attr({'data-current': ''});
   });
 
+</script>
+
+
+<script>
+  var sp = new StatusPage.page({ page: 'zxld2sws8c9x'});
+
+  sp.summary({
+    success: function(data) {
+      // adds the text description to the dropdown
+      $('.color-description').text(data.status.description);
+      // appends the status indicator as a class name so we can use the right color for the status light thing
+      $('.color-dot').addClass(data.status.indicator);
+    }
+  });
 </script>
 </html>

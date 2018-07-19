@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>Spartan Desktop - Spartan Documentation</title>
+  <title>Spartan Documentation</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/theme.css">
   <link rel="stylesheet" href="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.css">
@@ -11,6 +11,10 @@
   <script src="../js/theme.js"></script>
 
 
+  
+  <script src="../search/require.js"></script>
+  
+  <script src="../search/search.js"></script>
   
 
   <script>
@@ -40,11 +44,6 @@
         <meta content="1" itemprop="position" />
       </li>
       
-      <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-        <span itemprop="name">Spartan Desktop</span>
-        <meta content="2" itemprop="position" />
-      </li>
-      
 
     </ol>
     <div role="main">
@@ -64,6 +63,13 @@
         </form>
 
 
+        <div style="text-align: center; font-size: small">
+            Status:
+              <span class="color-dot"></span>
+              <span class="color-description"></span>
+            <a href="/status/"> (more...)</a>
+        </div>
+
       </header>
 
       <div class="tabbed-nav" data-tabbed="" id="nav">
@@ -72,12 +78,6 @@
             
               
               <a role="tab" href=".." >Home</a>
-              
-            
-              
-            
-              
-              <a role="tab" href="../status/" >Status</a>
               
             
               
@@ -93,15 +93,21 @@
               
             
               
-              <a role="tab" href="../gpu/" >GPGPU</a>
+              <a role="tab" href="./" id="activeTab">Guides</a>
               
             
               
-              <a role="tab" href="./" id="activeTab">Spartan Desktop</a>
+            
               
             
               
               <a role="tab" href="../faq/" >FAQ</a>
+              
+            
+              
+            
+              
+            
               
             
               
@@ -112,31 +118,12 @@
 
         <p>
         
-        <p class="notice notice--warning">
-  <strong>Beta</strong> Note that Spartan Desktop is currently in beta, and is not yet ready for general use. You're welcome to give it a try and provide feedback, but there may be bugs or missing features.
-</p>
-
-<p>While HPC systems like Spartan are oriented to command line batch processing, certain applications benefit from access to an interactive desktop environment. For example, you might like to quickly view some intermediate data, without having to download it to your own computer, and taking advantage of software already installed on Spartan.</p>
-<p>Spartan Desktop is based on Strudel, a cross-platform application developed by <a href="https://www.massive.org.au/userguide/cluster-instructions/strudel">CVL/MASSIVE</a>. It will create an interactive job on Spartan, launch a desktop session, and connect you via a secure SSH tunnel using TurboVNC.</p>
-<h2 id="getting-started">Getting Started</h2>
-<ol>
-<li>Install TurboVNC and Strudel as per the instructions at https://www.massive.org.au/userguide/cluster-instructions/strudel</li>
-<li>
-<p>Add Spartan as a site to Strudel. Go to 'File -&gt; Manage Sites', and click 'New'. Set the name field as <code>Spartan Desktop</code> and URL as <code>http://dashboard.hpc.unimelb.edu.au/spartan-rcg.json</code>. Click Ok, and make sure the site is set as active.</p>
-<p><img alt="" src="../desktop/sites.png" /></p>
-</li>
-<li>
-<p>Now to connect... select <code>spartan-rcg</code> from the site menu, and enter your Spartan username. Enable the advanced options, and set the SSH tunnel cipher as <code>aes128-cbc</code>. </p>
-<p><img alt="" src="../desktop/settings.png" /></p>
-</li>
-<li>
-<p>Click Login. Strudel will ask for your Spartan password, start a desktop session, and connect to it via TurboVNC.</p>
-</li>
-</ol>
-<h2 id="usage">Usage</h2>
-<p>From your desktop session, you can load modules and start jobs just as you would from a command line session. For example, to start MATLAB:</p>
-<p><img alt="" src="../desktop/start_matlab.png" /></p>
-<p><img alt="" src="../desktop/matlab.png" /></p>
+          <h2 id="spartan-desktop"><a href="desktop/">Spartan Desktop</a></h2>
+<p>Spartan Desktop allows you to run software with a GUI (e.g. MATLAB) from within Spartan.</p>
+<h2 id="containers"><a href="containers/">Containers</a></h2>
+<p>You can run your software on Spartan using containers, rather than via the <a href="../software/">managed modules system</a>. This article explains when you might want to do this, and how.</p>
+<h2 id="gpgpu"><a href="../gpu/">GPGPU</a></h2>
+<p>Details on our new GPGPU service for project partners.</p>
         
         </p>
 
@@ -157,5 +144,19 @@
       $('#activeTab').attr({'data-current': ''});
   });
 
+</script>
+
+
+<script>
+  var sp = new StatusPage.page({ page: 'zxld2sws8c9x'});
+
+  sp.summary({
+    success: function(data) {
+      // adds the text description to the dropdown
+      $('.color-description').text(data.status.description);
+      // appends the status indicator as a class name so we can use the right color for the status light thing
+      $('.color-dot').addClass(data.status.indicator);
+    }
+  });
 </script>
 </html>

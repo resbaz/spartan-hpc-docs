@@ -12,6 +12,10 @@
 
 
   
+  <script src="./search/require.js"></script>
+  
+  <script src="./search/search.js"></script>
+  
 
   <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -59,6 +63,13 @@
         </form>
 
 
+        <div style="text-align: center; font-size: small">
+            Status:
+              <span class="color-dot"></span>
+              <span class="color-description"></span>
+            <a href="/status/"> (more...)</a>
+        </div>
+
       </header>
 
       <div class="tabbed-nav" data-tabbed="" id="nav">
@@ -67,12 +78,6 @@
             
               
               <a role="tab" href="." id="activeTab">Home</a>
-              
-            
-              
-            
-              
-              <a role="tab" href="status/" >Status</a>
               
             
               
@@ -88,15 +93,21 @@
               
             
               
-              <a role="tab" href="gpu/" >GPGPU</a>
+              <a role="tab" href="guides/" >Guides</a>
               
             
               
-              <a role="tab" href="desktop/" >Spartan Desktop</a>
+            
               
             
               
               <a role="tab" href="faq/" >FAQ</a>
+              
+            
+              
+            
+              
+            
               
             
               
@@ -107,7 +118,7 @@
 
         <p>
         
-        <p>Spartan is High Performance Computing (HPC) system operated by Research Platform Services (ResPlat) at The University of Melbourne. It combines a high performance bare-metal compute with flexible cloud infrastructure to suit a wide range of use-cases.</p>
+          <p>Spartan is High Performance Computing (HPC) system operated by Research Platform Services (ResPlat) at The University of Melbourne. It combines a high performance bare-metal compute with flexible cloud infrastructure to suit a wide range of use-cases.</p>
 <p>If your computing jobs take too long on your desktop computer, or are simply not possible due to a lack of speed and memory, a HPC system like Spartan can help.</p>
 <p>Usage of Spartan is governed by an <a href="access_policy/">Access and Service Denial Policy</a>.</p>
 <h2 id="spartan-daily-weather-report-20180626">Spartan Daily Weather Report (20180626)</h2>
@@ -170,5 +181,19 @@
       $('#activeTab').attr({'data-current': ''});
   });
 
+</script>
+
+
+<script>
+  var sp = new StatusPage.page({ page: 'zxld2sws8c9x'});
+
+  sp.summary({
+    success: function(data) {
+      // adds the text description to the dropdown
+      $('.color-description').text(data.status.description);
+      // appends the status indicator as a class name so we can use the right color for the status light thing
+      $('.color-dot').addClass(data.status.indicator);
+    }
+  });
 </script>
 </html>

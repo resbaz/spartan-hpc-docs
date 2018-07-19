@@ -1,14 +1,5 @@
 Chances are you need to run your HPC job against a dataset, perhaps quite a sizable one. There are a number of places to store data on Spartan while you're working with it, and ways to get data in and out.
 
-## Not for Long-Term Storage
-While it's often essential to have fast nearby storage while working on your data, please don't use Spartan as your long-term data repository. It's not designed for that, may not conform to the requirements set by your institution or funding body, and we don't guarantee to store your data indefinitely (though we certainly won't get rid of it without asking you first). 
-
-## Data and Storage Solutions Beyond Spartan
-
-The University offers a range of other data storage and management solutions to meet your needs, beyond the short-term storage available on Spartan, which are described [here](http://research.unimelb.edu.au/infrastructure/research-platform-services/services/data-storage-management). 
-
-In some cases it's possible to integrate these resources with your account on Spartan to streamline your workflow. [Get in touch](mailto:hpc-support@unimelb.edu.au) if you'd like to find out more for your particular application.
-
 
 ## Where to Store Your Data on Spartan
 
@@ -57,3 +48,13 @@ Repeatedly transferring large files in and out of Spartan via `scp` can be tedio
 
 Note that the first argument is the source, and the second is the destination which will be modified to match the source.
 
+
+## Not for Long-Term Storage
+While it's often essential to have fast nearby storage while working on your data, please don't use Spartan as your long-term data repository. It's not designed for that, may not conform to the requirements set by your institution or funding body, and we don't guarantee to store your data indefinitely (though we certainly won't get rid of it without asking you first). 
+
+
+## Data and Storage Solutions Beyond Spartan
+
+The University offers a range of other data storage and management solutions to meet your needs, beyond the short-term storage available on Spartan, which are described [here](http://research.unimelb.edu.au/infrastructure/research-platform-services/services/data-storage-management). 
+
+In some cases it's possible to integrate these resources with your account on Spartan to streamline your workflow. [Get in touch](mailto:hpc-support@unimelb.edu.au) if you'd like to find out more for your particular application.

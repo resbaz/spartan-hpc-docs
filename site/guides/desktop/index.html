@@ -2,19 +2,19 @@
 <head>
   <title>Spartan Documentation</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/theme.css">
+  <link rel="stylesheet" href="../../css/theme.css">
   <link rel="stylesheet" href="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.css">
   <script src="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.statuspage.io/se-v2.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="../js/theme.js"></script>
+  <script src="../../js/theme.js"></script>
 
 
   
-  <script src="../search/require.js"></script>
+  <script src="../../search/require.js"></script>
   
-  <script src="../search/search.js"></script>
+  <script src="../../search/search.js"></script>
   
 
   <script>
@@ -49,7 +49,7 @@
     <div role="main">
 
       <header>
-        <form action="../search.html" class="search" method="get">
+        <form action="../../search.html" class="search" method="get">
           <fieldset>
             <div class="inline attached">
               <span class="fill">
@@ -77,23 +77,23 @@
           <nav role="tablist">
             
               
-              <a role="tab" href=".." >Home</a>
+              <a role="tab" href="../.." >Home</a>
               
             
               
-              <a role="tab" href="../getting_started/" >Getting Started</a>
+              <a role="tab" href="../../getting_started/" >Getting Started</a>
               
             
               
-              <a role="tab" href="../managing_data/" >Managing Data</a>
+              <a role="tab" href="../../managing_data/" >Managing Data</a>
               
             
               
-              <a role="tab" href="./" id="activeTab">Software</a>
+              <a role="tab" href="../../software/" >Software</a>
               
             
               
-              <a role="tab" href="../guides/" >Guides</a>
+              <a role="tab" href="../" >Guides</a>
               
             
               
@@ -101,7 +101,7 @@
               
             
               
-              <a role="tab" href="../faq/" >FAQ</a>
+              <a role="tab" href="../../faq/" >FAQ</a>
               
             
               
@@ -118,20 +118,31 @@
 
         <p>
         
-          <p>This page outlines usage and tips for some of the most popular software being used on Spartan. </p>
-<p>Spartan uses a modules system (<a href="http://lmod.readthedocs.io/en/latest/">lmod</a>) to load and unload different packages, including different versions of the same software. This allows many different software packages to be installed on Spartan at once without interfering with each other</p>
-<p>You can check what's currently installed using the <code>module avail</code> command, search using <code>module spider</code>, and load a particular module with the <code>module load</code> command. For example, to load MATLAB 2016a, use <code>module load MATLAB/2016a</code>.</p>
-<p>Generally you shouldn't load modules from the login node, instead working on a compute node, either via an interactive session (launched with <code>sinteractive</code>), or from within your Slurm script.</p>
-<h2 id="job-script-examples">Job Script Examples</h2>
-<p>We maintain example job scripts for various software packages on Spartan. You can browse these at <code>/usr/local/common</code> or at <a href="https://github.com/resbaz/spartan-examples">https://github.com/resbaz/spartan-examples</a></p>
-<h2 id="python">Python</h2>
-<p>There are multiple versions of Python installed on Spartan, which you can check using <code>module spider Python</code>. </p>
-<p>Common packages like numpy are already installed with some versions, but may be missing from others. If a Python package is missing, let us know, and we can install it for you. Alternatively, you can install additional packages locally using <code>pip install --user &lt;package name&gt;</code>. This works well for pure-python packages, but you may encounter errors for those that link to other binary packages.</p>
-<h2 id="r">R</h2>
-<p>R version 3.2.1 and 3.4.0 are installed on Spartan, along with some common packages. If a package you need is missing, you can either install it locally, or contact us to install it system-wide.</p>
-<h2 id="matlab">MATLAB</h2>
-<p>MATLAB 2016a is installed on Spartan, along with all of the standard toolboxes. </p>
-<p>MATLAB can be invoked with a particular script using <code>matlab -nodisplay -nodesktop -r "run my_script.m"</code>. You may need to add particular working directories so MATLAB can find all the scripts necessary for your job.</p>
+          <p class="notice notice--warning">
+  <strong>Beta</strong> Note that Spartan Desktop is currently in beta, and is not yet ready for general use. You're welcome to give it a try and provide feedback, but there may be bugs or missing features.
+</p>
+
+<p>While HPC systems like Spartan are oriented to command line batch processing, certain applications benefit from access to an interactive desktop environment. For example, you might like to quickly view some intermediate data, without having to download it to your own computer, and taking advantage of software already installed on Spartan.</p>
+<p>Spartan Desktop is based on Strudel, a cross-platform application developed by <a href="https://www.massive.org.au/userguide/cluster-instructions/strudel">CVL/MASSIVE</a>. It will create an interactive job on Spartan, launch a desktop session, and connect you via a secure SSH tunnel using TurboVNC.</p>
+<h2 id="getting-started">Getting Started</h2>
+<ol>
+<li>Install TurboVNC and Strudel as per the instructions at https://www.massive.org.au/userguide/cluster-instructions/strudel</li>
+<li>
+<p>Add Spartan as a site to Strudel. Go to 'File -&gt; Manage Sites', and click 'New'. Set the name field as <code>Spartan Desktop</code> and URL as <code>http://dashboard.hpc.unimelb.edu.au/spartan-rcg.json</code>. Click Ok, and make sure the site is set as active.</p>
+<p><img alt="" src="../desktop/sites.png" /></p>
+</li>
+<li>
+<p>Now to connect... select <code>spartan-rcg</code> from the site menu, and enter your Spartan username. Enable the advanced options, and set the SSH tunnel cipher as <code>aes128-cbc</code>. </p>
+<p><img alt="" src="../desktop/settings.png" /></p>
+</li>
+<li>
+<p>Click Login. Strudel will ask for your Spartan password, start a desktop session, and connect to it via TurboVNC.</p>
+</li>
+</ol>
+<h2 id="usage">Usage</h2>
+<p>From your desktop session, you can load modules and start jobs just as you would from a command line session. For example, to start MATLAB:</p>
+<p><img alt="" src="../desktop/start_matlab.png" /></p>
+<p><img alt="" src="../desktop/matlab.png" /></p>
         
         </p>
 

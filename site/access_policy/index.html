@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>Access and Service Denial Policy - Spartan Documentation</title>
+  <title>Spartan Documentation</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/theme.css">
   <link rel="stylesheet" href="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.css">
@@ -11,6 +11,10 @@
   <script src="../js/theme.js"></script>
 
 
+  
+  <script src="../search/require.js"></script>
+  
+  <script src="../search/search.js"></script>
   
 
   <script>
@@ -40,11 +44,6 @@
         <meta content="1" itemprop="position" />
       </li>
       
-      <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-        <span itemprop="name">Access and Service Denial Policy</span>
-        <meta content="2" itemprop="position" />
-      </li>
-      
 
     </ol>
     <div role="main">
@@ -64,6 +63,13 @@
         </form>
 
 
+        <div style="text-align: center; font-size: small">
+            Status:
+              <span class="color-dot"></span>
+              <span class="color-description"></span>
+            <a href="/status/"> (more...)</a>
+        </div>
+
       </header>
 
       <div class="tabbed-nav" data-tabbed="" id="nav">
@@ -72,12 +78,6 @@
             
               
               <a role="tab" href=".." >Home</a>
-              
-            
-              
-            
-              
-              <a role="tab" href="../status/" >Status</a>
               
             
               
@@ -93,15 +93,21 @@
               
             
               
-              <a role="tab" href="../gpu/" >GPGPU</a>
+              <a role="tab" href="../guides/" >Guides</a>
               
             
               
-              <a role="tab" href="../desktop/" >Spartan Desktop</a>
+            
               
             
               
               <a role="tab" href="../faq/" >FAQ</a>
+              
+            
+              
+            
+              
+            
               
             
               
@@ -112,7 +118,7 @@
 
         <p>
         
-        <h1 id="access-and-service-denial-policy">Access and Service Denial Policy</h1>
+          <h1 id="access-and-service-denial-policy">Access and Service Denial Policy</h1>
 <h2 id="access-policy">Access Policy</h2>
 <p>Access to the HPC Services (Spartan), is broadly governed by the access policies for the research cloud and the <a href="https://staff.unimelb.edu.au/legal-audit-records-policies/policy/policies-standards-guidelines">University of Melbourne IT policies, standards and guidelines</a>.  Additional requirements are as follows:</p>
 <ol>
@@ -178,5 +184,19 @@ If a user misuses the service, either wittingly or unwittingly, and causes the d
       $('#activeTab').attr({'data-current': ''});
   });
 
+</script>
+
+
+<script>
+  var sp = new StatusPage.page({ page: 'zxld2sws8c9x'});
+
+  sp.summary({
+    success: function(data) {
+      // adds the text description to the dropdown
+      $('.color-description').text(data.status.description);
+      // appends the status indicator as a class name so we can use the right color for the status light thing
+      $('.color-dot').addClass(data.status.indicator);
+    }
+  });
 </script>
 </html>

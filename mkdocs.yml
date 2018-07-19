@@ -1,14 +1,20 @@
 site_name: Spartan Documentation
 pages:
     - Home: index.md
-    - _Access and Service Denial Policy: access_policy.md
-    - Status: status.md
     - Getting Started: getting_started.md
     - Managing Data: managing_data.md
     - Software: software.md
-    - GPGPU: gpu.md
-    - Spartan Desktop: desktop.md
+    - Guides: guides/index.md
+    - _Spartan Desktop: guides/desktop.md
+    - _Containers: guides/containers.md
     - FAQ: faq.md
+    # Top-level pages, but not on nav menu
     - _Edward Transition: edward_transition.md
+    - _GPGPU: gpu.md # Keep this link here for a while since LIEF participants will have been sent this.
+    - _Access and Service Denial Policy: access_policy.md
+    - _Status: status.md
+
 theme_dir: uom_theme
-google_analytics: ['UA-97236408-1', 'auto']
+google_analytics:
+  - 'UA-97236408-1'
+  - 'auto'
