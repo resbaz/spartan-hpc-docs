@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <head>
-  <title>{% if page_title %}{{ page_title | replace('_', '') }} - {% endif %}{{ config.site_name }}</title>
+  <title>Spartan Documentation</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="{{ base_url }}/css/theme.css">
+  <link rel="stylesheet" href="./css/theme.css">
   <link rel="stylesheet" href="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.css">
   <script src="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.statuspage.io/se-v2.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="{{ base_url }}/js/theme.js"></script>
-  <script>var base_url = '{{ base_url }}';</script>
+  <script src="./js/theme.js"></script>
+  <script>var base_url = '.';</script>
 
 
-  {% for path in extra_javascript %}
-  <script src="{{ path }}"></script>
-  {% endfor %}
+  
+  <script src="./search/require.js"></script>
+  
+  <script src="./search/search.js"></script>
+  
 
   <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -22,12 +24,14 @@
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', '{{ config.google_analytics[0] }}', '{{ config.google_analytics[1] }}');
+      ga('create', 'UA-97236408-1', 'auto');
       ga('send', 'pageview');
   </script>
 
-  {% block extrahead %}
-  {% endblock %}
+  
+  <script>var base_url = '.';</script>
+  <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
+
 </head>
 
 <body>
@@ -38,23 +42,18 @@
     <ol class="page-local-history" itemscope="" itemtype="http://schema.org/BreadcrumbList">
       <li class="root" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
         <a href="/" title="Spartan Documentation" itemprop="item">
-          <span itemprop="name">{{ config.site_name }}</span>
+          <span itemprop="name">Spartan Documentation</span>
         </a>
         <meta content="1" itemprop="position" />
       </li>
-      {% if page_title %}
-      <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-        <span itemprop="name">{{ page_title | replace('_', '') }}</span>
-        <meta content="2" itemprop="position" />
-      </li>
-      {% endif %}
+      
 
     </ol>
     <div role="main">
 
       <header>
 
-        <form action="{{ base_url }}/search.html" class="search" method="get">
+        <form action="./search.html" class="search" method="get">
           <fieldset>
             <div class="inline attached">
               <span class="fill">
@@ -79,19 +78,62 @@
       <div class="tabbed-nav" data-tabbed="" id="nav">
         <div class="full-width">
           <nav role="tablist">
-            {% for nav_item in nav %}
-              {% if not nav_item.title.startswith("_") %}
-              <a role="tab" href="{{ nav_item.url }}" {% if nav_item.active %}id="activeTab"{% endif %}>{{ nav_item.title }}</a>
-              {% endif %}
-            {% endfor %}
+            
+              
+              <a role="tab" href="." >Home</a>
+              
+            
+              
+              <a role="tab" href="getting_started/" >Getting Started</a>
+              
+            
+              
+              <a role="tab" href="managing_data/" >Managing Data</a>
+              
+            
+              
+              <a role="tab" href="software/" >Software</a>
+              
+            
+              
+              <a role="tab" href="guides/" >Guides</a>
+              
+            
+              
+            
+              
+            
+              
+              <a role="tab" href="faq/" >FAQ</a>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
           </nav>
         </div>
       </div>
 
         <p>
-        {% block content %}
-          {{ page.content }}
-        {% endblock %}
+        
+
+  <h1 id="search">Search Results</h1>
+
+  <form id="content_search" action="search.html">
+    <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+    <input name="q" id="mkdocs-search-query" type="text" class="search_input search-query ui-autocomplete-input hidden" placeholder="Search the Docs" autocomplete="off">
+  </form>
+
+  <div id="mkdocs-search-results">
+    Sorry, page not found.
+  </div>
+
+
         </p>
 
 

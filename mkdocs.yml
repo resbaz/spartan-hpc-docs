@@ -14,7 +14,16 @@ pages:
     - _Access and Service Denial Policy: access_policy.md
     - _Status: status.md
 
-theme_dir: uom_theme
+theme:
+    name: null
+    custom_dir: uom_theme
+    static_templates:
+        - search.html
+    include_sidebar: false
+    include_search_page: true
+
 google_analytics:
   - 'UA-97236408-1'
   - 'auto'
+plugins:
+- search
