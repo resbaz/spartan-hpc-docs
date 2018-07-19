@@ -53,6 +53,14 @@ Note that the first argument is the source, and the second is the destination wh
 While it's often essential to have fast nearby storage while working on your data, please don't use Spartan as your long-term data repository. It's not designed for that, may not conform to the requirements set by your institution or funding body, and we don't guarantee to store your data indefinitely (though we certainly won't get rid of it without asking you first). 
 
 
+## Mediaflux Integration
+
+Mediaflux is a very capable, general and extensible data management platform for managing digital assets. You can read a little about it here: [http://www.arcitecta.com/Products](http://www.arcitecta.com/Products)
+
+Clients for Mediaflux are available on Spartan, allowing data to be uploaded/downloaded. Details on using this client are available [here](https://wiki.cloud.unimelb.edu.au/resplat/doku.php?id=data_management:mediaflux:howto:downloaddata_with_spartan).
+
+
+
 ## Data and Storage Solutions Beyond Spartan
 
 The University offers a range of other data storage and management solutions to meet your needs, beyond the short-term storage available on Spartan, which are described [here](http://research.unimelb.edu.au/infrastructure/research-platform-services/services/data-storage-management). 
