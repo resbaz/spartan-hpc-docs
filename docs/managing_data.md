@@ -55,9 +55,8 @@ While it's often essential to have fast nearby storage while working on your dat
 
 ## Mediaflux Integration
 
-Mediaflux is a very capable, general and extensible data management platform for managing digital assets. You can read a little about it here: [http://www.arcitecta.com/Products](http://www.arcitecta.com/Products)
-
-Clients for Mediaflux are available on Spartan, allowing data to be uploaded/downloaded. Details on using this client are available [here](https://wiki.cloud.unimelb.edu.au/resplat/doku.php?id=data_management:mediaflux:howto:downloaddata_with_spartan).
+Research Platform Services provides a data management service utilising the [Mediaflux platform](https://research.unimelb.edu.au/infrastructure/research-platform-services/services/data-storage-management/mediaflux). This platform provides a persistent location for research data and meta-data.
+To aid integration between Mediaflux and Spartan, Java clients are available on Spartan, allowing data to be downloaded from and uploaded to Mediaflux. Details on Mediaflux integration with Spartan can be found in Section 4 of the [Mediaflux support wiki](https://wiki.cloud.unimelb.edu.au/resplat/doku.php?id=data_management:mediaflux)
 
 
 
