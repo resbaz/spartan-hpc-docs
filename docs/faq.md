@@ -74,7 +74,7 @@ They can be specified in your job script with `#SBATCH --partition gpu` and `#SB
 
 You'll also need to include a generic resource request in your job script, for example `#SBATCH --gres=gpu:2` will request two GPUs for your job.
 
-A range of GPU-accelerated software such as TensorFlow is available on Spartan, as well as CUDA for developing your own GPU applications.
+A range of GPU-accelerated software such as TensorFlow is available on Spartan [example](https://github.com/resbaz/spartan-examples/tree/master/TensorFlow), as well as CUDA for developing your own GPU applications [example](https://github.com/resbaz/spartan-examples/tree/master/GPU).
 
 __N.B. The GPGPU partition is not automatically available to all Spartan users, and a dedicated project must be created to request access. See [here](gpu.md) for more details.__
 

@@ -169,7 +169,7 @@
 <p>The legacy <code>gpu</code> partition includes four Nvidia K80 GPUs per node, while the newer <code>gpgpu</code> partition includes four Nvidia P100 GPUs per node. </p>
 <p>They can be specified in your job script with <code>#SBATCH --partition gpu</code> and <code>#SBATCH --partition gpgpu</code>, respectively.</p>
 <p>You'll also need to include a generic resource request in your job script, for example <code>#SBATCH --gres=gpu:2</code> will request two GPUs for your job.</p>
-<p>A range of GPU-accelerated software such as TensorFlow is available on Spartan, as well as CUDA for developing your own GPU applications.</p>
+<p>A range of GPU-accelerated software such as TensorFlow is available on Spartan <a href="https://github.com/resbaz/spartan-examples/tree/master/TensorFlow">example</a>, as well as CUDA for developing your own GPU applications <a href="https://github.com/resbaz/spartan-examples/tree/master/GPU">example</a>.</p>
 <p><strong>N.B. The GPGPU partition is not automatically available to all Spartan users, and a dedicated project must be created to request access. See <a href="../gpu/">here</a> for more details.</strong></p>
 <h2 id="how-do-i-submit-a-job">How do I submit a job?</h2>
 <p>You'll need your data files and scripts, the software you want to run installed on Spartan, and a job script so that Spartan knows how to put everything together. Check out <a href="../getting_started/">Getting Started</a> for an example.</p>
