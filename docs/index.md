@@ -60,6 +60,11 @@ If you use Spartan to obtain results for a publication, we'd appreciate if you'd
 
 `Lev Lafayette, Greg Sauter, Linh Vu, Bernard Meade, "Spartan Performance and Flexibility: An HPC-Cloud Chimera", OpenStack Summit, Barcelona, October 27, 2016. doi.org/10.4225/49/58ead90dceaaa`
 
+If you are using the LIEF GPGPU cluster for a publication, please include the following citation in the acknowledgements section of your paper:
+ 
+`This research was undertaken using the LIEF HPC-GPGPU Facility hosted at the University of Melbourne.  This Facility was established with the assistance of LIEF Grant LE170100200.`
+
+
 ## Other Resources
 
 Spartan is just one of many research IT resources offered by The University of Melbourne, or available from other institutions.
