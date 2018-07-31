@@ -18,3 +18,9 @@ The GPGPU cluster operates as per other Spartan partitions, and so the documenta
 
 To request one or more GPGPUs in your job script, see: [https://dashboard.hpc.unimelb.edu.au/faq/#how-do-i-get-access-to-gpus](https://dashboard.hpc.unimelb.edu.au/faq/#how-do-i-get-access-to-gpus)
 
+
+## Citation
+
+If you are using the LIEF GPGPU cluster for a publication, please include the following citation in the acknowledgements section of your paper:
+ 
+`This research was undertaken using the LIEF HPC-GPGPU Facility hosted at the University of Melbourne.  This Facility was established with the assistance of LIEF Grant LE170100200.`
