@@ -4,10 +4,10 @@ If your computing jobs take too long on your desktop computer, or are simply not
 
 Usage of Spartan is governed by an [Access and Service Denial Policy](access_policy.md).
 
-## Spartan Daily Weather Report (20180626)
-* Utilisation of /projects at 93%, and /home is at 19% (new CephFS partition).
+## Spartan Daily Weather Report (20180806)
+* Utilisation of is at 23% from the Ceph pool.
 * Spartan is busy, with close to 100% node allocation.
-* Many cloud nodes out (111), mainly due to qh2-uom migration and outage.
+* Many cloud nodes out (102), mainly due to qh2-uom migration and outage.
 
 ## Getting Help
 
@@ -31,11 +31,11 @@ Spartan has a number of partitions available for general usage. A full list of p
  
 **Cloud**
 
-100 nodes, each with 8 cores and 62 GB of RAM, allocated from the Melbourne node of the Nectar research cloud. This partition is best suited for general-purpose single-node jobs. Multiple node jobs will work, but communication between nodes will be comparatively slow.
+208 nodes, each with 8 cores and 62 GB of RAM, allocated from the Melbourne node of the Nectar research cloud. This partition is best suited for general-purpose single-node jobs. Multiple node jobs will work, but communication between nodes will be comparatively slow.
 
 **Physical**
 
-21 nodes, each with 12 cores and 251 GB of RAM. Each node is connected by high-speed 56GigE networking with 1.15 µsec latency, making this partition suited to multi-node jobs (e.g. those using OpenMPI).
+20 nodes, each with 12 cores and 251 GB of RAM. Each node is connected by high-speed 56GigE networking with 1.15 µsec latency, making this partition suited to multi-node jobs (e.g. those using OpenMPI).
 
 **GPU**
 
@@ -64,7 +64,6 @@ If you are using the LIEF GPGPU cluster for a publication, please include the fo
  
 `This research was undertaken using the LIEF HPC-GPGPU Facility hosted at the University of Melbourne.  This Facility was established with the assistance of LIEF Grant LE170100200.`
 
-
 ## Other Resources
 
 Spartan is just one of many research IT resources offered by The University of Melbourne, or available from other institutions.
@@ -78,7 +77,6 @@ Spartan runs some of it's computation resources in the Nectar cloud.
 **Melbourne Bioinformatics**
 
 [Melbourne Bioinformatics](https://www.melbournebioinformatics.org.au/) run two large HPC systems for life sciences researchers.
-
 
 **Multi-modal Australian ScienceS Imaging and Visualisation Environment (MASSIVE)** 
 

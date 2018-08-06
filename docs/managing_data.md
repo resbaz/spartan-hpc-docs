@@ -15,14 +15,17 @@ Your home directory, i.e. `/home/yourusername` can be used to store small amount
 
 Others in your project won't have access, and you're limited to 50GB of storage.
 
-
 **Scratch Space**
 
 You can store temporary working data while your job is running at `/tmp`. This will map to a directory on our fast scratch network storage specific to your job ID, and clean up once your job is complete. It's also possible to write directly to `/scratch/`, for instance if you would like to share your working files across multiple nodes. In this case it's your own responsibility to avoid collisions (i.e. two processes writing to the same file at the same time), and clean up afterwards.
 
-
 **N.B.** Note that home, project and scratch are all network-based storage that can be accessed by multiple nodes and processes at the same time. Take care that you don't inadvertently write to the same file from multiple jobs at the same time.
 
+**Staging**
+
+Local disk is typically faster than shared disks. If you find that your read-writes are slow and you are making use of a lot of I/O you may need to stage your data. 
+
+Spartan has `/data` for /home and /projects (large, slower), `/scratch` for temporary storage data (faster), and as local disk, `/var/local/tmp` (fastest, not shared). You may need to copy data between these locations. 
 
 ## How to Transfer Data In and Out of Spartan
 
