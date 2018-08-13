@@ -1,3 +1,7 @@
+<p class="notice notice--warning">
+In the coming weeks, we'll be switching our helpdesk system to ServiceNow. The current hpc-support@unimelb.edu.au contact email will continue to work, but there will also be a web-based form to submit support and software installation requests. We're not anticipating any disruptions, and the current helpdesk system will be run in parallel for existing tickets. We will let you know of the cut-over date once confirmed.
+</p>
+
 Spartan is High Performance Computing (HPC) system operated by Research Platform Services (ResPlat) at The University of Melbourne. It combines a high performance bare-metal compute with flexible cloud infrastructure to suit a wide range of use-cases.
 
 If your computing jobs take too long on your desktop computer, or are simply not possible due to a lack of speed and memory, a HPC system like Spartan can help.

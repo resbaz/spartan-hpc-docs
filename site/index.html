@@ -119,14 +119,19 @@
 
         <p>
         
-          <p>Spartan is High Performance Computing (HPC) system operated by Research Platform Services (ResPlat) at The University of Melbourne. It combines a high performance bare-metal compute with flexible cloud infrastructure to suit a wide range of use-cases.</p>
+          <p class="notice notice--warning">
+In the coming weeks, we'll be switching our helpdesk system to ServiceNow. The current hpc-support@unimelb.edu.au contact email will continue to work, but there will also be a web-based form to submit support and software installation requests. We're not anticipating any disruptions, and the current helpdesk system will be run in parallel for existing tickets. We will let you know of the cut-over date once confirmed.
+</p>
+
+<p>Spartan is High Performance Computing (HPC) system operated by Research Platform Services (ResPlat) at The University of Melbourne. It combines a high performance bare-metal compute with flexible cloud infrastructure to suit a wide range of use-cases.</p>
 <p>If your computing jobs take too long on your desktop computer, or are simply not possible due to a lack of speed and memory, a HPC system like Spartan can help.</p>
 <p>Usage of Spartan is governed by an <a href="access_policy/">Access and Service Denial Policy</a>.</p>
-<h2 id="spartan-daily-weather-report-20180626">Spartan Daily Weather Report (20180626)</h2>
+<h2 id="spartan-daily-weather-report-20180810">Spartan Daily Weather Report (20180810)</h2>
 <ul>
-<li>Utilisation of /projects at 93%, and /home is at 19% (new CephFS partition).</li>
-<li>Spartan is busy, with close to 100% node allocation.</li>
-<li>Many cloud nodes out (111), mainly due to qh2-uom migration and outage.</li>
+<li>Utilisation of is at 23% from the Ceph pool.</li>
+<li>Spartan is busy, with close to 100% node allocation in cloud and physical partitions.</li>
+<li>GPGPU partition is approximately 65% node allocation.</li>
+<li>Many cloud nodes out (74), mainly due to qh2-uom migration and outage.</li>
 </ul>
 <h2 id="getting-help">Getting Help</h2>
 <h3 id="training">Training</h3>
@@ -139,9 +144,9 @@
 <h2 id="specifications">Specifications</h2>
 <p>Spartan has a number of partitions available for general usage. A full list of partitions can be viewed with the command <code>sinfo -s</code>.</p>
 <p><strong>Cloud</strong></p>
-<p>100 nodes, each with 8 cores and 62 GB of RAM, allocated from the Melbourne node of the Nectar research cloud. This partition is best suited for general-purpose single-node jobs. Multiple node jobs will work, but communication between nodes will be comparatively slow.</p>
+<p>208 nodes, each with 8 cores and 62 GB of RAM, allocated from the Melbourne node of the Nectar research cloud. This partition is best suited for general-purpose single-node jobs. Multiple node jobs will work, but communication between nodes will be comparatively slow.</p>
 <p><strong>Physical</strong></p>
-<p>21 nodes, each with 12 cores and 251 GB of RAM. Each node is connected by high-speed 56GigE networking with 1.15 µsec latency, making this partition suited to multi-node jobs (e.g. those using OpenMPI).</p>
+<p>20 nodes, each with 12 cores and 251 GB of RAM. Each node is connected by high-speed 56GigE networking with 1.15 µsec latency, making this partition suited to multi-node jobs (e.g. those using OpenMPI).</p>
 <p><strong>GPU</strong></p>
 <p>3 nodes, each with 12 cores, 251 GB of RAM, and four NVidia K80 GPUs. This partition also makes use of high-speed networking.</p>
 <p><strong>GPGPU</strong></p>
