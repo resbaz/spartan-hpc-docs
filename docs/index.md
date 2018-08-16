@@ -10,8 +10,8 @@ Usage of Spartan is governed by an [Access and Service Denial Policy](access_pol
 
 ## Spartan Daily Weather Report (20180814)
 * Utilisation of is at 23% from the Ceph pool.
-* Spartan is busy on physical partition, with close to 90% node allocation.
-* Spartan is not busy on cloud partion, with close to 70% node allocation.
+* Spartan is busy on physical partition, with close to 95% node allocation.
+* Spartan is not as busy on cloud partion, with close to 80% node allocation.
 * GPGPU partition is approximately 70% node allocation.
 * Many cloud nodes out (76), mainly due to qh2-uom migration and outage.
 
