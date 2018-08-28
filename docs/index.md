@@ -6,7 +6,7 @@ Spartan is High Performance Computing (HPC) system operated by Research Platform
 
 If your computing jobs take too long on your desktop computer, or are simply not possible due to a lack of speed and memory, a HPC system like Spartan can help.
 
-Use of this service is governed by the University's [https://staff.unimelb.edu.au/legal-audit-records-policies/policy/policies-standards-guidelines](general regulations for IT resources).
+Use of this service is governed by the University's [general regulations for IT resources](https://staff.unimelb.edu.au/legal-audit-records-policies/policy/policies-standards-guidelines).
 
 ## Spartan Daily Weather Report (20180828)
 * Utilisation of disk is at 24% from the Ceph pool.
