@@ -9,6 +9,8 @@ Your projects directory is the best place to store research data while you're wo
 
 Others in your project can access it, and 500 GB of storage is available per project. If you need more than this, [get in touch](mailto:hpc-support@unimelb.edu.au) and we'll try to find a solution. In general 1 TB of project storage is available upon request, and up to 10 TB is possible if needed. Project storage beyond 10 TB will generally require some sort of co-investment, but this may be waived in some circumstances, particularly for high-value shared datasets.
 
+To increase your project storage space from more than 1TB up to 10TB please fill in a [Compute Storage Extension Request](https://dashboard.hpc.unimelb.edu.au/20180912ComputeStorageExtensionRequest.docx) form and send to the Head of Research Compute Services, [Dr. Bernard Meade](mailto:bmeade@unimelb.edu.au).
+
 **Home Directory**
 
 Your home directory, i.e. `/home/yourusername` can be used to store small amounts of data, however this is generally discouraged. It's best suited to short-lived and non-critical data, for example while working through our [getting started](getting_started.md) tutorial or testing out new software.
@@ -60,7 +62,6 @@ While it's often essential to have fast nearby storage while working on your dat
 
 Research Platform Services provides a data management service utilising the [Mediaflux platform](https://research.unimelb.edu.au/infrastructure/research-platform-services/services/data-storage-management/mediaflux). This platform provides a persistent location for research data and meta-data.
 To aid integration between Mediaflux and Spartan, Java clients are available on Spartan, allowing data to be downloaded from and uploaded to Mediaflux. Details on Mediaflux integration with Spartan can be found in Section 4 of the [Mediaflux support wiki](https://wiki.cloud.unimelb.edu.au/resplat/doku.php?id=data_management:mediaflux)
-
 
 
 ## Data and Storage Solutions Beyond Spartan
