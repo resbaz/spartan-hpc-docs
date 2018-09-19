@@ -270,6 +270,18 @@ Host spartan
 </code></pre>
 
 <p>Now to connect to Spartan, you need only type <code>ssh spartan</code>.</p>
+<h2 id="can-i-run-interactive-gui-applications-on-spartan">Can I run interactive GUI applications on Spartan?</h2>
+<p>Yes. HPC systems are optimised for command line batch processing, but some workflows and software packages benefit from access to a graphical user interface (GUI). One option is to use <a href="../guides/desktop/">Strudel</a>, which provides a desktop-like experience, and the other is to use X forwarding, which allows your application to display directly on your own machine.</p>
+<p>Here's an example:</p>
+<ol>
+<li>Install X Windows on your machine. This is built-in for Linux, available via <a href="https://www.xquartz.org">XQuartz</a> for OS X, and <a href="https://mobaxterm.mobatek.net/">MobaXterm</a> for Windows.</li>
+<li>SSH into Spartan using the -Y flag, e.g. <code>ssh -Y username@spartan.hpc.unimelb.edu.au</code></li>
+<li>Open an interactive session on a compute node using the --x11 flag, i.e. <code>sinteractive --x11</code>. You can set the partition, wall time and core count as usual for the <code>sinteractive</code> command.</li>
+<li>Start your GUI application within the interactive session, which will then be forwarded to your local machine. For example, to start MATLAB:</li>
+</ol>
+<pre><code>$ module load MATLAB
+$ matlab
+</code></pre>
         
         </p>
 
