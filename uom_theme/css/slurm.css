@@ -1,0 +1,23 @@
+/* style sheet for Slurm job script generator */
+
+.site {
+   background: #fff;
+}
+
+textarea {
+   height:120px;
+}
+
+.helpboxtext {
+   background:#abc;
+   padding:8px;
+}
+
+.helpbox {
+   margin-bottom:25px;
+}
+
+.numinput {
+   text-align: right;
+   width:100%;
+}

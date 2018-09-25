@@ -7,6 +7,7 @@ pages:
     - Guides: guides/index.md
     - _Spartan Desktop: guides/desktop.md
     - _Containers: guides/containers.md
+    - _Script Generator: guides/script_generator.md
     - FAQ: faq.md
     # Top-level pages, but not on nav menu
     - _Edward Transition: edward_transition.md

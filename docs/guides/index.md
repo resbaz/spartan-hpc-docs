@@ -10,3 +10,5 @@ You can run your software on Spartan using containers, rather than via the [mana
 ## [GPGPU](/gpu.md)
 
 Details on our new GPGPU service for project partners.
+
+## [Job Script Generator](script_generator.md)
