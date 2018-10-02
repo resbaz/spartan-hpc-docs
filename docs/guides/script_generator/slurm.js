@@ -17,7 +17,7 @@
 
   // Write the job script into the HTML document.
   function setJobScript(text) {
-   $('#jobscript').html('<h4>The job script:<\/h4><div id="jobCode"><pre><code>' + text + '<\/code><\/pre><\/div>');
+   $('#jobscript').html('<h4>The job script:<\/h4><div id="jobCode"><pre style="width:800px"><code>' + text + '<\/code><\/pre><\/div>');
   }
 
   // Add a download link
@@ -323,13 +323,13 @@
    window.scrollTo(0,document.body.scrollHeight);
   });
   $('#emailjobstart').change(function () {
-   emailJobStart = !emailJobStart;
+   emailJobStart = $(this).is(":checked");
   });
   $('#emailjobend').change(function () {
-   emailJobEnd = !emailJobEnd;
+   emailJobEnd = $(this).is(":checked");
   });
   $('#emailjobdie').change(function () {
-   emailJobDie = !emailJobDie;
+   emailJobDie = $(this).is(":checked");
   });
 
   // attach the click handlers to each of the help buttons

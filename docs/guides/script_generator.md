@@ -3,6 +3,8 @@ This page generates job scripts for Spartan, which uses the <a href="https://slu
 
 Enter the details of your job in the form below and then click on the <a href="#makescript">make script</a> button below.
 
+This utility is adapted from work by Bernie Pope, Ben Moran and Lev Lafayette.
+
 <form>
 
 
@@ -62,149 +64,114 @@ Enter the details of your job in the form below and then click on the <a href="#
         <p>For example if you request 2 CPU cores and 8GB of memory per core, the total memory used by the job is 16GB.</p>
         <strong>Multithreaded (SMP) jobs</strong>
         <p>For Multithreaded (SMP) jobs this is the total memory allocated for the job, irrespective of the number of CPU cores.</p>
-</div>
+    </div>
     <p class="form-text text-muted">
       Leave this blank to use the default <a data-modal-target="memory-modal" href="#">(more...)</a>
     </p>
 </div>
 
-</form>
+<div>
+    <label for="emailaddress">Notification Email: </label>
+    <input id="emailaddress" type="text" class="form-control" >
+    <input id="emailjobstart" type="checkbox" /> Job Starts<br />
+    <input id="emailjobend" type="checkbox" /> Job Ends (Success)<br />
+    <input id="emailjobdie" type="checkbox" /> Job Ends (Error)<br />
+    <p class="form-text text-muted">
+      You can be notified by email when your job starts running or when it ends (either successfully or with an error).
+    </p>
+</div>
 
+<div>
+    <label for="days">Walltime: </label>
+    <input id="days" type="text" value="0" class="form-control" /> days
+    <input id="hours" type="text" value="1" class="form-control" /> hours
+    <input id="minutes" type="text" value="0" class="form-control" /> minutes
 
+    <p class="form-text text-muted">
+      Maximum amount of time needed for your job to complete (it will be terminated after this time).
+    </p>
+</div>
 
-<div class="row" id="emailheading">
-    <strong class="twelve columns">Email</strong>
-</div><!-- emailheading -->
+<div>
+    <label for="workdir">Directory to run the job from:</label>
 
-<div class="row" id="emailsettings">
-    <div class="four columns" id="emailevents">
-        <p>Send yourself an email when the job:</p>
-        <input id="emailjobstart" type="checkbox" />&nbsp;starts running<br />
-        <input id="emailjobend" type="checkbox" />&nbsp;ends successfully<br />
-        <input id="emailjobdie" type="checkbox" />&nbsp;ends with an error<br />
-    </div><!-- emailevents -->
-    <div class="four columns" id="emailaddressdiv">
-        Use this email address:<br />
-        <input id="emailaddress" type="text" />
-    </div><!-- emailaddressdiv -->
-    <input class="four columns" id="showemailhelp" type="button" value="help" />
-</div><!-- emailsettings -->
-
-<div class="helpbox row" id="emailhelp" style="display:none">
-    <div class="twelve columns helpboxtext">
-        <p>You can be notified by email when your job starts running or when it ends (either successfully or with an error).</p>
-        <p>You can specify an address to receive the email. If you leave it blank the email will be sent to the address registered with your user account.</p>
-    </div><!-- helpboxtext -->
-</div><!-- emailhelp -->
-
-<div class="row" id="walltimeheading">
-    <strong class="twelve columns">Walltime</strong>
-</div><!-- walltimeheading -->
-
-<div class="row" id="walltimedays">
-    <span class="two columns">Days</span>
-    <input class="six columns numinput" id="days" type="text" value="0" />
-</div><!-- walltimedays -->
-
-<div class="row" id="walltimehours">
-    <span class="two columns">Hours</span>
-    <input class="six columns numinput" id="hours" type="text" value="1" />
-</div><!-- walltimehours -->
-
-<div class="row" id="walltimeminutes">
-    <span class="two columns">Minutes</span>
-    <input class="six columns numinput" id="minutes" type="text" value="0" />
-    <input class="four columns" id="showtimehelp" type="button" value="help" />
-</div><!-- walltimeminutes -->
-
-<div class="helpbox row" id="timehelp" style="display:none">
-    <div class="twelve columns helpboxtext">
-        <p>Enter the maximum amount of time needed by your whole job.</p>
-    </div><!-- helpboxtext -->
-</div><!-- timehelp -->
-
-<div class="row" id="directorysettingsheading">
-    <strong class="twelve columns">Directory</strong>
-</div><!-- directorysettingsheading -->
-
-<div class="row" id="directorysettings">
-    <div class="eight columns" id="runfrom">
-        <p>Run the job from:</p>
-        <input checked="CHECKED" id="workdir" name="directory" type="radio" value="workdir" />
-        The same directory where it is launched.<br />
-        <input id="homedir" name="directory" type="radio" value="homedir" />
-        Your home directory.<br />
-        <input id="otherdir" name="directory" type="radio" value="otherdir" />
-        The directory with this name:
+    <div class="inline">
+        <input checked aria-required="true" id="workdir" value="workdir" name="directory" type="radio" value="yes" data-error="Please make a selection" />
+        <label for="workdir">
+          <span>The same directory where it is launched</span>
+        </label>
+     </div>
+     <div class="inline">
+        <input checked aria-required="true" id="homedir" value="homedir" name="directory" type="radio" value="yes" data-error="Please make a selection" />
+        <label for="workdir">
+          <span>Home directory</span>
+        </label>
+     </div>
+     <div class="inline">
+        <input checked aria-required="true" id="otherdir" value="otherdir" name="directory" type="radio" value="yes" data-error="Please make a selection" />
+        <label for="workdir">
+          <span>Other</span>
+        </label>
         <input id="otherdirname" type="text" />
-    </div><!-- runfrom -->
-    <input class="four columns" id="showdirhelp" type="button" value="help" />
-</div><!-- directorysettings -->
+     </div>
 
-<div class="helpbox row" id="dirhelp" style="display:none">
-    <div class="helpboxtext">
+    <div class="modal__dialog" id="dir-modal">
         <p>Each job is run from a given directory on the computer's filesystem - this is called the <em>working directory</em> in Unix terminology.</p>
-        <p>You need to set the working directory correctly so that your job can find its input files and generate its output files in the appropriate location.</p>
-        <p>In most cases it is desirable to set this to the directory where the job was launched, but you might also like it to be your home directory, or from some other specific directory on the computer.</p>
+        <p>You need to set the working directory correctly so that your job can find its input files and generate its output files in the appropriate location. In most cases it is desirable to set this to the directory where the job was launched, but you might also like it to be your home directory, or from some other specific directory on the computer.</p>
         <p>If you specify the directory, it must be an absolute reference (i.e. /home/foo/mydir) or relative to the launch directory.</p>
-    </div><!-- helpboxtext -->
-</div><!-- dirhelp -->
-
-<div class="row" id="moduleslistheading">
-    <div class="twelve columns" id="modulesheadinginner">
-        <strong>Modules</strong>
-        <p>Enter the modules that you would like to load:</p>
     </div>
-</div><!-- moduleslistheading -->
+    <p class="form-text text-muted">
+        The working directory for your job <a data-modal-target="dir-modal" href="#">(more...)</a>
+    </p>
+</div>
 
-<div class="row" id="moduleslist">
-    <textarea class="eight columns" id="modules"></textarea>
-    <input class="four columns" id="showmoduleshelp" type="button" value="help" />
-</div><!-- moduleslist -->
 
-<div class="helpbox row" id="moduleshelp" style="display:none">
-    <div class="twelve columns helpboxtext">
-        <p>The <em>modules</em> utility sets up your environment paths for particular versions of specified programs. It is possible to use more than one module in your job (just list all the ones you need on separate lines).</p>
-        <p>For example to use version <code>3.2</code> of the application <code>foo</code>, which was compiled with <code>gcc</code> version 4.9.2, you should load the module called:</p>
-        <p><code>foo/3.2-gcc-4.9.2</code></p>
-    </div><!-- helpboxtext -->
-</div><!-- moduleshelp -->
+<div>
+    <label for="modules">Modules:</label>
+    <textarea id="modules" type="textarea" class="form-control" ></textarea>
 
-<div class="row" id="commandheading">
-    <strong class="twelve columns">Command</strong>
-</div><!-- commandheading -->
+    <div class="modal__dialog" id="modules-modal">
+       <strong>Single Core and MPI</strong>
+         <p>The <em>modules</em> utility sets up your environment paths for particular versions of specified programs. It is possible to use more than one module in your job (just list all the ones you need on separate lines).</p>
+         <p>For example to use version <code>3.2</code> of the application <code>foo</code>, which was compiled with <code>gcc</code> version 4.9.2, you should load the module called: <code>foo/3.2-gcc-4.9.2</code></p>
+         <p>You can list all available modules on Spartan using the <code>module avail</code> command.</p>
+    </div>
+    <p class="form-text text-muted">
+        List of modules to load for your job, one per line <a data-modal-target="modules-modal" href="#">(more...)</a>
+    </p>
+</div>
 
-<div class="row" id="commandlist">
-    <textarea class="eight columns" id="command"></textarea>
-    <input class="four columns" id="showcommandhelp" type="button" value="help" />
-</div><!-- commandlist -->
 
-<div class="helpbox row" id="commandhelp" style="display:none">
-    <div class="twelve columns helpboxtext">
-        <p>Enter the command (or commands) that you want to run, one per line.</p>
-        <p>Note that MPI jobs need to prefix the command with <em>srun</em>.</p>
-    </div><!-- helpboxtext -->
-</div><!-- commandhelp -->
+<div>
+    <label for="command">Command: </label>
+    <textarea id="command" type="text" value="0" class="form-control" ></textarea>
 
-<div class="row" id="finaljobscript">
-    <div class="twelve columns" id="finaljobscriptinner">
-        <strong>The job script</strong>
-        <p>Select the button to make your script. If you change any of the values in the form above you can re-generate the script by selecting the button again.</p>
-        <input class="button-primary" id="makescript" type="button" value="make script" />
-    </div><!-- finaljobscriptinner -->
-</div><!-- finaljobscript -->
+
+    <p class="form-text text-muted">
+      Enter the command (or commands) that you want to run, one per line. Note that MPI jobs need to prefix the command with <em>srun</em>.
+    </p>
+</div>
+
+
+<div>
+    <input class="button-primary" id="makescript" type="button" value="make script" />
+</div>
 
 <div class="row" id="resultswrapper">
-    <div class="twelve columns" id="jobscript">
+    <div id="jobscript">
         <!-- output to be inserted here -->
-    </div><!-- jobscript -->
-</div><!-- resultswrapper -->
+    </div>
+</div>
 
 <div class="row" id="downloadsection" style="display:none">
     <div class="twelve columns" id="downloadlink">
         <a class="button button-primary" id="downloadanchor" download="sbatch-script.txt" href="">Download this script</a>
     </div><!-- downloadlink -->
 </div><!-- downloadsection -->
+
+</form>
+
+
 
 <script type="text/javascript" src="slurm.js"></script>
 
