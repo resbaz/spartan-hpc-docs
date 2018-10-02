@@ -1,12 +1,131 @@
-# Job script generator for Slurm
-This page generates job scripts for Spartan, which uses the <a href="https://slurm.schedmd.com/">Slurm</a> workload manager. It isn't intended to cover every option available, just a little help to get you started with some of the possibilities and how the syntax works.
+<!DOCTYPE html>
+<head>
+  <title>Spartan Documentation</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../css/theme.css">
+  <link rel="stylesheet" href="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.css">
+  <script src="https://d2h9b02ioca40d.cloudfront.net/v7.0/uom.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.statuspage.io/se-v2.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="../../js/theme.js"></script>
+  <script>var base_url = '../..';</script>
 
-Enter the details of your job in the form below and then click on the <a href="#makescript">make script</a> button below.
 
-This utility is adapted from work by Bernie Pope, Ben Moran and Lev Lafayette.
+  
+  <script src="../../search/require.js"></script>
+  
+  <script src="../../search/search.js"></script>
+  
 
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-97236408-1', 'auto');
+      ga('send', 'pageview');
+  </script>
+
+  
+  
+</head>
+
+<body>
+
+<div class="uomcontent">
+
+  <div class="page-inner">
+    <ol class="page-local-history" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+      <li class="root" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+        <a href="/" title="Spartan Documentation" itemprop="item">
+          <span itemprop="name">Spartan Documentation</span>
+        </a>
+        <meta content="1" itemprop="position" />
+      </li>
+      
+
+    </ol>
+    <div role="main">
+
+      <header>
+
+        <form action="../../search.html" class="search" method="get">
+          <fieldset>
+            <div class="inline attached">
+              <span class="fill">
+                <input aria-label="Search" aria-required="true" autocomplete="off" data-error="Please enter a keyword" name="q" placeholder="Search Spartan Documentation" type="search" id="mkdocs-search-query"/>
+              </span>
+              <span>
+              <button class="inline-button" type="submit"><span class="small icon--hide-label" data-icon="search">Go</span></button>
+            </span>
+            </div>
+          </fieldset>
+        </form>
+
+        <div style="text-align: center; font-size: small">
+            Status:
+              <span class="color-dot"></span>
+              <span class="color-description"></span>
+            <a href="/status/"> (more...)</a>
+        </div>
+
+      </header>
+
+      <div class="tabbed-nav" data-tabbed="" id="nav">
+        <div class="full-width">
+          <nav role="tablist">
+            
+              
+              <a role="tab" href="../.." >Home</a>
+              
+            
+              
+              <a role="tab" href="../../getting_started/" >Getting Started</a>
+              
+            
+              
+              <a role="tab" href="../../managing_data/" >Managing Data</a>
+              
+            
+              
+              <a role="tab" href="../../software/" >Software</a>
+              
+            
+              
+              <a role="tab" href="../" >Guides</a>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <a role="tab" href="../../faq/" >FAQ</a>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </nav>
+        </div>
+      </div>
+
+        <p>
+        
+          <h1 id="job-script-generator-for-slurm">Job script generator for Slurm</h1>
+<p>This page generates job scripts for Spartan, which uses the <a href="https://slurm.schedmd.com/">Slurm</a> workload manager. It isn't intended to cover every option available, just a little help to get you started with some of the possibilities and how the syntax works.</p>
+<p>Enter the details of your job in the form below and then click on the <a href="#makescript">make script</a> button below.</p>
+<p>This utility is adapted from work by Bernie Pope, Ben Moran and Lev Lafayette.</p>
 <form>
-
 
 <div>
     <label for="name">Job Name: </label>
@@ -171,7 +290,40 @@ This utility is adapted from work by Bernie Pope, Ben Moran and Lev Lafayette.
 
 </form>
 
-
-
 <script type="text/javascript" src="slurm.js"></script>
+        
+        </p>
 
+
+      <!--UoM CSS handles local nav for us instead of mkdocs-->
+      <div class="jumpnav"></div>
+
+    </div>
+
+  </div>
+</body>
+
+<script>
+
+  $(document).ready(function(){
+      // Force tab link markers/highlighting to shift for external links (not supported out of the box).
+      $('a').removeAttr('data-current');
+      $('#activeTab').attr({'data-current': ''});
+  });
+
+</script>
+
+
+<script>
+  var sp = new StatusPage.page({ page: 'zxld2sws8c9x'});
+
+  sp.summary({
+    success: function(data) {
+      // adds the text description to the dropdown
+      $('.color-description').text(data.status.description);
+      // appends the status indicator as a class name so we can use the right color for the status light thing
+      $('.color-dot').addClass(data.status.indicator);
+    }
+  });
+</script>
+</html>

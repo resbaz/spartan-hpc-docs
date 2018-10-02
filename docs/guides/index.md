@@ -12,3 +12,5 @@ You can run your software on Spartan using containers, rather than via the [mana
 Details on our new GPGPU service for project partners.
 
 ## [Job Script Generator](script_generator.md)
+
+A small web-based utility to help in writing job scripts for Spartan.
