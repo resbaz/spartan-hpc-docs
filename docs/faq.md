@@ -183,7 +183,7 @@ If you use Spartan to obtain results, we'd very much appreciate if you'd cite ou
 Here's a [guide](edward_transition.md) to help you.
 
 
-## How do setup passwordless SSH login?
+## How do I setup passwordless SSH login?
 
 A passwordless SSH for Spartan will make your life easier. You won't
 even need to remember your password!
@@ -219,6 +219,30 @@ changes:
 
 You can now SSH to Spartan without having to enter your password!
 
+## How do I set up passwordless SSH login from a MS-Windows system?
+
+Painfully. :)
+
+1) Download additional software called PuTTYgen
+`https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html`
+
+2) Launch up Puttygen tool up. If you are on Windows 7 higher, right-click on it and select Run as Administrator.
+
+3) Select the parameters; the default value (SSH-2 RSA) is fine.
+
+4) Select Generate
+
+5) Add the public key to your authorized_keys file in ~/.ssh on Spartan (create it if it doesn't exist). Make sure you don't have any weird line breaks or anything like that. Make sure the permissions on the file are 0644.
+
+`chmod 644 ~/.ssh/authorized_keys`
+
+6) Back on puttygen save the Private Key and Public Key. Make sure you save Public Key as .txt while Private Key as .ppk.
+
+7) Configure Putty to use that newly generated key. Start putty and go to Connection > SSH > Auth and add the locate of the Private Key that you saved previously.
+
+8) Open Putty and login as usual. If all the steps above have been followed you will not need a password.
+
+All of this is a lot easier on Linux :)
 
 ## How can I avoid typing myUsername@spartan.hpc.unimelb.edu.au everytime I connect?
 

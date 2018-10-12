@@ -228,7 +228,7 @@ myProgram data_${SLURM_ARRAY_TASK_ID}.dat
 <p><code>Lev Lafayette, Greg Sauter, Linh Vu, Bernard Meade, "Spartan Performance and Flexibility: An HPC-Cloud Chimera", OpenStack Summit, Barcelona, October 27, 2016. doi.org/10.4225/49/58ead90dceaaa</code></p>
 <h2 id="how-do-i-transition-my-work-from-the-old-hpc-system-edward-to-spartan">How do I transition my work from the old HPC system Edward to Spartan?</h2>
 <p>Here's a <a href="../edward_transition/">guide</a> to help you.</p>
-<h2 id="how-do-setup-passwordless-ssh-login">How do setup passwordless SSH login?</h2>
+<h2 id="how-do-i-setup-passwordless-ssh-login">How do I setup passwordless SSH login?</h2>
 <p>A passwordless SSH for Spartan will make your life easier. You won't
 even need to remember your password!</p>
 <p>If you have a *nix system (e.g., UNIX, Linux, MacOS X) open up a
@@ -257,6 +257,19 @@ changes:</p>
 <li>Change the permissions of .ssh/authorized_keys2 to 640</li>
 </ul>
 <p>You can now SSH to Spartan without having to enter your password!</p>
+<h2 id="how-do-i-set-up-passwordless-ssh-login-from-a-ms-windows-system">How do I set up passwordless SSH login from a MS-Windows system?</h2>
+<p>Painfully. :)</p>
+<p>1) Download additional software called PuTTYgen
+<code>https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html</code></p>
+<p>2) Launch up Puttygen tool up. If you are on Windows 7 higher, right-click on it and select Run as Administrator.</p>
+<p>3) Select the parameters; the default value (SSH-2 RSA) is fine.</p>
+<p>4) Select Generate</p>
+<p>5) Add the public key to your authorized_keys file in ~/.ssh on Spartan (create it if it doesn't exist). Make sure you don't have any weird line breaks or anything like that. Make sure the permissions on the file are 0644.</p>
+<p><code>chmod 644 ~/.ssh/authorized_keys</code></p>
+<p>6) Back on puttygen save the Private Key and Public Key. Make sure you save Public Key as .txt while Private Key as .ppk.</p>
+<p>7) Configure Putty to use that newly generated key. Start putty and go to Connection &gt; SSH &gt; Auth and add the locate of the Private Key that you saved previously.</p>
+<p>8) Open Putty and login as usual. If all the steps above have been followed you will not need a password.</p>
+<p>All of this is a lot easier on Linux :)</p>
 <h2 id="how-can-i-avoid-typing-myusernamespartanhpcunimelbeduau-everytime-i-connect">How can I avoid typing myUsername@spartan.hpc.unimelb.edu.au everytime I connect?</h2>
 <p>An SSH config file will also make your life easier. It allows you to create alises (i.e. shortcuts) for a given hostname. </p>
 <p>Create the text file in your <code>~/.ssh</code> directory with your preferred text editor, for example, <code>nano</code>.</p>
