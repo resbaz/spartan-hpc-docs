@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>None</loc>
-     <lastmod>2018-10-19</lastmod>
+     <loc>/</loc>
+     <lastmod>2018-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-10-19</lastmod>
+     <loc>/getting_started/</loc>
+     <lastmod>2018-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-10-19</lastmod>
+     <loc>/managing_data/</loc>
+     <lastmod>2018-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-10-19</lastmod>
+     <loc>/software/</loc>
+     <lastmod>2018-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-10-19</lastmod>
+     <loc>/guides/</loc>
+     <lastmod>2018-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-10-19</lastmod>
+     <loc>/guides/desktop/</loc>
+     <lastmod>2018-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-10-19</lastmod>
+     <loc>/guides/containers/</loc>
+     <lastmod>2018-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-10-19</lastmod>
+     <loc>/guides/script_generator/</loc>
+     <lastmod>2018-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-10-19</lastmod>
+     <loc>/faq/</loc>
+     <lastmod>2018-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-10-19</lastmod>
+     <loc>/edward_transition/</loc>
+     <lastmod>2018-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-10-19</lastmod>
+     <loc>/gpu/</loc>
+     <lastmod>2018-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-10-19</lastmod>
+     <loc>/access_policy/</loc>
+     <lastmod>2018-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-10-19</lastmod>
+     <loc>/status/</loc>
+     <lastmod>2018-10-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
