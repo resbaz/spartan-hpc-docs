@@ -82,7 +82,7 @@ Spartan runs some of it's computation resources in the Nectar cloud.
 
 **Melbourne Bioinformatics**
 
-[Melbourne Bioinformatics](https://www.melbournebioinformatics.org.au/) run two large HPC systems for life sciences researchers.
+[Melbourne Bioinformatics](https://www.melbournebioinformatics.org.au/) run two large HPC systems for life sciences researchers. From 2019, Melbourne Bioinformatics systems will be incorporated into Spartan.
 
 **Multi-modal Australian ScienceS Imaging and Visualisation Environment (MASSIVE)** 
 
