@@ -8,12 +8,12 @@ If your computing jobs take too long on your desktop computer, or are simply not
 
 Use of this service is governed by the University's [general regulations for IT resources](https://policy.unimelb.edu.au/category/Facilities%20and%20IT) and our [HPC Support Service Policy](/20180123_HPC_Support_Service_Policy.pdf).
 
-## Spartan Daily Weather Report (20181026)
-* CephFS usage:  733T Free  169T 
-* Spartan is less busy on cloud partition, with close to 75% node allocation.
+## Spartan Daily Weather Report (20181029)
+* CephFS usage:  741T Free  186T
+* Spartan is less busy on cloud partition, with close to 88% node allocation.
 * Spartan is very busy on physical partition, with close to 95% node allocation.
-* Spartan is less busy on the GPGPU partition with 86% node allocation.
-* Many cloud nodes out (115), mainly due to qh2-uom migration and reservations.
+* Spartan is very less busy on the GPGPU partition with 100% node allocation.
+* Many cloud nodes out (92), mainly due to qh2-uom migration.
 
 ## Getting Help
 
