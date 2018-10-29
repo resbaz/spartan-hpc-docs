@@ -126,7 +126,7 @@
 <p>You can check what's currently installed using the <code>module avail</code> command, search using <code>module spider</code>, and load a particular module with the <code>module load</code> command. For example, to load MATLAB 2016a, use <code>module load MATLAB/2016a</code>.</p>
 <p>Generally you shouldn't load modules from the login node, instead working on a compute node, either via an interactive session (launched with <code>sinteractive</code>), or from within your Slurm script.</p>
 <h2 id="software-list">Software List</h2>
-<p>Every day a list of <a href="../softwarelist.txt">software installed</a> on Spartan is regenerated from <code>module spider</code> and added to this page. </p>
+<p>Every day a list of <a href="../softwarelist.txt">software installed</a> on Spartan is regenerated from <code>module spider</code> and added to this page. This does not list all versions on the summary line. Other software can be installed on request.</p>
 <h2 id="python">Python</h2>
 <p>There are multiple versions of Python installed on Spartan, which you can check using <code>module spider Python</code>. </p>
 <p>Common packages like numpy are already installed with some versions, but may be missing from others. If a Python package is missing, let us know, and we can install it for you. Alternatively, you can install additional packages locally using <code>pip install --user &lt;package name&gt;</code>. This works well for pure-python packages, but you may encounter errors for those that link to other binary packages.</p>

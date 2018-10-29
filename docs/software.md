@@ -9,7 +9,7 @@ Generally you shouldn't load modules from the login node, instead working on a c
 
 ## Software List
 
-Every day a list of [software installed](/softwarelist.txt) on Spartan is regenerated from `module spider` and added to this page. 
+Every day a list of [software installed](/softwarelist.txt) on Spartan is regenerated from `module spider` and added to this page. This does not list all versions on the summary line. Other software can be installed on request.
 
 ## Python
 
