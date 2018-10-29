@@ -7,11 +7,9 @@ You can check what's currently installed using the `module avail` command, searc
 
 Generally you shouldn't load modules from the login node, instead working on a compute node, either via an interactive session (launched with `sinteractive`), or from within your Slurm script.
 
+## Software List
 
-## Job Script Examples
-
-We maintain example job scripts for various software packages on Spartan. You can browse these at `/usr/local/common` or at [https://github.com/resbaz/spartan-examples](https://github.com/resbaz/spartan-examples)
-
+Every day a list of [software installed](/softwarelist.txt) on Spartan is regenerated from `module spider` and added to this page. 
 
 ## Python
 
@@ -22,7 +20,7 @@ Common packages like numpy are already installed with some versions, but may be 
 
 ## R
 
-R version 3.2.1 and 3.4.0 are installed on Spartan, along with some common packages. If a package you need is missing, you can either install it locally, or contact us to install it system-wide.
+R versions from the 2.x and 3x series are installed on Spartan, along with some common packages. If a package you need is missing, you can either install it locally, or contact us to install it system-wide.
 
 
 ## MATLAB
@@ -30,4 +28,9 @@ R version 3.2.1 and 3.4.0 are installed on Spartan, along with some common packa
 MATLAB 2016a is installed on Spartan, along with all of the standard toolboxes. 
 
 MATLAB can be invoked with a particular script using `matlab -nodisplay -nodesktop -r "run my_script.m"`. You may need to add particular working directories so MATLAB can find all the scripts necessary for your job.
+
+
+## Job Script Examples
+
+We maintain example job scripts for various software packages on Spartan. You can browse these at `/usr/local/common` or at [https://github.com/resbaz/spartan-examples](https://github.com/resbaz/spartan-examples)
 

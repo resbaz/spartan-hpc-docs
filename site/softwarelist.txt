@@ -1,0 +1,3118 @@
+
+----------------------------------------------------------------------------
+The following is a list of the modules currently available:
+----------------------------------------------------------------------------
+  ABINIT: ABINIT/8.0.8b-GCC-4.9.2, ABINIT/8.0.8b-GCC-4.9.3, ...
+    ABINIT is a package whose main program allows one to find the total
+    energy, charge density and electronic structure of systems made of
+    electrons and nuclei (molecules and periodic solids) within Density
+    Functional Theory (DFT), using pseudopotentials and a planewave or
+    wavelet basis. 
+
+  ABySS: ABySS/1.5.2-goolf-2015a, ABySS/1.9.0-goolf-2015a, ...
+    Assembly By Short Sequences - a de novo, parallel, paired-end sequence
+    assembler - Homepage:
+    http://www.bcgsc.ca/platform/bioinfo/software/abyss
+
+  ACTC: ACTC/1.1-intel-2016.u3
+    ACTC converts independent triangles into triangle strips or fans. -
+    Homepage: https://sourceforge.net/projects/actc
+
+  ADMIXTURE: ADMIXTURE/1.3.0
+    ADMIXTURE is a software tool for maximum likelihood estimation of
+    individual ancestries from multilocus SNP genotype datasets. It uses
+    the same statistical model as STRUCTURE but calculates estimates much
+    more rapidly using a fast numerical optimization algorithm. - Homepage:
+    https://www.genetics.ucla.edu/software/admixture 
+
+  AFNI: AFNI/linux_openmp_64-intel-2016.u3-20180104, ...
+    Free software for analysis and display of FMRI data 
+
+  ANSYS_CFD: ANSYS_CFD/18.1, ANSYS_CFD/19.0
+    ANSYS computational fluid dynamics (CFD) simulation software allows you
+    to predict, with confidence, the impact of fluid flows on your product
+    throughout design and manufacturing as well as during end use. ANSYS
+    renowned CFD analysis tools include the widely used and well-validated
+    ANSYS Fluent and ANSYS CFX. 
+
+  ANTLR: ANTLR/2.7.7-intel-2016.u3, ANTLR/2.7.7-intel-2017.u2
+    ANTLR, ANother Tool for Language Recognition, (formerly PCCTS) is a
+    language tool that provides a framework for constructing recognizers,
+    compilers, and translators from grammatical descriptions containing
+    Java, C#, C++, or Python actions. 
+
+  ANTs: ANTs/2.2.0-goolf-2015a, ANTs/2.2.0-intel-2016.u3, ...
+    ANTs extracts information from complex datasets that include imaging.
+    ANTs is useful for managing, interpreting and visualizing
+    multidimensional data. 
+
+  APR: APR/1.5.2-GCC-4.9.2
+    Apache Portable Runtime (APR) libraries. - Homepage:
+    http://apr.apache.org/
+
+  APR-util: APR-util/1.5.4-GCC-4.9.2
+    Apache Portable Runtime (APR) util libraries. - Homepage:
+    http://apr.apache.org/
+
+  ARAGORN: ARAGORN/1.2.36-GCC-4.9.2
+
+  ATK: ATK/2.18.0-intel-2016.u3, ATK/2.24.0-GCC-4.9.2, ATK/2.24.0-GCC-6.2.0, ...
+    ATK provides the set of accessibility interfaces that are implemented
+    by other toolkits and applications. Using the ATK interfaces,
+    accessibility tools have full access to view and control running
+    applications. - Homepage: https://developer.gnome.org/ATK/stable/ 
+
+  ATLAS: ATLAS/3.10.1-GCC-4.9.2-LAPACK-3.5.0, ...
+    ATLAS (Automatically Tuned Linear Algebra Software) is the application
+    of the AEOS (Automated Empirical Optimization of Software) paradigm,
+    with the present emphasis on the Basic Linear Algebra Subprograms
+    (BLAS), a widely used, performance-critical, linear algebra kernel
+    library. - Homepage: http://math-atlas.sourceforge.net 
+
+  ATSAS: ATSAS/2.8.0-2.el7.x86_64
+    ATSAS is a program suite for small-angle scattering data analysis from
+    biological macromolecules. - Homepage:
+    http://www.embl-hamburg.de/ExternalInfo/Research/Sax/software.html
+
+  AlignGraph: AlignGraph/20160823-intel-2016.u3
+
+  Amber: Amber/16-GCC-6.2.0-CUDA, Amber/16-GCC-6.2.0, ...
+    Amber (originally Assisted Model Building with Energy Refinement) is
+    software for performing molecular dynamics and structure prediction. 
+
+  AmberTools: AmberTools/18-spartan_intel-2017.u2
+    AmberTools consists of several independently developed packages that
+    work well by themselves, and with Amber itself. The suite can also be
+    used to carry out complete molecular dynamics simulations, with either
+    explicit water or generalized Born solvent models. 
+
+  Anaconda2: Anaconda2/4.2.0
+    Anaconda is the leading open data science platform powered by Python.
+    The open source version of Anaconda is a high performance distribution
+    of Python and R and includes over 100 of the most popular Python, R and
+    Scala packages for data science.
+
+  Anaconda3: Anaconda3/5.0.1, Anaconda3/5.1.0, Anaconda3/5.3.0
+    Built to complement the rich, open source Python community, the
+    Anaconda platform provides an enterprise-ready data analytics platform
+    that empowers companies to adopt a modern open data science analytics
+    architecture. 
+
+  Armadillo: Armadillo/6.600.4-intel-2016.u3-Python-2.7.10, ...
+    Armadillo is an open-source C++ linear algebra library (matrix maths)
+    aiming towards a good balance between speed and ease of use. Integer,
+    floating point and complex numbers are supported, as well as a subset
+    of trigonometric and statistics functions. 
+
+  Array-Utils: Array-Utils/0.5-intel-2016.u3
+    small utils for array manipulation
+
+  Aspera-Connect: Aspera-Connect/3.6.1
+    Connect is an install-on-demand Web browser plug-in that facilitates
+    high-speed uploads and downloads with an Aspera transfer server. 
+
+  Autoconf: Autoconf/2.69-GCC-4.6.4, Autoconf/2.69-GCC-4.9.2, ...
+
+  Automake: Automake/1.11-GCC-4.9.2, Automake/1.14-GCC-4.9.2, ...
+
+  Autotools: Autotools/20150119-GCC-4.6.4, Autotools/20150119-GCC-4.9.2, ...
+    This bundle collect the standard GNU build tools: Autoconf, Automake
+    and libtool - Homepage: http://autotools.io
+
+  BAMM: BAMM/2.5.0-spartan_intel-2017.u2
+    BAMM is oriented entirely towards detecting and quantifying
+    heterogeneity in evolutionary rates. It uses reversible jump Markov
+    chain Monte Carlo to automatically explore a vast universe of candidate
+    models of lineage diversification and trait evolution. 
+
+  BBMap: BBMap/36.62-intel-2016.u3-Java-1.8.0_71, BBMap/37.68, BBMap/37.93
+    BBMap short read aligner, and other bioinformatic tools. - Homepage:
+    https://sourceforge.net/projects/bbmap/
+
+  BCFtools: BCFtools/1.2-intel-2016.u3, BCFtools/1.3-intel-2016.u3, ...
+    Samtools is a suite of programs for interacting with high-throughput
+    sequencing data. BCFtools - Reading/writing BCF2/VCF/gVCF files and
+    calling/filtering/summarising SNP and short indel sequence variants 
+
+  BEDTools: BEDTools/2.25.0-intel-2016.u3, BEDTools/2.26.0-intel-2016.u3
+
+  BLACS: BLACS/1.1-goolf-2015a, BLACS/1.1-intel-2017.u2
+    The BLACS (Basic Linear Algebra Communication Subprograms) project is
+    an ongoing investigation whose purpose is to create a linear algebra
+    oriented message passing interface that may be implemented efficiently
+    and uniformly across a large range of distributed memory platforms. -
+    Homepage: http://www.netlib.org/blacs/ 
+
+  BLAST: BLAST/2.2.26-Linux_x86_64
+
+  BLAST+: BLAST+/2.7.1-intel-2016.u3, BLAST+/2.7.1-intel-2017.u2
+    Basic Local Alignment Search Tool, or BLAST, is an algorithm for
+    comparing primary biological sequence information, such as the
+    amino-acid sequences of different proteins or the nucleotides of DNA
+    sequences. 
+
+  BLAT: BLAT/3.5-intel-2016.u3
+
+  BWA: BWA/0.6.2-GCC-4.9.2, BWA/0.6.2-intel-2016.u3, ...
+
+  BamTools: BamTools/2.3.0-intel-2016.u3, BamTools/2.4.0-intel-2016.u3
+
+  Barrnap: Barrnap/0.6-intel-2016.u3
+    Barrnap predicts the location of ribosomal RNA genes in genomes. It
+    supports bacteria (5S,23S,16S), archaea (5S,5.8S,23S,16S), mitochondria
+    (12S,16S) and eukaryotes (5S,5.8S,28S,18S). 
+
+  Bazel: Bazel/0.8.0, Bazel/0.11.0-GCC-6.4.0
+    Bazel is a build tool that builds code quickly and reliably. It is used
+    to build the majority of Google's software. 
+
+  Beast: Beast/1.8.3-intel-2016.u3, Beast/1.8.3, ...
+    BEAST is a cross-platform program for Bayesian MCMC analysis of
+    molecular sequences. It is entirely orientated towards rooted,
+    time-measured phylogenies inferred using strict or relaxed molecular
+    clock models. It can be used as a method of reconstructing phylogenies
+    but is also a framework for testing evolutionary hypotheses without
+    conditioning on a single tree topology. BEAST uses MCMC to average over
+    tree space, so that each tree is weighted proportional to its posterior
+    probability. 
+
+  BioPerl: BioPerl/1.6.924-intel-2016.u3-Perl-5.20.0-bio, ...
+    Bioperl is the product of a community effort to produce Perl code which
+    is useful in biology. Examples include Sequence objects, Alignment
+    objects and database searching objects. 
+
+  Biopython: Biopython/1.61-intel-2016.u3-Python-2.7.10, ...
+    Biopython is a set of freely available tools for biological computation
+    written in Python by an international team of developers. It is a
+    distributed collaborative effort to develop Python libraries and
+    applications which address the needs of current and future work in
+    bioinformatics. 
+
+  Bismark: Bismark/0.20.0-intel-2016.u3
+    A tool to map bisulfite converted sequence reads and determine cytosine
+    methylation states 
+
+  Bison: Bison/2.7-GCC-4.9.2, Bison/2.7-intel-2016.u3, Bison/2.7, ...
+
+  Blender: Blender/2.77a-intel-2016.u3-Python-3.5.2, ...
+    Blender is the free and open source 3D creation suite. It supports the
+    entirety of the 3D pipeline-modeling, rigging, animation, simulation,
+    rendering, compositing and motion tracking, even video editing and game
+    creation. - Homepage: https://www.blender.org/ 
+
+  Boost: Boost/1.54.0-GCC-4.9.2-Python-2.7.9, ...
+    Boost provides free peer-reviewed portable C++ source libraries. -
+    Homepage: http://www.boost.org/
+
+  Bowtie: Bowtie/1.2.1.1-intel-2017.u2, Bowtie/1.2.1.1
+    Bowtie is an ultrafast, memory-efficient short read aligner. It aligns
+    short DNA sequences (reads) to the human genome at a rate of over 25
+    million 35-bp reads per hour. Bowtie indexes the genome with a
+    Burrows-Wheeler index to keep its memory footprint small: typically
+    about 2.2 GB for the human genome (2.9 GB for paired-end). 
+
+  Bowtie2: Bowtie2/2.1.0-intel-2016.u3, Bowtie2/2.2.5-GCC-4.9.2, ...
+    Bowtie 2 is an ultrafast and memory-efficient tool for aligning
+    sequencing reads to long reference sequences. It is particularly good
+    at aligning reads of about 50 up to 100s or 1,000s of characters, and
+    particularly good at aligning to relatively long (e.g. mammalian)
+    genomes. Bowtie 2 indexes the genome with an FM Index to keep its
+    memory footprint small: for the human genome, its memory footprint is
+    typically around 3.2 GB. Bowtie 2 supports gapped, local, and
+    paired-end alignment modes. 
+
+  Bracken: Bracken/1.0.0
+    Bracken: estimating species abundance in metagenomics data
+
+  CAT: CAT/06092016-intel-2016.u3
+    
+
+  CD-HIT: CD-HIT/4.6.1-intel-2016.u3-2012-08-27
+    CD-HIT is a very widely used program for clustering and comparing
+    protein or nucleotide sequences. 
+
+  CESM: CESM/1.0.6
+
+  CGAL: CGAL/4.7-intel-2016.u3-Python-2.7.9, ...
+    The goal of the CGAL Open Source Project is to provide easy access to
+    efficient and reliable geometric algorithms in the form of a C++
+    library. 
+
+  CLCWorkbench: CLCWorkbench/8.0.1_64
+    CLC Main Workbench is used by tens of thousands of researchers all over
+    the world for DNA, RNA, and protein sequence data analysis. Its wide
+    variety of features are presented in an intuitive graphical
+    user-interface, for which advanced computer skills are not required.
+
+  CLISP: CLISP/2.49-GCCcore-6.4.0
+    Common Lisp is a high-level, general-purpose, object-oriented, dynamic,
+    functional programming language. 
+
+  CMake: CMake/2.8.4-intel-2016.u3, CMake/2.8.12-GCC-4.9.2, ...
+
+  CNTKCustomMKL: CNTKCustomMKL/3
+    This is a custom version of Intel's Math Kernel Library for Microsoft's
+    Cognitive Toolkit, packaged by the CNTK team. I have no idea why
+    Microsoft keeps doing things like this, their ostensible reasoning is
+    that this means users don't need access to the (now freely available)
+    Intel MKL. Ok. --Dan - Homepage: https://github.com/Microsoft/CNTK/ 
+
+  COMSOL: COMSOL/5.2, COMSOL/5.3a
+    COMSOL is a cross-platform finite element analysis, solver and
+    multipyhsics simulation software
+
+  CPLEX: CPLEX/12.7.1, CPLEX/12.8, CPLEX/12.63
+
+  CRISPR: CRISPR/1.2-Java-1.8.0_152
+    CRISPR Recognition Tool
+
+  CUDA: CUDA/7.0.28-GCC-4.9.2, CUDA/7.0.28-intel-2016.u3, CUDA/7.0.28, ...
+    CUDA (formerly Compute Unified Device Architecture) is a parallel
+    computing platform and programming model created by NVIDIA and
+    implemented by the graphics processing units (GPUs) that they produce.
+    CUDA gives developers access to the virtual instruction set and memory
+    of the parallel computational elements in CUDA GPUs. 
+
+  Caffe: Caffe/20171110-intel-2017.u2-GCC-5.4.0-CUDA8
+    Caffe is a deep learning framework made with expression, speed, and
+    modularity in mind. It is developed by the Berkeley Vision and Learning
+    Center (BVLC) and by community contributors. 
+
+  Canu: Canu/1.3-GCC-4.9.3, Canu/1.7-GCC-4.9.3
+    Canu is a fork of the Celera Assembler designed for high-noise
+    single-molecule sequencing (such as the PacBio RSII or Oxford Nanopore
+    MinION).
+
+  CapnProto: CapnProto/0.6.1-GCC-6.2.0
+    Cap’n Proto is an insanely fast data interchange format and
+    capability-based RPC system.
+
+  Charm++: Charm++/6.6.1-intel-2016.u3
+    Charm++ is a message-passing parallel language and runtime system. 	It
+    is implemented as a set of libraries for C++, is efficient, 	and is
+    portable to a wide variety of parallel machines. 	Source code is
+    provided, and non-commercial use is free. 
+
+  Chaste: Chaste/2017.1-intel-2016.u3
+    Chaste (Cancer, Heart and Soft Tissue Environment) is a general purpose
+    simulation package aimed at multi-scale, computationally demanding
+    problems arising in biology and physiology. Current functionality
+    includes tissue and cell level electrophysiology, discrete tissue
+    modelling, and soft tissue modelling.
+
+  CheMPS2: CheMPS2/1.6-intel-2016.u3
+
+  Circos: Circos/0.69-3-intel-2016.u3-Perl-5.20.0
+
+  ClonalFrameML: ClonalFrameML/20160309-intel-2016.u3
+    ClonalFrameML is a software package that performs efficient inference
+    of recombination in bacterial genomes. ClonalFrameML was created by
+    Xavier Didelot and Daniel Wilson. ClonalFrameML can be applied to any
+    type of aligned sequence data, but is especially aimed at analysis of
+    whole genome sequences. It is able to compare hundreds of whole genomes
+    in a matter of hours on a standard Desktop computer. 
+
+  Cloudy: Cloudy/17.01-GCC-4.9.2
+    Cloudy is a spectral synthesis code designed to simulate conditions in
+    interstellar matter under a broad range of conditions.
+
+  Code_Saturne: Code_Saturne/4.0.0-intel-2016.u3
+    Code_Saturne solves the Navier-Stokes equations for 2D, 2D-axisymmetric
+    and 3D flows - Homepage: http://code-saturne.org
+
+  Coinhsl: Coinhsl/2014.01.10-goolf-2015a
+    HSL provides a number of linear solvers that can be used in IPOPT. -
+    Homepage: http://www.hsl.rl.ac.uk/ipopt/
+
+  CppUnit: CppUnit/r606-GCC-4.9.2, CppUnit/1.12.1-intel-2016.u3
+    CppUnit is the C++ port of the famous JUnit framework for unit testing.
+    - Homepage: http://sourceforge.net/projects/cppunit/
+
+  Cube: Cube/4.2-goolf-2015a, Cube/4.3.4-goolf-2015a
+    Cube, which is used as performance report explorer for Scalasca and
+    Score-P, is a generic tool for displaying a multi-dimensional
+    performance space consisting of the dimensions (i) performance metric,
+    (ii) call path, and (iii) system resource. Each dimension can be
+    represented as a tree, where non-leaf nodes of the tree can be
+    collapsed or expanded to achieve the desired level of granularity. 
+
+  Cufflinks: Cufflinks/2.2.1-GCC-4.9.2, Cufflinks/2.2.1-intel-2016.u3
+
+  Cython: Cython/0.28.5-intel-2017.u2-Python-2.7.11
+    The Cython language makes writing C extensions for the Python language
+    as easy as Python itself. Cython is a source code translator based on
+    the well-known Pyrex, but supports more cutting edge functionality and
+    optimizations. 
+
+  DALTON: DALTON/2016-spartan_intel-2017.u2
+    Dalton program is designed to allow convenient, automated determination
+    of a large number of molecular properties based on an HF, DFT, MP2,
+    coupled cluster, or MCSCF reference wave function. 
+
+  DB: DB/2.7.7-GCC-4.9.2, DB/2.7.7-intel-2016.u3, DB/6.2.32-GCCcore-6.4.0, ...
+
+  DB_File: DB_File/1.831-intel-2016.u3-Perl-5.20.0-bare, ...
+    Perl5 access to Berkeley DB version 1.x.
+
+  DBus: DBus/1.10.12-goolf-2015a, DBus/1.10.12-intel-2016.u3, ...
+    D-Bus is a message bus system, a simple way for applications to talk to
+    one another. In addition to interprocess communication, D-Bus helps
+    coordinate process lifecycle; it makes it simple and reliable to code a
+    "single instance" application or daemon, and to launch applications and
+    daemons on demand when their services are needed. 
+
+  DSRC: DSRC/2.0rc-linux-64-bit
+    DNA Sequence Reads Compression is an application designed for
+    compression of data files containing reads from DNA sequencing in FASTQ
+    format. The amount of such files can be huge, e.g., a few (or tens) of
+    gigabytes, so a need for a robust data compression tool is clear.
+    Usually universal compression programs like gzip or bzip2 are used for
+    this purpose, but it is obvious that a specialized tool can work
+    better. 
+
+  Delft3D: Delft3D/3.80.00-intel-2016.u3, Delft3D/7545-intel-2016.u3
+    Delft3D is a world leading 3D modeling suite to investigate
+    hydrodynamics, sediment transport and morphology and water quality for
+    fluvial, estuarine and coastal environments.
+
+  DendroPy: DendroPy/4.1.0-intel-2016.u3-Python-2.7.10, ...
+    DendroPy is a Python library for phylogenetic computing. It provides
+    classes and functions for the simulation, processing, and manipulation
+    of phylogenetic trees and character matrices, and supports the reading
+    and writing of phylogenetic data in a range of formats, such as NEXUS,
+    NEWICK, NeXML, Phylip, FASTA, etc.
+
+  Doxygen: Doxygen/1.8.8-GCC-4.9.2, Doxygen/1.8.8-intel-2016.u3, ...
+    Doxygen is a documentation system for C++, C, Java, Objective-C,
+    Python, IDL (Corba and Microsoft flavors), Fortran, VHDL, PHP, C#, and
+    to some extent D. - Homepage: http://www.doxygen.org 
+
+  EMAN2: EMAN2/2.12-intel-2016.u3-Python-2.7.9, ...
+    EMAN2 is the successor to EMAN1. It is a broadly based greyscale
+    scientific image processing suite with a primary focus on processing
+    data from transmission electron microscopes. 
+
+  EMBOSS: EMBOSS/6.6.0-intel-2016.u3
+
+  EasyBuild: EasyBuild/2.4.0, EasyBuild/2.5.0, EasyBuild/2.9.0, ...
+
+  EasyDict: EasyDict/1.8-intel-2016.u3-Python-3.5.2
+    EasyDict allows to access dict values as attributes (works
+    recursively). A Javascript-like properties dot notation for python
+    dicts..
+
+  Eigen: Eigen/3.2.3-GCC-4.9.2, Eigen/3.2.3-intel-2016.u3, ...
+
+  Emacs: Emacs/25.3-GCC-4.9.2, Emacs/25.3-GCC-4.9.3
+    Emacs runs on several operating systems regardless of the machine type.
+    The main ones are: GNU, GNU/Linux, FreeBSD, NetBSD, OpenBSD, macOS, MS
+    Windows and Solaris. 
+
+  Env-Path: Env-Path/0.19-intel-2016.u3-Perl-5.20.0
+    Advanced operations on path variables
+
+  Exonerate: Exonerate/2.2.0-intel-2016.u3
+    Exonerate is a generic tool for pairwise sequence comparison. It allows
+    you to align sequences using a many alignment models, using either
+    exhaustive dynamic programming, or a variety of heuristics. 
+
+  FASTX-Toolkit: FASTX-Toolkit/0.0.14-GCC-4.9.2
+
+  FDS: FDS/6.5.2-intel-2016.u3, FDS/6.7.0-spartan_intel-2017.u2
+    Fire Dynamics Simulator (FDS) is a large-eddy simulation (LES) code for
+    low-speed flows, with an emphasis on smoke and heat transport from
+    fires. - Homepage: https://pages.nist.gov/fds-smv/ 
+
+  FFC: FFC/1.6.0-intel-2016.u3-Python-2.7.9, ...
+    FEniCS Form Compiler (FFC) works as a compiler for multilinear forms by
+    generating code (C++) for the evaluation of a multilinear form given in
+    mathematical notation. - Homepage:
+    https://bitbucket.org/fenics-project/ffc 
+
+  FFTW: FFTW/2.1.5-intel-2016.u3, FFTW/3.3.4-GCC-4.9.2, ...
+    FFTW is a C subroutine library for computing the discrete Fourier
+    transform (DFT) in one or more dimensions, of arbitrary input size, and
+    of both real and complex data. - Homepage: http://www.fftw.org 
+
+  FFmpeg: FFmpeg/3.1.3-GCC-4.9.2, FFmpeg/3.1.3-intel-2016.u3, ...
+    A complete, cross-platform solution to record, convert and stream audio
+    and video.
+
+  FIAT: FIAT/1.5.0-goolf-2015a-Python-2.7.10, ...
+    The FInite element Automatic Tabulator FIAT supports generation of
+    arbitrary order instances of the Lagrange elements on lines, triangles,
+    and tetrahedra. It is also capable of generating arbitrary order
+    instances of Jacobi-type quadrature rules on the same element shapes. 
+
+  FLASH: FLASH/1.2.11
+    FLASH (Fast Length Adjustment of SHort reads) is a very fast and
+    accurate software tool to merge paired-end reads from next-generation
+    sequencing experiments. FLASH is designed to merge pairs of reads when
+    the original DNA fragments are shorter than twice the length of reads.
+
+  FLTK: FLTK/1.3.3-intel-2016.u3, FLTK/1.3.3-intel-2017.u2
+    FLTK is a cross-platform C++ GUI toolkit for UNIX/Linux (X11),
+    Microsoft Windows, and MacOS X. FLTK provides modern GUI functionality
+    without the bloat and supports 3D graphics via OpenGL and its built-in
+    GLUT emulation. - Homepage: http://www.fltk.org 
+
+  FSL: FSL/5.0.8-intel-2016.u3, FSL/5.0.9-centos6_64, ...
+    FSL is a comprehensive library of analysis tools for FMRI, MRI and DTI
+    brain imaging data.
+
+  FTGL: FTGL/2.1.3-rc5-intel-2016.u3
+    FTGL is a free open source library to enable developers to use
+    arbitrary fonts in their OpenGL (www.opengl.org) applications. 
+
+  FastEpistasis: FastEpistasis/2.07-intel-2016.u3
+    FastEpistasis, a software tool capable of computing tests of epistasis
+    for a large number of SNP pairs, is an efficient parallel extension to
+    the PLINK epistasis module.
+
+  FastTree: FastTree/2.1.7-intel-2016.u3, FastTree/2.1.8-intel-2016.u3, ...
+
+  File-Grep: File-Grep/0.02-intel-2016.u3-Perl-5.20.0
+    Find matches to a pattern in a series of files and related functions
+
+  File-Slurper: File-Slurper/0.008-intel-2016.u3-Perl-5.20.0
+    A simple, sane and efficient module to slurp a file
+
+  FileShareDir: FileShareDir/1.102-intel-2016.u3-Perl-5.20.0
+    The intent of File::ShareDir is to provide a companion to
+    Class::Inspector and File::HomeDir, modules that take a process that is
+    well-known by advanced Perl developers but gets a little tricky, and
+    make it more available to the larger Perl community.
+
+  Fox: Fox/1.6.54-GCC-4.9.2
+    "FOX stands for Free Objects for X. It is a C++ based class library for
+    building Graphical User Interfaces. - Homepage:
+    http://www.fox-toolkit.org/ 
+
+  FragGeneScan: FragGeneScan/1.3.0-intel-2016.u3
+    FragGeneScan is an application for finding (fragmented) genes in short
+    reads. It can also be applied to predict prokaryotic genes in
+    incomplete assemblies or complete genomes. 
+
+  FreeSurfer: FreeSurfer/5.3.0-GCC-4.9.2-centos6_x86_64, ...
+
+  GAMESS-US: GAMESS-US/20160708-GCC-4.9.2
+
+  GAMS: GAMS/24.1
+
+  GATK: GATK/3.3-0-Java-1.7.0_80, GATK/3.4-46-Java-1.8.0_71, ...
+    The Genome Analysis Toolkit or GATK is a software package developed at
+    the Broad Institute to analyse next-generation resequencing data. The
+    toolkit offers a wide variety of tools, with a primary focus on variant
+    discovery and genotyping as well as strong emphasis on data quality
+    assurance. Its robust architecture, powerful processing engine and
+    high-performance computing features make it capable of taking on
+    projects of any size. 
+
+  GCC: GCC/4.4.7, GCC/4.6.4, GCC/4.7.4, GCC/4.8.1, GCC/4.9.2-binutils-2.25, ...
+
+  GCC-CUDA: GCC-CUDA/5.4.0-8.0.61, GCC-CUDA/6.2.0-9.0.176
+    The GNU Compiler Collection includes front ends for C, C++,
+    Objective-C, Fortran, Java, and Ada, as well as libraries for these
+    languages (libstdc++, libgcj,...). This version also 
+
+  GCCcore: GCCcore/5.4.0, GCCcore/6.3.0, GCCcore/6.4.0, GCCcore/7.3.0, ...
+    The GNU Compiler Collection includes front ends for C, C++,
+    Objective-C, Fortran, Java, and Ada, as well as libraries for these
+    languages (libstdc++, libgcj,...). 
+
+  GConf: GConf/3.2.6-GCC-6.2.0, GConf/3.2.6-intel-2017.u2
+    GConf is a system for storing application preferences. It is intended
+    for user preferences; not configuration of something like Apache, or
+    arbitrary data storage. 
+
+  GD: GD/2.52-intel-2016.u3-Perl-5.20.0, GD/2.56-intel-2016.u3-Perl-5.20.0
+
+  GDAL: GDAL/1.10.0-GCC-4.9.2, GDAL/1.10.0-intel-2016.u3, ...
+
+  GDB: GDB/7.8.2-GCC-4.9.2, GDB/7.8.2-goolf-2015a
+
+  GEMINI: GEMINI/0.18.3-GCC-4.9.2-Python-2.7.9
+    GEMINI (GEnome MINIng) is a flexible framework for exploring genetic
+    variation in the context of the wealth of genome annotations available
+    for the human genome. By placing genetic variants, sample phenotypes
+    and genotypes, as well as genome annotations into an integrated
+    database framework, GEMINI provides a simple, flexible, and powerful
+    system for exploring genetic variation for disease and population
+    genetics.
+
+  GEOS: GEOS/3.6.1-intel-2016.u3-Python-2.7.11, ...
+    GEOS (Geometry Engine - Open Source) is a C++ port of the Java Topology
+    Suite (JTS)
+
+  GHC: GHC/6.12.3-GCC-4.9.2, GHC/6.12.3-intel-2016.u3
+    The Glorious/Glasgow Haskell Compiler
+
+  GLINT: GLINT/1.0.4-Python.2.7.13-intel-2017.u2
+    GLINT is a user-friendly command-line tool for fast analysis of
+    genome-wide DNA methylation data generated using the Illumina human
+    methylation arrays. GLINT allows to easily run a pipeline of
+    Epigenome-Wide Association Study (EWAS) under different models while
+    accounting for known confounders in methylation data.
+
+  GLM: GLM/0.9.7.2-intel-2016.u3, GLM/0.9.7.2-intel-2017.u2
+    OpenGL Mathematics (GLM) is a header only C++ mathematics library for
+    graphics software based on the OpenGL Shading Language (GLSL)
+    specifications. - Homepage: https://github.com/g-truc/glm 
+
+  GLib: GLib/2.40.0-intel-2016.u3, GLib/2.46.0-intel-2016.u3-Python-2.7.9, ...
+
+  GMAP-GSNAP: GMAP-GSNAP/2014-06-10-GCC-4.9.2
+    GMAP: A Genomic Mapping and Alignment Program for mRNA and EST
+    Sequences GSNAP: Genomic Short-read Nucleotide Alignment Program 
+
+  GMP: GMP/5.1.3-GCC-4.9.2, GMP/6.0.0a-GCC-4.9.2, GMP/6.0.0a-GCC-4.9.3, ...
+
+  GMSH: GMSH/2.16.0-intel-2016.u3
+    Gmsh is a 3D finite element grid generator with a build-in CAD engine
+    and post-processor. - Homepage: http://geuz.org/gmsh
+
+  GNU: GNU/4.9.2-2.25
+    Compiler-only toolchain with GCC and binutils. - Homepage:
+    http://www.gnu.org/software/
+
+  GObject-Introspection: GObject-Introspection/1.47.1-GCC-4.9.2, ...
+    GObject introspection is a middleware layer between C libraries (using
+    GObject) and language bindings. The C library can be scanned at compile
+    time and generate a metadata file, in addition to the actual native C
+    library. Then at runtime, language bindings can read this metadata and
+    automatically provide bindings to call into the C library. - Homepage:
+    https://wiki.gnome.org/GObjectIntrospection/ 
+
+  GROMACS: GROMACS/4.6.5-intel-2016.u3-mpi, GROMACS/4.6.5-intel-2016.u3-mt, ...
+    GROMACS is a versatile package to perform molecular dynamics, i.e.
+    simulate the Newtonian equations of motion for systems with hundreds to
+    millions of particles. 
+
+  GSL: GSL/1.16-intel-2016.u3, GSL/2.1-GCC-4.9.2, GSL/2.1-goolfc-2017.01, ...
+
+  GST-plugins-base: GST-plugins-base/0.10.36-GCC-6.2.0, ...
+    GStreamer is a library for constructing graphs of media-handling
+    components. The applications it supports range from simple Ogg/Vorbis
+    playback, audio/video streaming to complex audio (mixing) and video
+    (non-linear editing) processing. 
+
+  GStreamer: GStreamer/0.10.36-GCC-6.2.0, GStreamer/0.10.36-intel-2017.u2, ...
+    GStreamer is a library for constructing graphs of media-handling
+    components. The applications it supports range from simple Ogg/Vorbis
+    playback, audio/video streaming to complex audio (mixing) and video
+    (non-linear editing) processing. 
+
+  GTK+: GTK+/2.24.28-intel-2016.u3, GTK+/2.24.31-GCC-4.9.2, ...
+    The GTK+ 2 package contains libraries used for creating graphical user
+    interfaces for applications. - Homepage:
+    https://developer.gnome.org/gtk+/stable/ 
+
+  Gaussian: Gaussian/g09.b01, Gaussian/g09TEST, Gaussian/g09, Gaussian/g16
+
+  Gdk-Pixbuf: Gdk-Pixbuf/2.32.3-intel-2016.u3, Gdk-Pixbuf/2.36.6-GCC-4.9.2, ...
+    The Gdk Pixbuf is a toolkit for image loading and pixel buffer
+    manipulation. It is used by GTK+ 2 and GTK+ 3 to load and manipulate
+    images. In the past it was distributed as part of GTK+ 2 but it was
+    split off into a separate package in preparation for the change to GTK+
+    3. - Homepage: https://developer.gnome.org/gdk-pixbuf/stable/ 
+
+  Ghostscript: Ghostscript/9.20-intel-2016.u3
+    Ghostscript is a versatile processor for PostScript data with the
+    ability to render PostScript to different targets. It used to be part
+    of the cups printing stack, but is no longer used for that. 
+
+  Go: Go/1.8.1
+    Go is an open source programming language that makes it easy to build
+    simple, reliable, and efficient software. 
+
+  GrADS: GrADS/2.2.0-GCC-4.9.2
+    The Grid Analysis and Display System (GrADS) is an interactive desktop
+    tool that is used for easy access, manipulation, and visualization of
+    earth science data.
+
+  Graph: Graph/0.9704-intel-2016.u3-Perl-5.20.0
+    graph data structures and algorithms
+
+  Greenlet: Greenlet/0.4.9-intel-2016.u3-Python-3.5.2
+    The greenlet package is a spin-off of Stackless, a version of CPython
+    that supports micro-threads called "tasklets". Tasklets run
+    pseudo-concurrently (typically in a single or a few OS-level threads)
+    and are synchronized with data exchanges on "channels". A "greenlet",
+    on the other hand, is a still more primitive notion of micro-thread
+    with no implicit scheduling; coroutines, in other words. This is useful
+    when you want to control exactly when your code runs. 
+
+  Gubbins: Gubbins/1.4.2-intel-2016.u3-Python-2.7.9, ...
+    Gubbins (Genealogies Unbiased By recomBinations In Nucleotide
+    Sequences) is an algorithm that iteratively identifies loci containing
+    elevated densities of base substitutions while concurrently
+    constructing a phylogeny based on the putative point mutations outside
+    of these regions. - Homepage: https://github.com/andrewjpage/gubbins 
+
+  Gurobi: Gurobi/7.0.1
+    The Gurobi Optimizer is a state-of-the-art solver for mathematical
+    programming. The solvers in the Gurobi Optimizer were designed from the
+    ground up to exploit modern architectures and multi-core processors,
+    using the most advanced implementations of the latest algorithms. -
+    Homepage: http://www.gurobi.com 
+
+  HDF: HDF/4.2.8-GCC-4.9.2, HDF/4.2.8-intel-2016.u3
+
+  HDF5: HDF5/1.8.12-intel-2016.u3, HDF5/1.8.13-GCC-4.9.2, ...
+    HDF5 is a unique technology suite that makes possible the management of
+    extremely large and complex data collections. - Homepage:
+    http://www.hdfgroup.org/HDF5/ 
+
+  HGA: HGA/1.0.0-Python-2.7.10
+    Hierarchical Genome Assembly (HGA) is a novel methodology that takes
+    further advantage of very high coverage by independently assembling
+    disjoint subsets of reads, combining assemblies of the subsets, and
+    finally re-assembling the combined contigs along with the original
+    reads. 
+
+  HGA_pymodules-bundle: ...
+    This is a bundle of two python modules, xlrd and xlwt, required by the
+    application, HGA (separate module). xlrd (https://pypi.python
+    .org/pypi/xlrd) extracts data from Microsoft Excel spreadsheets, while
+    xlwt (https://pypi.python.org/pypi/xlwt) is used to generate Excel
+    spreadsheet s. 
+
+  HISAT2: HISAT2/2.1.0-intel-2016.u3
+    HISAT2 is a fast and sensitive alignment program for mapping
+    next-generation sequencing reads (both DNA and RNA) to a population of
+    human genomes (as well as to a single reference genome). - Homepage:
+    https://ccb.jhu.edu/software/hisat2/index.shtml
+
+  HMMER: HMMER/3.1b2-intel-2016.u3
+
+  HPL: HPL/2.1-intel-2016.u3
+    HPL is a software package that solves a (random) dense linear system in
+    double precision (64 bits) arithmetic on distributed-memory computers.
+    It can thus be regarded as a portable as well as freely available
+    implementation of the High Performance Computing Linpack Benchmark. 
+
+  HTSeq: HTSeq/0.9.1-intel-2016.u3-Python-2.7.12
+    - Homepage: http://www-huber.embl.de/users/anders/HTSeq/
+
+  HTSlib: HTSlib/1.2.1-intel-2016.u3, HTSlib/1.3-intel-2016.u3, ...
+    A C library for reading/writing high-throughput sequencing data. This
+    package includes the utilities bgzip and tabix 
+
+  HarfBuzz: HarfBuzz/1.1.3-GCC-4.9.2, HarfBuzz/1.1.3-goolf-2015a, ...
+    HarfBuzz is an OpenType text shaping engine. - Homepage:
+    http://www.freedesktop.org/wiki/Software/HarfBuzz
+
+  Hypre: Hypre/2.11.1-goolf-2015a, Hypre/2.11.1-intel-2016.u3-test, ...
+    Hypre is a library for solving large, sparse linear systems of
+    equations on massively parallel computers. The problems of interest
+    arise in the simulation codes being developed at LLNL and elsewhere to
+    study physical phenomena in the defense, environmental, energy, and
+    biological sciences. 
+
+  I-TASSER: I-TASSER/4.2, I-TASSER/5.0
+    I-TASSER (Iterative Threading ASSEmbly Refinement) is a hierarchical
+    method for protein structure and function prediction. Structural
+    templates are identified from the PDB by multiple threading approach
+    LOMETS; full-length atomic models are then constructed by iterative
+    template fragment assembly simulations; function inslights of the
+    target are finally derived by threading the 3D models through protein
+    function database BioLiP.
+
+  ICU: ICU/60.2-GCC-4.9.2, ICU/61.1-intel-2017.u2
+    ICU is a mature, widely used set of C/C++ and Java libraries providing
+    Unicode and Globalization support for software applications. ICU is
+    widely portable and gives applications the same results on all
+    platforms and between C/C++ and Java software. .
+
+  IDBA: IDBA/1.1.3-GCC-4.9.3
+    IDBA is the basic iterative de Bruijn graph assembler for
+    second-generation sequencing reads. IDBA-UD, an extension of IDBA, is
+    designed to utilize paired-end reads to assemble low-depth regions and
+    use progressive depth on contigs to reduce errors in high-depth
+    regions.
+
+  IGV: IGV/2.3.15
+    The Integrative Genomics Viewer (IGV) is a high-performance
+    visualization tool for interactive exploration of large, integrated
+    genomic datasets. It supports a wide variety of data types, including
+    array-based and next-generation sequence data, and genomic annotations.
+
+  IOR: IOR/3.0.1-gompi-2015a-mpiio
+    The IOR software is used for benchmarking parallel file systems using
+    POSIX, MPIIO, or HDF5 interfaces. - Homepage:
+    https://github.com/chaos/ior 
+
+  IPC-System-Simple: IPC-System-Simple/1.25-intel-2016.u3-Perl-5.20.0
+    IPC::System::Simple - Run commands simply, with detailed diagnostics.
+
+  IPython: IPython/3.2.0-intel-2016.u3-Python-2.7.9
+    IPython provides a rich architecture for interactive computing with:
+    Powerful interactive shells (terminal and Qt-based). A browser-based
+    notebook with support for code, text, mathematical expressions, inline
+    plots and other rich media. Support for interactive data visualization
+    and use of GUI toolkits. Flexible, embeddable interpreters to load into
+    your own projects. Easy to use, high performance tools for parallel
+    computing. - Homepage: http://ipython.org/index.html 
+
+  ISL: ISL/0.15-GCC-4.9.2
+
+  ITK: ITK/4.12.2-intel-2016.u3-Python-2.7.11
+    Insight Segmentation and Registration Toolkit (ITK) provides an
+    extensive suite of software tools for registering and segmenting
+    multidimensional imaging data. 
+
+  ImageMagick: ImageMagick/7.0.2-9-GCC-4.9.2
+
+  Infernal: Infernal/1.1.2-intel-2016.u3
+
+  Instant: Instant/1.6.0-intel-2016.u3-Python-2.7.9, ...
+    Instant is a Python module that allows for instant inlining of C and
+    C++ code in Python. It is a small Python module built on top of SWIG
+    and Distutils. - Homepage: https://bitbucket.org/fenics-project/instant
+    
+
+  InterViews: InterViews/19-intel-2016.u3, InterViews/19-intel-2017.u2
+    InterViews is a prerequisite of the NEURON, a simulation environment
+    for building and using computational models of neurons and networks of
+    neurons. 
+
+  JAGS: JAGS/4.2.0-intel-2016.u3, JAGS/4.3.0-GCC-6.2.0, ...
+    JAGS is Just Another Gibbs Sampler. It is a program for analysis of
+    Bayesian hierarchical models using Markov Chain Monte Carlo (MCMC)
+    simulation - Homepage: http://mcmc-jags.sourceforge.net/ 
+
+  JUnit: JUnit/4.12-Java-1.8.0_71, JUnit/4.12-Java-9.0.4
+    A programmer-oriented testing framework for Java. - Homepage:
+    http://sourceforge.net/projects/junit
+
+  JasPer: JasPer/1.900.1-GCC-4.9.2, JasPer/1.900.1-intel-2016.u3, ...
+
+  Java: Java/1.7.0_80, Java/1.8.0_71, Java/1.8.0_152, Java/9.0.4
+    Java Platform, Standard Edition (Java SE) lets you develop and deploy
+    Java applications on desktops and servers. 
+
+  Jellyfish: Jellyfish/1.1.11-GCC-4.9.2, Jellyfish/2.2.10-intel-2017.u2
+    Jellyfish is a tool for fast, memory-efficient counting of k-mers in
+    DNA.
+
+  Json-Fortran: Json-Fortran/6.3.0-GCC-6.2.0, ...
+    A user-friendly, thread-safe, and object-oriented API for reading and
+    writing JSON files, written in modern Fortran.
+
+  Julia: Julia/0.5.0-binary, Julia/0.6.0-binary, ...
+
+  KNIFE: KNIFE/1.4
+    Known and Novel IsoForm Explorer. Statistically based splicing
+    detection for circular and linear isoforms from RNA-Seq data.
+
+  Kaiju: Kaiju/1.6.2-intel-2017.u2
+    Kaiju is a program for sensitive taxonomic classification of
+    high-throughput sequencing reads from metagenomic whole genome
+    sequencing experiments 
+
+  Kent_tools: Kent_tools/20181018-linux.x86_64
+    Kent tools: collection of tools used by the UCSC genome browser.
+
+  Keras: Keras/2.1.5-intel-2017.u2-GCC-5.4.0-CUDA8-Python-3.5.2-GPU, ...
+    Keras is a high-level neural networks API, written in Python and
+    capable of running on top of TensorFlow, CNTK, or Theano.
+
+  Kraken: Kraken/1.0-GCC-4.9.2, Kraken/1.0-intel-2017.u2-Perl-5.24.1
+    Kraken is a system for assigning taxonomic labels to short DNA
+    sequences, usually obtained through metagenomic studies.
+
+  Krona: Krona/2.7
+    Krona allows hierarchical data to be explored with zooming,
+    multi-layered pie charts.
+
+  KyotoCabinet: KyotoCabinet/1.2.76-intel-2016.u3
+    Kyoto Cabinet is a library of routines for managing a database.
+
+  LAMMPS: LAMMPS/20170811-goolfc-2017.01, ...
+    LAMMPS (Large-scale Atomic/Molecular Massively Parallel Simulator) is a
+    classical molecular dynamics simulation code designed to run
+    efficiently on parallel computers.
+
+  LAPACK: LAPACK/3.4.2-GCC-6.2.0, ...
+    LAPACK is written in Fortran90 and provides routines for solving
+    systems of simultaneous linear equations, least-squares solutions of
+    linear systems of equations, eigenvalue problems, and singular value
+    problems. 
+
+  LLVM: LLVM/3.7.0-GCC-4.9.2, LLVM/3.7.0-goolf-2015a, ...
+    The LLVM Core libraries provide a modern source- and target-independent
+    optimizer, along with code generation support for many popular CPUs (as
+    well as some less common ones!) These libraries are built around a well
+    specified code representation known as the LLVM intermediate
+    representation ("LLVM IR"). The LLVM Core libraries are well
+    documented, and it is particularly easy to invent your own language (or
+    port an existing compiler) to use LLVM as an optimizer and code
+    generator. - Homepage: http://llvm.org/ 
+
+  LMDB: LMDB/0.9.18-GCC-4.9.2, LMDB/0.9.18-intel-2016.u3, ...
+    OpenLDAP's Lightning Memory-Mapped Database (LMDB) library. - Homepage:
+    https://github.com/LMDB/lmdb 
+
+  LibTIFF: LibTIFF/4.0.4-goolf-2015a, LibTIFF/4.0.4-intel-2016.u3, ...
+    tiff: Library and tools for reading and writing TIFF data files -
+    Homepage: http://www.remotesensing.org/libtiff/
+
+  LibUUID: LibUUID/1.0.3-intel-2016.u3, LibUUID/1.0.3-intel-2017.u2
+    Portable uuid C library
+
+  LightGBM: LightGBM/2.1.0-GCC-4.9.2
+    A fast, distributed, high performance gradient boosting (GBDT, GBRT,
+    GBM or MART) framework based on decision tree algorithms.
+
+  LittleCMS: LittleCMS/2.7-goolf-2015a, ...
+    Little CMS intends to be an OPEN SOURCE small-footprint color
+    management engine, with special focus on accuracy and performance. 
+
+  Lua: Lua/5.1.4-8-GCC-4.9.2, Lua/5.1.4-8-intel-2016.u3, ...
+    Lua is a powerful, fast, lightweight, embeddable scripting language.
+    Lua combines simple procedural syntax with powerful data description
+    constructs based on associative arrays and extensible semantics. Lua is
+    dynamically typed, runs by interpreting bytecode for a register-based
+    virtual machine, and has automatic memory management with incremental
+    garbage collection, making it ideal for configuration, scripting, and
+    rapid prototyping. - Homepage: http://www.lua.org/ 
+
+  M4: M4/1.4.17-GCC-4.6.4, M4/1.4.17-GCC-4.9.2-binutils-2.25, ...
+
+  MAFFT: MAFFT/7.130-GCC-4.9.2-with-extensions, ...
+
+  MATIO: MATIO/1.5.2-intel-2016.u3, MATIO/1.5.2-intel-2017.u2
+    matio is an C library for reading and writing Matlab MAT files. -
+    Homepage: http://sourceforge.net/projects/matio/
+
+  MATLAB: MATLAB/2016a, MATLAB/2017a, MATLAB/2018a
+
+  MCL: MCL/14.137-intel-2016.u3
+
+  MCR: MCR/R2016a
+    The MATLAB Runtime is a standalone set of shared libraries that enables
+    the execution of compiled MATLAB applications or components on
+    computers that do not have MATLAB installed. 
+
+  MEGAHIT: MEGAHIT/1.0.3-intel-2016.u3, MEGAHIT/1.1.1-intel-2016.u3
+    MEGAHIT is a NGS de novo assembler for assembling large and complex
+    metagenomics data in a time- and cost-efficient manner. 
+
+  METIS: METIS/3.0.6-intel-2017.u2, METIS/4.0.3-intel-2016.u3, ...
+    METIS is a set of serial programs for partitioning graphs, partitioning
+    finite element meshes, and producing fill reducing orderings for sparse
+    matrices. The algorithms implemented in METIS are based on the
+    multilevel recursive-bisection, multilevel k-way, and multi-constraint
+    partitioning schemes. - Homepage:
+    http://glaros.dtc.umn.edu/gkhome/metis/metis/overview 
+
+  MPC: MPC/1.0.2-GCC-4.9.2, MPC/1.0.2-intel-2016.u3
+
+  MPFR: MPFR/3.1.2-GCC-4.9.2, MPFR/3.1.2-intel-2016.u3, ...
+
+  MPJ-Express: MPJ-Express/0.44-goolf-2015a-Java-9.0.4
+    MPJ Express is an open source Java message passing library that allows
+    application developers to write and execute parallel applications for
+    multicore processors and compute clusters/clouds. 
+
+  MRtrix: MRtrix/0.3.14-intel-2016.u3-Python-2.7.9, ...
+    MRtrix provides a set of tools to perform diffusion-weighted MR
+    white-matter tractography in a manner robust to crossing fibres, using
+    constrained spherical deconvolution (CSD) and probabilistic
+    streamlines. - Homepage:
+    http://www.brain.org.au/software/index.html#mrtrix 
+
+  MTL4: MTL4/4.0.9555
+    The Matrix Template Library 4 incorporates the most modern programming
+    techniques to provide an easy and intuitive interface to users while
+    enabling optimal performance. The natural mathematical notation in MTL4
+    empowers all engineers and scientists to implement their algorithms and
+    models in minimal time. All technical aspects are encapsulated in the
+    library. - Homepage: http://www.simunova.com/mtl4 
+
+  MUMPS: MUMPS/4.10.0-goolf-2015a-parmetis, ...
+    A parallel sparse direct solver - Homepage:
+    http://graal.ens-lyon.fr/MUMPS/
+
+  MUMmer: MUMmer/3.23-intel-2016.u3
+
+  MUSCLE: MUSCLE/3.8.31-intel-2016.u3
+
+  Mako: Mako/1.0.4-GCC-6.2.0-Python-2.7.13-bare, ...
+    A super-fast templating language that borrows the best ideas from the
+    existing templating languages
+
+  Maple: Maple/2015
+
+  MariaDB-connector-c: MariaDB-connector-c/2.3.5-GCC-6.2.0
+    MariaDB Connector/C is used to connect applications developed in C/C++
+    to MariaDB and MySQL databases.
+
+  Mash: Mash/2.1-intel-2017.u2
+    Fast genome and metagenome distance estimation using MinHash
+
+  Mathematica: Mathematica/11.0.1
+    Mathematica is a computational software program used in many
+    scientific, engineering, mathematical and computing fields. - Homepage:
+    http://www.wolfram.com/mathematica 
+
+  Maven: Maven/3.5.4
+    Binary maven install, Apache Maven is a software project management and
+    comprehension tool. Based on the concept of a project object model
+    (POM), Maven can manage a project's build, reporting and documentation
+    from a central piece of information. 
+
+  Maxima: Maxima/5.41.0
+    Maxima is a system for the manipulation of symbolic and numerical
+    expressions. 
+
+  Mesa: Mesa/7.11.2-GCC-4.9.2-Python-2.7.9, ...
+    Mesa is an open-source implementation of the OpenGL specification - a
+    system for rendering interactive 3D graphics. - Homepage:
+    http://www.mesa3d.org/ 
+
+  Meson: Meson/0.43.0-intel-2016.u3-Python-3.5.2
+    Meson is a cross-platform build system designed to be both as fast and
+    as user friendly as possible.
+
+  MetaVelvet: MetaVelvet/1.2.01-intel-2016.u3, ...
+
+  Minimac3: Minimac3/1.0.10-intel-2016.u3, Minimac3/2.0.1-intel-2016.u3
+    Minimac3 is a lower memory and more computationally efficient
+    implementation of the genotype imputation algorithms in minimac and
+    minimac2. Minimac3 is designed to handle very large reference panels in
+    a more computationally efficient way with no loss of accuracy. -
+    Homepage: http://genome.sph.umich.edu/wiki/Minimac3 
+
+  Molden: Molden/5.7-GCC-4.9.2, Molden/5.7-intel-2016.u3
+    Molden is a package for displaying Molecular Density from the Ab Initio
+    packages GAMESS-UK, GAMESS-US and GAUSSIAN and the Semi-Empirical
+    packages Mopac/Ampac - Homepage: http://www.cmbi.ru.nl/molden/ 
+
+  Mono: Mono/4.6.2.7-GCC-4.9.2, Mono/4.6.2.7-intel-2016.u3, ...
+    An open source, cross-platform, implementation of C# and the CLR that
+    is binary compatible with Microsoft.NET. - Homepage:
+    http://mono-framework.com 
+
+  MotionCor2: MotionCor2/01-30-2017
+    Correction of electron beam-induced sample motion is one of the major
+    factors contributing to the recent resolution breakthroughs in
+    cryo-electron microscopy. - Homepage:
+    http://msg.ucsf.edu/em/software/motioncor2.html
+
+  MrBayes: MrBayes/3.2.6-intel-2016.u3
+    MrBayes is a program for the Bayesian estimation of phylogeny.
+
+  Multiwell: Multiwell/2016-intel-2016.u3
+    Calculates time dependent concentrations, reaction yields, vibrational
+    distributions, and rate constants as functions of temperature and
+    pressure for multi-well, multi-channel unimolecular reactions systems.
+    - Homepage: http://clasp-research.engin.umich.edu/multiwell/
+
+  NAMD: NAMD/2.10-gompi-2015a-mpi, NAMD/2.10-intel-2016.u3-mpi, ...
+
+  NASM: NASM/2.11.06-intel-2016.u3, NASM/2.11.08-GCC-4.9.2, ...
+    NASM: General-purpose x86 assembler
+
+  NCBI-GENOME: NCBI-GENOME/0.2.2-intel-2016.u3-Python-2.7.10
+    Some script to download bacterial and fungal genomes from NCBI after
+    they restructured their FTP a while ago.
+
+  NCL: NCL/6.5.0
+    NCAR Command Language
+
+  NCO: NCO/4.7.1-intel-2016.u3, NCO/4.7.1-intel-2017.u2
+    manipulates and analyzes data stored in netCDF-accessible formats,
+    including DAP, HDF4, and HDF5
+
+  NEURON: NEURON/7.4-gompi-2015a, NEURON/7.4-intel-2016.u3, ...
+    Empirically-based simulations of neurons and networks of neurons. -
+    Homepage: http://www.neuron.yale.edu/neuron
+
+  NEdit: NEdit/5.5-Linux-x86
+    NEdit is a multi-purpose text editor for the X Window System, which
+    combines a standard, easy to use, graphical user interface with the
+    thorough functionality and stability required by users who edit text
+    eight hours a day. 
+
+  NLopt: NLopt/2.4.2-intel-2017.u2, NLopt/2.4.2-spartan_intel-2017.u2
+    NLopt is a free/open-source library for nonlinear optimization,
+    providing a common interface for a number of different free
+    optimization routines available online as well as original
+    implementations of various other algorithms. 
+
+  NSPR: NSPR/4.9.3-GCC-6.2.0
+    Netscape Portable Runtime (NSPR) provides a platform-neutral API for
+    system level and libc-like functions. The API is used in the Mozilla
+    clients, many of Red Hat's and Oracle's server applications, and other
+    software offerings.
+
+  NWChem: NWChem/6.5.revision26243-intel-2016.u3-2014-09-10-Python-2.7.11
+    NWChem aims to provide its users with computational chemistry tools
+    that are scalable both in their ability to treat large scientific
+    computational chemistry problems efficiently, and in their use of
+    available parallel computing resources from high-performance parallel
+    supercomputers to conventional workstation clusters. NWChem software
+    can handle: biomolecules, nanostructures, and solid-state; from quantum
+    to classical, and all combinations; Gaussian basis functions or
+    plane-waves; scaling from one to thousands of processors; properties
+    and relativity. - Homepage: http://www.nwchem-sw.org 
+
+  NiBabel: NiBabel/2.1.0-intel-2016.u3-Python-2.7.9-freetype-2.6.5
+    NiBabel provides read/write access to some common medical and
+    neuroimaging file formats, including: ANALYZE (plain, SPM99, SPM2 and
+    later), GIFTI, NIfTI1, NIfTI2, MINC1, MINC2, MGH and ECAT as well as
+    Philips PAR/REC. We can read and write Freesurfer geometry, and read
+    Freesurfer morphometry and annotation files. There is some very limited
+    support for DICOM. NiBabel is the successor of PyNIfTI. - Homepage:
+    https://nipy.github.io/nibabel 
+
+  Nilearn: Nilearn/0.1.3-intel-2016.u3-Python-2.7.9-freetype-2.6.5
+    Nilearn is a Python module for fast and easy statistical learning on
+    NeuroImaging data. - Homepage: http://nilearn.github.io/
+
+  Ninja: Ninja/1.8.2-intel-2016.u3
+    Ninja is a small build system with a focus on speed.
+
+  OCaml: OCaml/4.01.0-intel-2017.u2
+    OCaml is a general purpose industrial-strength programming language
+    with an emphasis on expressiveness and safety. Developed for more than
+    20 years at Inria it benefits from one of the most advanced type
+    systems and supports functional, imperative and object-oriented styles
+    of programming. 
+
+  OPARI2: OPARI2/1.1.1-goolf-2015a, OPARI2/1.1.2-goolf-2015a, ...
+    OPARI2, the successor of Forschungszentrum Juelich's OPARI, is a
+    source-to-source instrumentation tool for OpenMP and hybrid codes. It
+    surrounds OpenMP directives and runtime library calls with calls to the
+    POMP2 measurement interface. 
+
+  ORCA: ORCA/3_0_2-linux_x86-64-OpenMPI-1.6.5, ...
+
+  OTF: OTF/1.12.4-goolf-2015a
+    The Open Trace Format is a highly scalable, memory efficient event
+    trace data format plus support library. It is the standard trace format
+    for Vampir, and is open for other tools. [NOW OBSOLETE: use OTF2] 
+
+  OTF2: OTF2/1.2.1-goolf-2015a, OTF2/2.0-goolf-2015a
+    The Open Trace Format 2 is a highly scalable, memory efficient event
+    trace data format plus support library. It will become the new standard
+    trace format for Scalasca, Vampir, and Tau and is open for other tools.
+    
+
+  Octave: Octave/3.8.2-goolf-2015a, Octave/4.2.1-goolf-2015a
+
+  OlaFlow: OlaFlow/20170725-intel-2016.u3-OpenFOAM-4.0, ...
+    This free and open source project is committed to bringing the latest
+    advances in the simulation of wave dynamics to the OpenFOAM® and
+    FOAM-extend communities. olaFlow includes a set of solvers and boundary
+    conditions to generate and absorb water waves actively at the
+    boundaries and to simulate their interaction with porous coastal
+    structures. 
+
+  OpenBLAS: OpenBLAS/0.2.14-gompi-2015a-LAPACK-3.5.0, ...
+
+  OpenBUGS: OpenBUGS/3.2.3
+    BUGS is a software package for performing Bayesian inference Using
+    Gibbs Sampling. - Homepage: http://www.openbugs.net/
+
+  OpenCV: OpenCV/3.1.0-GCC-4.9.2, OpenCV/3.1.0-intel-2016.u3
+    OpenCV (Open Source Computer Vision Library) is an open source computer
+    vision and machine learning software library. OpenCV was built to
+    provide a common infrastructure for computer vision applications and to
+    accelerate the use of machine perception in the commercial products. 
+
+  OpenEXR: OpenEXR/2.2.0-intel-2016.u3
+    OpenEXR is a high dynamic-range (HDR) image file format developed by
+    Industrial Light & Magic for use in computer imaging applications -
+    Homepage: http://www.openexr.com/ 
+
+  OpenFOAM/1606+-intel-2016.u3: OpenFOAM/1606+-intel-2016.u3
+    OpenFOAM is a free, open source CFD software package. OpenFOAM has an
+    extensive range of features to solve anything from complex fluid flows
+    involving chemical reactions, turbulence and heat transfer, to solid
+    dynamics and electromagnetics. - Homepage: http://www.openfoam.com/ 
+
+  OpenFOAM/2.1.1-gompi-GCC-4.6.4-OpenMPI-1.8.4: ...
+
+  OpenFOAM/2.1.1-iompi-2016.u3: OpenFOAM/2.1.1-iompi-2016.u3
+    OpenFOAM is a free, open source CFD software package. OpenFOAM has an
+    extensive range of features to solve anything from complex fluid flows
+    involving chemical reactions, turbulence and heat transfer, to solid
+    dynamics and electromagnetics. 
+
+  OpenFOAM/2.1.1-iompi-2016.u3-custom: OpenFOAM/2.1.1-iompi-2016.u3-custom
+    OpenFOAM is a free, open source CFD software package. OpenFOAM has an
+    extensive range of features to solve anything from complex fluid flows
+    involving chemical reactions, turbulence and heat transfer, to solid
+    dynamics and electromagnetics. 
+
+  OpenFOAM/2.3.1-intel-2016.u3: OpenFOAM/2.3.1-intel-2016.u3
+
+  OpenFOAM/2.3.1-iompi-2016.u3: OpenFOAM/2.3.1-iompi-2016.u3
+
+  OpenFOAM/2.4.0-intel-2016.u3: OpenFOAM/2.4.0-intel-2016.u3
+    OpenFOAM is a free, open source CFD software package. OpenFOAM has an
+    extensive range of features to solve anything from complex fluid flows
+    involving chemical reactions, turbulence and heat transfer, to solid
+    dynamics and electromagnetics. 
+
+  OpenFOAM/2.4.0-intel-2017.u2: OpenFOAM/2.4.0-intel-2017.u2
+    OpenFOAM is a free, open source CFD software package. OpenFOAM has an
+    extensive range of features to solve anything from complex fluid flows
+    involving chemical reactions, turbulence and heat transfer, to solid
+    dynamics and electromagnetics. 
+
+  OpenFOAM/4.0-intel-2016.u3: OpenFOAM/4.0-intel-2016.u3
+    OpenFOAM is a free, open source CFD software package. OpenFOAM has an
+    extensive range of features to solve anything from complex fluid flows
+    involving chemical reactions, turbulence and heat transfer, to solid
+    dynamics and electromagnetics. - Homepage: http://www.openfoam.com/ 
+
+  OpenFOAM/5.0-intel-2017.u2: OpenFOAM/5.0-intel-2017.u2
+    OpenFOAM is a free, open source CFD software package. OpenFOAM has an
+    extensive range of features to solve anything from complex fluid flows
+    involving chemical reactions, turbulence and heat transfer, to solid
+    dynamics and electromagnetics. 
+
+  OpenFOAM/5.0-intel-2017.u2-CUDA8-test: ...
+    OpenFOAM is a free, open source CFD software package. OpenFOAM has an
+    extensive range of features to solve anything from complex fluid flows
+    involving chemical reactions, turbulence and heat transfer, to solid
+    dynamics and electromagnetics. 
+
+  OpenFOAM/6-spartan_intel-2017.u2: OpenFOAM/6-spartan_intel-2017.u2
+    OpenFOAM is a free, open source CFD software package. OpenFOAM has an
+    extensive range of features to solve anything from complex fluid flows
+    involving chemical reactions, turbulence and heat transfer, to solid
+    dynamics and electromagnetics. 
+
+  OpenFOAM/v1806-intel-2017.u2: OpenFOAM/v1806-intel-2017.u2
+    OpenFOAM is a free, open source CFD software package. OpenFOAM has an
+    extensive range of features to solve anything from complex fluid flows
+    involving chemical reactions, turbulence and heat transfer, to solid
+    dynamics and electromagnetics. 
+
+  OpenImageIO: OpenImageIO/1.6.17-intel-2016.u3
+    OpenImageIO is a library for reading and writing images, and a bunch of
+    related classes, utilities, and applications. - Homepage:
+    http://openimageio.org/ 
+
+  OpenMM: OpenMM/7.2.1-intel-2017.u2-Python-3.6.1
+    OpenMM is a toolkit for molecular simulation.
+
+  OpenMPI: OpenMPI/1.6.5-GCC-4.9.2, OpenMPI/1.8.4-GCC-4.6.4, ...
+    The Open MPI Project is an open source MPI-2 implementation.
+
+  OpenPGM: OpenPGM/5.2.122-intel-2016.u3
+    OpenPGM is an open source implementation of the Pragmatic General
+    Multicast (PGM) specification in RFC 3208 available at www.ietf.org.
+    PGM is a reliable and scalable multicast protocol that enables
+    receivers to detect loss, request retransmission of lost data, or
+    notify an application of unrecoverable loss. PGM is a receiver-reliable
+    protocol, which means the receiver is responsible for ensuring all data
+    is received, absolving the sender of reception responsibility. -
+    Homepage: http://code.google.com/p/openpgm/ 
+
+  OpenSSL: OpenSSL/1.0.1p-GCC-4.9.2, OpenSSL/1.0.1p-GCC-4.9.3, ...
+
+  OpenUCX: OpenUCX/1.3.0-CUDA9.1, OpenUCX/1.3.0, OpenUCX/1.4.x
+    UCX is a communication library implementing a high-performance
+    messaging layer for MPI, PGAS, and RPC frameworks.
+
+  PAML: PAML/4.9a-intel-2016.u3
+    PAML is a package of programs for phylogenetic analyses of DNA or
+    protein sequences using maximum likelihood. 
+
+  PAPI: PAPI/5.2.0-gompi-2015a, PAPI/5.2.0-goolf-2015a, ...
+    PAPI provides the tool designer and application engineer with a
+    consistent interface and methodology for use of the performance counter
+    hardware found in most major microprocessors. PAPI enables software
+    engineers to see, in near real time, the relation between software
+    performance and processor events. In addition Component PAPI provides
+    access to a collection of components that expose performance
+    measurement opportunites across the hardware and software stack. 
+
+  PARCAS: PARCAS/20181017-GCC-4.9.2
+    
+
+  PCMSolver: PCMSolver/1.1.5-intel-2016.u3-Python-2.7.9
+
+  PCRE: PCRE/8.36-GCC-4.9.2, PCRE/8.36-GCC-6.2.0, PCRE/8.36-gompi-2015a, ...
+
+  PDT: PDT/3.19-goolf-2015a, PDT/3.22-goolf-2015a, PDT/3.25-goolf-2015a
+    Program Database Toolkit (PDT) is a framework for analyzing source code
+    written in several programming languages and for making rich program
+    knowledge accessible to developers of static and dynamic analysis
+    tools. PDT implements a standard program representation, the program
+    database (PDB), that can be accessed in a uniform way through a class
+    library supporting common PDB operations. 
+
+  PEST: PEST/15-GCC-6.2.0
+    Model-Independent Parameter Estimation and Uncertainty Analysis
+
+  PETSc: PETSc/3.5.3-intel-2016.u3-Python-2.7.9, ...
+    PETSc, pronounced PET-see (the S is silent), is a suite of data
+    structures and routines for the scalable (parallel) solution of
+    scientific applications modeled by partial differential equations. 
+
+  PGI: PGI/16.10-GCC-4.9.2-2.26, PGI/16.10-GCC-5.4.0-2.26, ...
+    C, C++ and Fortran compilers from The Portland Group - PGI
+
+  PGI-openmpi: PGI-openmpi/18.5-openmpi-2.1.2
+
+  PIL: PIL/1.1.7-intel-2016.u3-Python-2.7.9-freetype-2.6.5, ...
+    The Python Imaging Library (PIL) adds image processing capabilities to
+    your Python interpreter. This library supports many file formats, and
+    provides powerful image processing and graphics capabilities. -
+    Homepage: http://www.pythonware.com/products/pil 
+
+  PLINK: PLINK/1.07-x86_64, PLINK/1.90-b5.3-x84-64, PLINK/1.90-b5.3-x86-64
+    plink-1.07-src: Whole-genome association analysis toolset
+
+  PLY: PLY/3.8-intel-2016.u3-Python-2.7.9, ...
+    PLY is yet another implementation of lex and yacc for Python. -
+    Homepage: http://www.dabeaz.com/ply/
+
+  POI: POI/3.17-20170915-x86_64
+    The Apache POI Project's mission is to create and maintain Java APIs
+    for manipulating various file formats based upon the Office Open XML
+    standards (OOXML) and Microsoft's OLE 2 Compound Document format
+    (OLE2). In short, you can read and write MS Excel files using Java. In
+    addition, you can read and write MS Word and MS PowerPoint files using
+    Java. Apache POI is your Java Excel solution (for Excel 97-2008). We
+    have a complete API for porting other OOXML and OLE2 formats and
+    welcome others to participate. 
+
+  PRANK: PRANK/140110-GCC-4.9.2, PRANK/140110-intel-2016.u3
+    PRANK is a probabilistic multiple alignment program for DNA, codon and
+    amino-acid sequences. PRANK is based on a novel algorithm that treats
+    insertions correctly and avoids over-estimation of the number of
+    deletion events. 
+
+  PROJ: PROJ/4.8.0-intel-2016.u3, PROJ/4.9.2-GCC-4.9.2, ...
+    Program proj is a standard Unix filter function which converts
+    geographic longitude and latitude coordinates into cartesian
+    coordinates 
+
+  PaStiX: PaStiX/5.2.2.22-intel-2016.u3
+    PaStiX (Parallel Sparse matriX package) is a scientific library that
+    provides a high performance parallel solver for very large sparse
+    linear systems based on direct methods. - Homepage:
+    http://pastix.gforge.inria.fr/ 
+
+  Pango: Pango/1.40.0-intel-2016.u3, Pango/1.40.6-GCC-4.9.2, ...
+    Pango is a library for laying out and rendering of text, with an
+    emphasis on internationalization. Pango can be used anywhere that text
+    layout is needed, though most of the work on Pango so far has been done
+    in the context of the GTK+ widget toolkit. Pango forms the core of text
+    and font handling for GTK+-2.x. - Homepage: http://www.pango.org/ 
+
+  ParMETIS: ParMETIS/3.2.0-goolf-2015a, ParMETIS/3.2.0-intel-2016.u3-test, ...
+    ParMETIS is an MPI-based parallel library that implements a variety of
+    algorithms for partitioning unstructured graphs, meshes, and for
+    computing fill-reducing orderings of sparse matrices. ParMETIS extends
+    the functionality provided by METIS and includes routines that are
+    especially suited for parallel AMR computations and large scale
+    numerical simulations. The algorithms implemented in ParMETIS are based
+    on the parallel multilevel k-way graph-partitioning, adaptive
+    repartitioning, and parallel multi-constrained partitioning schemes. -
+    Homepage: http://glaros.dtc.umn.edu/gkhome/metis/parmetis/overview 
+
+  ParaView: ParaView/5.4.1-spartan_intel-2017.u2-mpi
+    ParaView is a scientific parallel visualizer.
+
+  Paraview: Paraview/4.4.0-intel-2016.u3, Paraview/5.1.2-intel-2016.u3-mpi, ...
+    Paraview is a scientific parallel visualizer - Homepage:
+    http://www.paraview.org
+
+  Parse-Yapp: Parse-Yapp/1.05-intel-2016.u3-Perl-5.20.0
+    A perl frontend to the Parse::Yapp module
+
+  PartitionFinder: PartitionFinder/1.1.1, PartitionFinder/2.0.0-pre9
+
+  Perl: Perl/5.16.3-goolf-2015a, Perl/5.20.0-GCC-4.9.2, ...
+    Larry Wall's Practical Extraction and Report Language - Homepage:
+    http://www.perl.org/
+
+  PhyML: PhyML/3.1
+
+  Pillow: Pillow/2.8.1-intel-2016.u3-Python-2.7.9, ...
+    Pillow is the 'friendly PIL fork' by Alex Clark and Contributors. PIL
+    is the Python Imaging Library by Fredrik Lundh and Contributors. 
+
+  PoPoolation2: PoPoolation2/1.201
+    PoPoolation2 allows to compare allele frequencies for SNPs between two
+    or more populations and to identify significant differences.
+    PoPoolation2 requires next generation sequencing data of pooled genomic
+    DNA (Pool-Seq). It may be used for measuring differentiation between
+    populations, for genome wide association studies and for experimental
+    evolution.
+
+  Polkit: Polkit/0.107-GCC-6.2.0
+    polkit is an application-level toolkit for defining and handling the
+    policy that allows unprivileged processes to speak to privileged
+    processes: It is a framework for centralizing the decision making
+    process with respect to granting access to privileged operations for
+    unprivileged applications. 
+
+  PopPUNK: PopPUNK/1.1.3-intel-2017.u2-Python-3.6.4
+    PopPUNK (POPulation Partitioning Using Nucleotide Kmers)
+
+  PostgreSQL: PostgreSQL/9.3.5-intel-2016.u3
+    PostgreSQL is a powerful, open source object-relational database
+    system. It is fully ACID compliant, has full support for foreign keys,
+    joins, views, triggers, and stored procedures (in multiple languages).
+    It includes most SQL:2008 data types, including INTEGER, NUMERIC,
+    BOOLEAN, CHAR, VARCHAR, DATE, INTERVAL, and TIMESTAMP. It also supports
+    storage of binary large objects, including pictures, sounds, or video.
+    It has native programming interfaces for C/C++, Java, .Net, Perl,
+    Python, Ruby, Tcl, ODBC, among others, and exceptional documentation. 
+
+  Prodigal: Prodigal/2.60-intel-2016.u3
+    Prodigal (PROkaryotic DynamIc programming Genefinding ALgorithm) is an
+    open source lightweight microbial genefinding program developed at
+    University of Tennessee and Oak Ridge National Laboratory.. 
+
+  Prokka: Prokka/1.13-intel-2016.u3-BioPerl-1.6.924
+    Prokka is a software tool for the rapid annotation of prokaryotic
+    genomes.
+
+  PyOpenGL: PyOpenGL/3.0.1-intel-2016.u3-Python-2.7.9
+    PyOpenGL is the most common cross platform Python binding to OpenGL and
+    related APIs. The binding is created using the standard ctypes library,
+    and is provided under an extremely liberal BSD-style Open-Source
+    license. 
+
+  PyQt: PyQt/4.11.4-intel-2016.u3-Python-2.7.9, ...
+    PyQt is a set of Python v2 and v3 bindings for Digia's Qt application
+    framework.
+
+  PyTorch: PyTorch/0.3.1-intel-2017.u2-GCC-5.4.0-CUDA8-Python-3.5.2-GPU, ...
+    PyTorch is a deep learning framework that puts Python first.
+
+  PyVCF: PyVCF/0.6.8-Python-2.7.10
+    PyVCF is a VCFv4.0 and 4.1 parser for Python. This is a bundle of
+    PyVCF, which includes dependencies pbr, linecache2, and whatever else
+    comes up. 
+
+  PyZMQ: PyZMQ/14.7.0-intel-2016.u3-Python-2.7.9-zmq3, ...
+    Python bindings for ZeroMQ - Homepage:
+    http://www.zeromq.org/bindings:python
+
+  Pygments: Pygments/2.0.2-intel-2016.u3-Python-2.7.9
+    Generic syntax highlighter suitable for use in code hosting, forums,
+    wikis or other applications that need to prettify source code. -
+    Homepage: http://pygments.org/ 
+
+  Pysam: Pysam/0.14-intel-2017.u2-Python-3.6.4, ...
+    Pysam is a python module for reading and manipulating Samfiles. It's a
+    lightweight wrapper of the samtools C-API. Pysam also includes an
+    interface for tabix. 
+
+  Python: Python/2.7.9-GCC-4.9.2-bare, Python/2.7.9-GCC-4.9.2, ...
+    Python is a programming language that lets you work more quickly and
+    integrate your systems more effectively. 
+
+  PythonBundle: PythonBundle/2.7.10-intel-2016.u3
+    Python is a programming language that lets you work more quickly and
+    integrate your systems more effectively. 
+
+  Pyvolve: Pyvolve/0.8.2-intel-2016.u3-Python-2.7.10
+    Pyvolve is an open-source Python module for simulating sequences along
+    a phylogenetic tree according to continuous-time Markov models of
+    sequence evolution.
+
+  QIIME: QIIME/1.8.0-intel-2016.u3-Python-2.7.10, ...
+    QIIME consists of native Python 2 code and additionally wraps many
+    external applications. This gives the user flexibility to easily build
+    their own analysis pipelines, making use of popular microbial community
+    analysis tools. QIIME handles the processing of input and output of
+    these applications, so the user can spend time analyzing their data
+    rather than parsing, writing, and converting file formats. 
+
+  QUAST: QUAST/4.3-intel-2016.u3
+    QUAST performs fast and convenient quality evaluation and comparison of
+    genome assemblies. 
+
+  Qt: Qt/4.8.2-iomkl-2016.u3, Qt/4.8.6-GCC-4.9.2, Qt/4.8.6-goolf-2015a, ...
+
+  Qt5: Qt5/5.7.0-intel-2016.u3, Qt5/5.7.0-intel-2017.u2
+    Qt is a comprehensive cross-platform C++ application framework. -
+    Homepage: http://qt.io/
+
+  QuantumESPRESSO: QuantumESPRESSO/5.4.0-intel-2016.u3, ...
+    Quantum ESPRESSO is an integrated suite of computer codes for
+    electronic-structure calculations and materials modeling at the
+    nanoscale. It is based on density-functional theory, plane waves, and
+    pseudopotentials (both norm-conserving and ultrasoft). - Homepage:
+    http://www.pwscf.org/ 
+
+  R: R/2.15.3-GCC-4.9.2, R/3.2.1-GCC-4.9.2, R/3.2.1-intel-2016.u3, ...
+    R is a free software environment for statistical computing and
+    graphics. - Homepage: http://www.r-project.org/
+
+  R-bundle-Bioconductor: R-bundle-Bioconductor/3.7-GCC-6.2.0-R-3.5.0
+    R is a free software environment for statistical computing and
+    graphics.
+
+  RAxML: RAxML/7.7.5-intel-2016.u3-hybrid-sse3, ...
+
+  RNA-SeQC: RNA-SeQC/1.1.8-Java-1.8.0_71
+
+  Racon: Racon/1.3.1-intel-2017.u2
+    Racon is intended as a standalone consensus module to correct raw
+    contigs generated by rapid assembly methods which do not include a
+    consensus step. The goal of Racon is to generate genomic consensus
+    which is of similar or better quality compared to the output generated
+    by assembly methods which employ both error correction and consensus
+    steps, while providing a speedup of several times compared to those
+    methods.
+
+  RapidCFD: RapidCFD/20180426-intel-2017.u2-custom, ...
+    CFD toolbox running on CUDA OpenFOAM solvers ported to Nvidia CUDA. All
+    the calculations are done on the GPU giving a huge speed-up. Still in
+    development stage, waiting for your contribution! 
+
+  Relion: Relion/2.0.3-intel-2016.u3, ...
+    RELION (for REgularised LIkelihood OptimisatioN, pronounce rely-on) is
+    a stand-alone computer program that employs an empirical Bayesian
+    approach to refinement of (multiple) 3D reconstructions or 2D class
+    averages in electron cryo-microscopy (cryo-EM). - Homepage:
+    http://www2.mrc-lmb.cam.ac.uk/relion/index.php/Main_Page 
+
+  Rubra: Rubra/20150505-intel-2016.u3-Python-2.7.10
+    Rubra is a bioinformatics pipeline.
+
+  Ruby: Ruby/2.4.1-intel-2016.u3
+    Ruby is a dynamic, open source programming language with a focus on
+    simplicity and productivity. It has an elegant syntax that is natural
+    to read and easy to write. - Homepage: https://www.ruby-lang.org 
+
+  S-Lang: S-Lang/2.3.0-GCC-4.9.2
+    S-Lang is a multi-platform programmer's library designed to allow a
+    developer to create robust multi-platform software. It provides
+    facilities required by interactive applications such as display/screen
+    management, keyboard input, keymaps, and so on. 
+
+  SAGE: SAGE/6.4
+    S.A.G.E. (Statistical Analysis for Genetic Epidemiology) is free
+    software package containing programs for use in the genetic analysis of
+    family, pedigree and individual data. - Homepage:
+    http://darwin.cwru.edu/sage/ 
+
+  SAMblaster: SAMblaster/0.1.22-GCC-4.9.2, SAMblaster/0.1.22-intel-2016.u3
+
+  SAMtools: SAMtools/0.1.18-GCC-4.9.2, SAMtools/0.1.18-intel-2016.u3, ...
+
+  SCALCE: SCALCE/2.7-GCC-4.9.2
+    SCALCE [skeɪlz] is a FASTQ compression tool that uses locally
+    consistet parsing to obtain better compression rate. SCALCE has been
+    specifically designed for Illumina reads but it can handle other
+    technologies (that generate base pair reads) if the read length is the
+    same throughout the file. 
+
+  SCIP: SCIP/3.2.1-intel-2016.u3
+    SCIP is currently one of the fastest non-commercial solvers for mixed
+    integer programming (MIP) and mixed integer nonlinear programming
+    (MINLP). It is also a framework for constraint integer programming and
+    branch-cut-and-price. It allows for total control of the solution
+    process and the access of detailed information down to the guts of the
+    solver. - Homepage: http://scip.zib.de/
+
+  SCOOP: SCOOP/0.7.1.1-intel-2016.u3-Python-3.5.2
+    SCOOP (Scalable COncurrent Operations in Python) is a distributed task
+    module allowing concurrent parallel programming on various
+    environments, from heterogeneous grids to supercomputers. 
+
+  SCOTCH: SCOTCH/6.0.0_esmumps-intel-2017.u2, SCOTCH/6.0.4-goolf-2015a, ...
+    Software package and libraries for sequential and parallel graph
+    partitioning, static mapping, and sparse matrix block ordering, and
+    sequential mesh and hypergraph partitioning. - Homepage:
+    http://gforge.inria.fr/projects/scotch/ 
+
+  SCons: SCons/2.3.6-GCC-4.9.2-Python-2.7.9, ...
+    SCons is a software construction tool. - Homepage:
+    http://www.scons.org/
+
+  SIONlib: SIONlib/1.6.1-goolf-2015a-tools, SIONlib/1.6.1-goolf-2015a
+    SIONlib is a scalable I/O library for parallel access to task-local
+    files. The library not only supports writing and reading binary data to
+    or from several thousands of processors into a single or a small number
+    of physical files, but also provides global open and close functions to
+    access SIONlib files in parallel. This package provides a stripped-down
+    installation of SIONlib for use with performance tools (e.g., Score-P),
+    with renamed symbols to avoid conflicts when an application using
+    SIONlib itself is linked against a tool requiring a different SIONlib
+    version. 
+
+  SIP: SIP/4.16.8-intel-2016.u3-Python-2.7.10, ...
+    SIP is a tool that makes it very easy to create Python bindings for C
+    and C++ libraries.
+
+  SLEPc: SLEPc/3.6.2-intel-2016.u3-Python-2.7.9, ...
+    SLEPc (Scalable Library for Eigenvalue Problem Computations) is a
+    software library for the solution of large scale sparse eigenvalue
+    problems on parallel computers. It is an extension of PETSc and can be
+    used for either standard or generalized eigenproblems, with real or
+    complex arithmetic. It can also be used for computing a partial SVD of
+    a large, sparse, rectangular matrix, and to solve quadratic eigenvalue
+    problems. - Homepage: http://www.grycap.upv.es/slepc/ 
+
+  SOLAR-Eclipse: SOLAR-Eclipse/8.1.1
+
+  SPAdes: SPAdes/3.8.1-GCC-4.9.2-Python-3.5.2, ...
+    Genome assembler for single-cell and isolates data sets 
+
+  SPM: SPM/12-GCC-4.7.4
+    Statistical Parametric Mapping refers to the construction and
+    assessment of spatially extended statistical processes used to test
+    hypotheses about functional imaging data. These ideas have been
+    instantiated in software that is called SPM. The SPM software package
+    has been designed for the analysis of brain imaging data sequences. The
+    sequences can be a series of images from different cohorts, or
+    time-series from the same subject. The current release is designed for
+    the analysis of fMRI, PET, SPECT, EEG and MEG. - Homepage:
+    http://www.fil.ion.ucl.ac.uk/spm/ 
+
+  SPSS: SPSS/25
+
+  SQLite: SQLite/3.8.8.1-GCC-4.9.2, SQLite/3.8.8.1-intel-2016.u3, ...
+    SQLite: SQL Database Engine in a C Library - Homepage:
+    http://www.sqlite.org/
+
+  SRA-Toolkit: SRA-Toolkit/2.5.4-centos_linux64, ...
+    The NCBI SRA Toolkit enables reading (dumping) of sequencing files from
+    the SRA database and writing (loading) files into the .sra format 
+
+  STAR: STAR/2.5.3a-intel-2016.u3
+    STAR aligns RNA-seq reads to a reference genome using uncompressed
+    suffix arrays. - Homepage: https://github.com/alexdobin/STAR
+
+  SUMO: SUMO/0.31.0-GCC-4.9.2
+    "Simulation of Urban MObility" (SUMO) is an open source, highly
+    portable, microscopic and continuous road traffic simulation package
+    designed to handle large road networks. - Homepage:
+    http://sumo.dlr.de/wiki/Simulation_of_Urban_MObility_-_Wiki 
+
+  SUNDIALS: SUNDIALS/2.7.0-intel-2016.u3, SUNDIALS/3.1.0-intel-2016.u3
+    SUNDIALS is a SUite of Nonlinear and DIfferential/ALgebraic equation
+    Solvers. It consists of the following six solvers: CVODE, solves
+    initial value problems for ordinary differential equation (ODE)
+    systems; CVODES, solves ODE systems and includes sensitivity analysis
+    capabilities (forward and adjoint); ARKODE, solves initial value ODE
+    problems with additive Runge-Kutta methods, include support for IMEX
+    methods; IDA, solves initial value problems for differential-algebraic
+    equation (DAE) systems; IDAS, solves DAE systems and includes
+    sensitivity analysis capabilities (forward and adjoint); KINSOL, solves
+    nonlinear algebraic systems.
+
+  SWASH: SWASH/3.14-intel-2016.u3-mt
+    SWASH is a general-purpose numerical tool for simulating unsteady,
+    non-hydrostatic, free-surface, rotational flow and transport phenomena
+    in coastal waters as driven by waves, tides, buoyancy and wind forces.
+    - Homepage: http://swash.sourceforge.net/ 
+
+  SWIG: SWIG/3.0.11-goolf-2015a-Python-2.7.12, ...
+    SWIG is a software development tool that connects programs written in C
+    and C++ with a variety of high-level programming languages. 
+
+  Sablotron: Sablotron/1.0.3-goolf-2015a
+    Sablotron XML processor - Homepage: http://sablotron.sourceforge.net/
+
+  Sagemath: Sagemath/8.1
+    SageMath is a free open-source mathematics software system licensed
+    under the GPL. It builds on top of many existing open-source packages.
+
+  ScaLAPACK: ScaLAPACK/2.0.2-gompi-2015a-OpenBLAS-0.2.14-LAPACK-3.5.0, ...
+
+  ScientificPython: ScientificPython/2.9.4-goolf-2015a-Python-2.7.10, ...
+    ScientificPython is a collection of Python modules for scientific
+    computing. It contains support for geometry, mathematical functions,
+    statistics, physical units, IO, visualization, and parallelization. 
+
+  Scipion: Scipion/1.2-GCC-6.2.0-CUDA-9, Scipion/1.2-GCC-6.2.0, ...
+    Scipion is an image processing framework to obtain 3D models of
+    macromolecular complexes using Electron Microscopy. 
+
+  Score-P: Score-P/2.0.1-goolf-2015a
+    The Score-P measurement infrastructure is a highly scalable and
+    easy-to-use tool suite for profiling, event tracing, and online
+    analysis of HPC applications. 
+
+  Serf: Serf/1.3.8-GCC-4.9.2
+    The serf library is a high performance C-based HTTP client library
+    built upon the Apache Portable Runtime (APR) library - Homepage:
+    http://serf.apache.org/ 
+
+  Singularity: Singularity/2.5.0-GCC-6.2.0, Singularity/2.5.0-intel-2017.u2
+    Singularity is a portable application stack packaging and runtime
+    utility.
+
+  Spark: Spark/1.6.2
+
+  Sphinx: Sphinx/1.3.3-intel-2016.u3-Python-2.7.9, ...
+    Sphinx is a tool that makes it easy to create intelligent and beautiful
+    documentation. It was originally created for the new Python
+    documentation, and it has excellent facilities for the documentation of
+    Python projects, but C/C++ is already supported as well, and it is
+    planned to add special support for other languages as well. - Homepage:
+    http://sphinx.pocoo.org/ 
+
+  Spidermonkey: Spidermonkey/1.0.0-GCC-6.2.0
+    SpiderMonkey is Mozilla's JavaScript engine written in C and C++. It is
+    used in various Mozilla products, including Firefox, and is available
+    under the MPL2. 
+
+  Stata: Stata/12, Stata/15
+    Stata is a complete, integrated statistical software package that
+    provides everything you need for data analysis, data management, and
+    graphics. - Homepage: http://www.stata.com/support/updates/
+
+  StringTie: StringTie/1.3.3b-intel-2016.u3
+    StringTie is a fast and highly efficient assembler of RNA-Seq
+    alignments into potential transcripts. It uses a novel network flow
+    algorithm as well as an optional de novo assembly step to assemble and
+    quantitate full-length transcripts representing multiple splice
+    variants for each gene locus. - Homepage:
+    https://ccb.jhu.edu/software/stringtie/#contact
+
+  Structure: Structure/2.3.4-intel-2016.u3
+
+  Subread: Subread/1.5.1-GCC-4.9.2
+
+  Subversion: Subversion/1.8.14-GCC-4.9.2
+    Subversion is an open source version control system. - Homepage:
+    http://subversion.apache.org/
+
+  SuiteSparse: SuiteSparse/3.7.1-spartan_intel-2017.u2-ParMETIS-4.0.3, ...
+    SuiteSparse is a collection of libraries manipulate sparse matrices.
+
+  Summovie: Summovie/1.0.2
+    Use with Unlur. Unblur is used to align the frames of movies recorded
+    on an electron microscope to reduce image blurring due to beam-induced
+    motion. - Homepage: http://grigoriefflab.janelia.org/unblur
+
+  Szip: Szip/2.1-GCC-4.9.2, Szip/2.1-GCC-5.4.0, Szip/2.1-GCC-6.2.0, ...
+
+  TAU: TAU/2.27-goolf-2015a, TAU/2.27.1-goolf-2015a, TAU/2.27.2-goolf-2015a
+    The TAU Performance System is a portable profiling and tracing toolkit
+    for performance analysis of parallel programs written in Fortran, C,
+    C++, Java, Python. 
+
+  Tcl: Tcl/8.5.7-GCC-4.9.3, Tcl/8.5.12-GCC-6.2.0, Tcl/8.5.12-intel-2016.u3, ...
+
+  Tensorflow: Tensorflow/1.1.0-intel-2016.u3-Python-3.5.2, ...
+    An open-source software library for Machine Intelligence - Homepage:
+    https://www.tensorflow.org/
+
+  Theano: Theano/1.0.2-intel-2017.u2-Python-3.5.2-Tensorflow-1.10.0
+    Theano is a Python library that allows you to define, optimize, and
+    evaluate mathematical expressions involving multi-dimensional arrays
+    efficiently. 
+
+  Thunar: Thunar/1.6.11-intel-2016.u3
+    Thunar is the Xfce file manager, a GTK+ 2 GUI to organise the files on
+    your computer. - Homepage: xfce.org
+
+  Tk: Tk/8.5.12-intel-2016.u3, Tk/8.6.3-GCC-4.9.2-no-X11, ...
+    Tk is an open source, cross-platform widget toolchain that provides a
+    library of basic elements for building a graphical user interface (GUI)
+    in many different programming languages. - Homepage: http://www.tcl.tk/
+    
+
+  Tkinter: Tkinter/3.6.4-intel-2017.u2-Python-3.6.4
+    Tkinter module, built with the Python buildsystem
+
+  TopHat: TopHat/2.1.0-intel-2016.u3, TopHat/2.1.1-GCC-4.9.2, ...
+
+  Torch: Torch/20171208-cuDNN7-intel-2017.u2-GCC-5.4.0-CUDA8, ...
+    Torch is a scientific computing framework with wide support for machine
+    learning algorithms that puts GPUs first. It is easy to use and
+    efficient, thanks to an easy and fast scripting language, LuaJIT, and
+    an underlying C/CUDA implementation.
+
+  Trilinos: Trilinos/12.4.2-intel-2016.u3-Python-2.7.11
+
+  TrimGalore: TrimGalore/0.4.4
+    Trim Galore! is a wrapper script to automate quality and adapter
+    trimming as well as quality control, with some added functionality to
+    remove biased methylation positions for RRBS sequence files (for
+    directional, non-directional (or paired-end) sequencing).
+
+  Trimmomatic: Trimmomatic/0.30, Trimmomatic/0.36-Java-1.8.0_71, ...
+
+  Trinity: Trinity/2.6.6-intel-2017.u2
+    Trinity represents a novel method for the efficient and robust de novo
+    reconstruction of transcriptomes from RNA-Seq data. Trinity combines
+    three independent software modules: Inchworm, Chrysalis, and Butterfly,
+    applied sequentially to process large volumes of RNA-Seq reads. 
+
+  TrinityRNAseq: TrinityRNAseq/2.5.1-intel-2017.u2
+    
+
+  TurboVNC: TurboVNC/2.1.1-intel-2016.u3, TurboVNC/2.1.1-intel-2017.u2
+    TurboVNC is a high-performance, enterprise-quality version of VNC based
+    on TightVNC, TigerVNC, and X.org . It contains a variant of Tight
+    encoding that is tuned for maximum performance and compression with 3D
+    applications (VirtualGL), video, and other image-intensive workloads.
+    TurboVNC, in combination with VirtualGL, provides a complete solution
+    for remotely displaying 3D applications with interactive performance.
+    Please use TurboVNC server in interactive sessions (`sinteractive`)
+    only. Note that tunnelling will be required for this. - Homepage:
+    https://sourceforge.net/projects/turbovnc/ 
+
+  UDUNITS: UDUNITS/2.2.20-intel-2016.u3, UDUNITS/2.2.26-GCC-4.9.2, ...
+    UDUNITS supports conversion of unit specifications between formatted
+    and binary forms, arithmetic manipulation of units, and conversion of
+    values between compatible scales of measurement. - Homepage:
+    http://www.unidata.ucar.edu/software/udunits/ 
+
+  UFL: UFL/1.6.0-intel-2016.u3-Python-2.7.9, ...
+    The Unified Form Language (UFL) is a domain specific language for
+    declaration of finite element discretizations of variational forms.
+    More precisely, it defines a flexible interface for choosing finite
+    element spaces and defining expressions for weak forms in a notation
+    close to mathematical notation. - Homepage: https://launchpad.net/ufl 
+
+  Unblur: Unblur/1.0.2
+    Unblur is used to align the frames of movies recorded on an electron
+    microscope to reduce image blurring due to beam-induced motion. -
+    Homepage: http://grigoriefflab.janelia.org/unblur
+
+  VCFtools: VCFtools/0.1.12-GCC-4.9.2-Perl-5.20.0, ...
+
+  VMD: VMD/1.9.1, VMD/1.9.3
+    VMD is a molecular visualization program for displaying, animating, and
+    analyzing large biomolecular systems using 3-D graphics and built-in
+    scripting. 
+
+  VTK: VTK/6.3.0-intel-2016.u3-test, VTK/6.3.0-intel-2016.u3-Python-2.7.9, ...
+
+  Valgrind: Valgrind/3.9.0-GCC-4.9.2, Valgrind/3.10.0-GCC-4.9.2, ...
+    Valgrind: Debugging and profiling tools - Homepage:
+    http://valgrind.org/downloads/
+
+  Velvet: Velvet/1.2.10-GCC-4.9.2-mt-kmer_57, ...
+
+  ViennaRNA: ViennaRNA/2.1.3-GCC-4.9.2, ViennaRNA/2.1.3-GCC-4.9.3
+    Software and Documents from the Theoretical Biochemistry Institute,
+    University of Vienna 
+
+  Voro++: Voro++/0.4.6-GCC-6.2.0, ...
+    Voro++ is a software library for carrying out three-dimensional
+    computations of the Voronoi tessellation. A distinguishing feature of
+    the Voro++ library is that it carries out cell-based calculations,
+    computing the Voronoi cell for each particle individually. It is
+    particularly well-suited for applications that rely on cell-based
+    statistics, where features of Voronoi cells (eg. volume, centroid,
+    number of faces) can be used to analyze a system of particles. 
+
+  WRF: WRF/3.6.1-intel-2016.u3-dmpar
+    The Weather Research and Forecasting (WRF) Model is a next-generation
+    mesoscale numerical weather prediction system designed to serve both
+    operational forecasting and atmospheric research needs. - Homepage:
+    http://www.wrf-model.org 
+
+  Wine: Wine/1.8.6
+    Wine: Free implementation of Windows on Unix - Homepage:
+    http://www.winehq.com/
+
+  X11: X11/20160819-GCC-4.9.2, X11/20160819-GCC-6.2.0, ...
+    The X Window System (X11) is a windowing system for bitmap displays
+
+  X11-Applications: X11-Applications/20160819-intel-2016.u3
+    The X Window System (X11) is a windowing system for bitmap displays
+
+  XKeyboardConfig: XKeyboardConfig/2.16-intel-2016.u3-Python-2.7.11, ...
+    The non-arch keyboard configuration database for X Window. The goal is
+    to provide the consistent, well-structured, frequently released open
+    source of X keyboard configuration data for X Window System
+    implementations (free, open source and commercial). The project is
+    targeted to XKB-based systems. - Homepage:
+    http://www.freedesktop.org/wiki/Software/XKeyboardConfig/ 
+
+  XML-Parser: XML-Parser/2.41-GCC-4.9.2-Perl-5.20.0, ...
+    This is a Perl extension interface to James Clark's XML parser, expat.
+
+  XML-Writer: XML-Writer/0.625-intel-2016.u3-Perl-5.20.0
+    Perl extension for writing XML documents.
+
+  XOP: XOP/2.4
+    XOP provides a set of codes from different authors and written in
+    different computer languages for modeling of x-ray radiation sources
+    and their interaction with x-ray optical components such as mirrors,
+    filters, and multilayers and offers a variety of analyses and data
+    visualizations. 
+
+  XSD: XSD/4.0.0-intel-2016.u3
+    CodeSynthesis XSD is an open-source, cross-platform W3C XML Schema to
+    C++ data binding compiler. Provided with an XML instance specification
+    (XML Schema), it generates C++ classes that represent the given
+    vocabulary as well as XML parsing and serialization code.
+
+  XZ: XZ/5.2.2-GCC-4.6.4, XZ/5.2.2-GCC-4.9.2, XZ/5.2.2-GCC-5.4.0, ...
+    xz: XZ utilities - Homepage: http://tukaani.org/xz/
+
+  Xerces-C++: Xerces-C++/3.1.1-GCC-4.9.2, Xerces-C++/3.1.1-intel-2016.u3
+    Xerces-C++ is a validating XML parser written in a portable subset of
+    C++. Xerces-C++ makes it easy to give your application the ability to
+    read and write XML data. A shared library is provided for parsing,
+    generating, manipulating, and validating XML documents using the DOM,
+    SAX, and SAX2 APIs. - Homepage: http://xerces.apache.org/xerces-c/ 
+
+  Xpress: Xpress/Xpress-7.9
+    FICO Xpress is the premier mathematical modeling and optimization
+    software suite - Homepage:
+    http://www.fico.com/en/products/fico-xpress-optimization
+
+  Yambo: Yambo/3.4.2-intel-2016.u3
+    Yambo is a FORTRAN/C code for Many-Body calculations in solid state and
+    molecular physics. Yambo relies on the Kohn-Sham wavefunctions
+    generated by two DFT public codes: abinit, and PWscf. - Homepage:
+    http://www.yambo-code.org 
+
+  Yasm: Yasm/1.3.0-GCC-4.9.2, Yasm/1.3.0-intel-2016.u3, ...
+    Yasm: Complete rewrite of the NASM assembler with BSD license
+
+  ZeroMQ: ZeroMQ/3.2.5-intel-2016.u3
+    ZeroMQ looks like an embeddable networking library but acts like a
+    concurrency framework. It gives you sockets that carry atomic messages
+    across various transports like in-process, inter-process, TCP, and
+    multicast. You can connect sockets N-to-N with patterns like fanout,
+    pub-sub, task distribution, and request-reply. It's fast enough to be
+    the fabric for clustered products. Its asynchronous I/O model gives you
+    scalable multicore applications, built as asynchronous
+    message-processing tasks. It has a score of language APIs and runs on
+    most operating systems. - Homepage: http://www.zeromq.org/ 
+
+  abacas: abacas/1.3.1
+
+  ant: ant/1.10.0-Java-1.8.0_71, ant/1.10.2-Java-9.0.4
+    Apache Ant is a Java library and command-line tool whose mission is to
+    drive processes described in build files as targets and extension
+    points dependent upon each other. The main known usage of Ant is the
+    build of Java applications. - Homepage: http://ant.apache.org/ 
+
+  arpack-ng: arpack-ng/3.3.0-intel-2016.u3, arpack-ng/3.3.0-iompi-2016.u3, ...
+    ARPACK is a collection of Fortran77 subroutines designed to solve large
+    scale eigenvalue problems. - Homepage:
+    http://forge.scilab.org/index.php/p/arpack-ng/
+
+  bcl2fastq2: bcl2fastq2/2-20-0
+
+  beagle-lib: beagle-lib/2.1.2-GCC-4.9.2, beagle-lib/2.1.2-goolf-2015a, ...
+
+  binutils: binutils/2.25-GCC-4.9.2-binutils-2.25, binutils/2.25-GCC-5.4.0, ...
+    binutils: GNU binary utilities - Homepage:
+    http://directory.fsf.org/project/binutils/
+
+  biobambam: biobambam/0.0.99-intel-2016.u3
+
+  blasr: blasr/smrtanalysis-2.1-GCC-4.9.2
+    BLASR (Basic Local Alignment with Successive Refinement) rapidly maps
+    reads to genomes by finding the highest scoring local alignment or set
+    of local alignments between the read and the genome. Optimized for
+    PacBio's extraordinarily long reads and taking advantage of rich
+    quality values, BLASR maps reads rapidly with high accuracy. 
+
+  blobtools: blobtools/0.9.19.4-intel-2016.u3
+    Blobtools is a tool set for the visualisation of (draft) genome
+    assemblies using TAGC (Taxon-annotated Gc-Coverage) plots Kumar et al.
+    2012. 
+
+  bzip2: bzip2/1.0.6-GCC-4.9.2, bzip2/1.0.6-GCC-4.9.3, ...
+
+  cMESS: cMESS/1.0.0-spartan_intel-2017.u2-Python-2.7.13
+    M.E.S.S. is the successor to the LyaPack Toolbox for MATLAB. It is
+    intended for solving large sparse matrix equations.
+
+  cURL: cURL/7.43.0-GCC-4.9.2, cURL/7.43.0-GCC-5.4.0, ...
+
+  cairo: cairo/1.12.18-GCC-4.9.2, cairo/1.12.18-intel-2016.u3, ...
+
+  capnproto: capnproto/0.5.3-GCC-4.9.2
+    The Cap’n Proto tools, including the compiler (which takes .capnp
+    files and generates source code for them), are written in C++.
+    Therefore, you must install the C++ package even if your actual
+    development language is something else.
+
+  centrifuge: centrifuge/1.0.3b-intel-2016.u3, ...
+    [Centrifuge] is a novel microbial classification engine that enables
+    rapid, accurate and sensitive labeling of reads and quantification of
+    species on desktop computers.
+
+  clustalw: clustalw/2.1-intel-2016.u3
+    Multiple alignment of nucleic acid and protein sequences 
+
+  cosi2: cosi2/2.02-GCC-4.9.2, cosi2/2.3.0rc4-GCC-4.9.2
+    cosi2 is an efficient coalescent simulator with support for selection,
+    population structure, variable recombination rates, and gene
+    conversion. It supports exact and approximate simulation modes.
+
+  cromwell: cromwell/31-Java-1.8.0_71
+    Cromwell is a Workflow Management System geared towards scientific
+    workflows.
+
+  cuDNN: cuDNN/5.1-CUDA-8.0.44, cuDNN/5.1-intel-2017.u2-CUDA-8.0.44, ...
+    The NVIDIA CUDA Deep Neural Network library (cuDNN) is a
+    GPU-accelerated library of primitives for deep neural networks. -
+    Homepage: https://developer.nvidia.com/cudnn 
+
+  cub: cub/1.6.4
+    NVLabs CUB provides state-of-the-art, reusable software components for
+    every layer of the CUDA programming model - Homepage:
+    https://nvlabs.github.io/cub/ 
+
+  cutadapt: cutadapt/1.13-intel-2016.u3-Python-3.5.2
+    cutadapt removes adapter sequences from high-throughput sequencing
+    data. This is usually necessary when the read length of the sequencing
+    machine is longer than the molecule that is sequenced, for example when
+    sequencing microRNAs. 
+
+  dbus-glib: dbus-glib/0.106-GCC-6.2.0, dbus-glib/0.108-intel-2016.u3, ...
+    D-Bus is a message bus system, a simple way for applications to talk to
+    one another.
+
+  deepTools: deepTools/3.1.2-intel-2017.u2-Python-3.6.4
+    deepTools is a suite of python tools particularly developed for the
+    efficient analysis of high-throughput sequencing data, such as
+    ChIP-seq, RNA-seq or MNase-seq. 
+
+  diamond: diamond/0.9.10
+    DIAMOND is a sequence aligner for protein and translated DNA searches
+    and functions as a drop-in replacement for the NCBI BLAST software
+    tools. It is suitable for protein-protein search as well as DNA-protein
+    search on short reads and longer sequences including contigs and
+    assemblies, providing a speedup of BLAST ranging up to x20,000.
+
+  dsk: dsk/2.2.0-GCC-4.9.2, dsk/2.2.0-GCC-4.9.3
+    DSK is a k-mer counter for reads or genomes.
+
+  dx-toolkit: dx-toolkit/0.168.0-Python-2.7.9
+    The DNAnexus Platform SDK (a.k.a. dx-toolkit) includes the dx
+    command-line client, tools for building and debugging apps, and other
+    utilities for working with DNA data on the platform. 
+
+  ea-utils: ea-utils/r805-GCC-4.8.1, ea-utils/r805-GCC-4.9.2, ...
+    Tcl (Tool Command Language) is a very powerful but easy to learn
+    dynamic programming language, suitable for a very wide range of uses,
+    including web and desktop applications, networking, administration,
+    testing and many more. 
+
+  eudev: eudev/3.1.2-GCC-4.9.2, eudev/3.1.2-goolf-2015a, ...
+    eudev is a fork of systemd-udev with the goal of obtaining better
+    compatibility with existing software such as OpenRC and Upstart, older
+    kernels, various toolchains and anything else required by users and
+    various distributions. - Homepage:
+    https://wiki.gentoo.org/wiki/Project:Eudev 
+
+  exo: exo/0.10.3-intel-2016.u3
+    - Homepage: https://xfce.org/
+
+  expat: expat/2.1.0-GCC-4.9.2, expat/2.1.0-GCC-6.2.0, ...
+
+  fastGEAR: fastGEAR/16Dec2016, fastGEAR/20161216
+    
+
+  fastqc: fastqc/0.11.3
+
+  fixesproto: fixesproto/5.0-GCC-4.9.2, fixesproto/5.0-goolf-2015a, ...
+    X.org FixesProto protocol headers. - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs
+
+  flex: flex/2.5.35-GCC-4.9.2, flex/2.5.35-intel-2016.u3, ...
+    Flex (Fast Lexical Analyzer) is a tool for generating scanners. A
+    scanner, sometimes called a tokenizer, is a program which recognizes
+    lexical patterns in text. 
+
+  fontconfig: fontconfig/2.11.1-GCC-4.9.2, fontconfig/2.11.1-goolf-2015a, ...
+
+  fontsproto: fontsproto/2.1.3-GCC-4.9.2, fontsproto/2.1.3-goolf-2015a, ...
+    X11 font extension wire protocol - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs
+
+  foss: foss/2017b
+    GNU Compiler Collection (GCC) based compiler toolchain, including
+    OpenMPI for MPI support, OpenBLAS (BLAS and LAPACK support), FFTW and
+    ScaLAPACK. 
+
+  freeglut: freeglut/2.8.1-goolf-2015a, freeglut/2.8.1-intel-2016.u3, ...
+    freeglut is a completely OpenSourced alternative to the OpenGL Utility
+    Toolkit (GLUT) library. - Homepage: http://freeglut.sourceforge.net/
+
+  freetype: freetype/2.5.3-GCC-4.9.2, freetype/2.5.5-GCC-4.9.2, ...
+    FreeType 2 is a software font engine that is designed to be small,
+    efficient, highly customizable, and portable while capable of producing
+    high-quality output (glyph images). It can be used in graphics
+    libraries, display servers, font conversion tools, text image
+    generation tools, and many other products as well. 
+
+  future: future/0.16.0-spartan_intel-2017.u2-Python-2.7.13
+    This library is the reference implementation of the Python wheel
+    packaging standard, as defined in PEP 427.
+
+  fxtract: fxtract/2.3-GCC-4.9.4
+    Extract sequences from a fastx (fasta or fastq) file given a
+    subsequence. 
+
+  g2clib: g2clib/1.6.0-spartan_intel-2017.u2
+    Library contains GRIB2 encoder/decoder ('C' version).
+
+  g2lib: g2lib/1.4.0-spartan_intel-2017.u2
+    Library contains GRIB2 encoder/decoder and search/indexing routines.
+
+  garcon: garcon/0.4.0-intel-2016.u3
+    - Homepage: https://xfce.org/
+
+  gatb-core: gatb-core/1.1.0, gatb-core/1.2.1, gatb-core/1.3.0
+    Genome Analysis Toolbox with de-Bruijn graph
+
+  gcccuda: gcccuda/2017.01
+    GNU Compiler Collection (GCC) based compiler toolchain, along with CUDA
+    toolkit.
+
+  gettext: gettext/0.19.2-GCC-4.6.4, gettext/0.19.2-GCC-4.9.2, ...
+    GNU `gettext' is an important step for the GNU Translation Project, as
+    it is an asset on which we may build many other steps. This package
+    offers to programmers, translators, and even users, a well integrated
+    set of tools and documentation - Homepage:
+    http://www.gnu.org/software/gettext/ 
+
+  gflags: gflags/2.1.2-GCC-4.9.2, gflags/2.1.2-intel-2016.u3, ...
+
+  git: git/1.8.5.6-GCC-4.9.2, git/2.10.0-GCC-4.9.2, git/2.19.1-GCC-6.2.0
+
+  glibmm: glibmm/2.46.1-intel-2017.u2-GCC-6.2.0-CUDA9
+    This is glibmm, a C++ API for parts of glib that are useful for C++.
+
+  glog: glog/0.3.4-GCC-4.9.2, glog/0.3.4-intel-2016.u3, ...
+
+  glproto: glproto/1.4.16-GCC-4.9.2, glproto/1.4.16-goolf-2015a, ...
+
+  gmsh: gmsh/3.0.6
+    gmsh is a 3D finite element mesh generator with a build-in CAD engine
+    and post-processor.
+
+  gnuplot: gnuplot/5.0.0-GCC-4.9.2
+
+  gompi: gompi/GCC-4.6.4-OpenMPI-1.8.4, gompi/GCC-6.2.0-OpenMPI-3.0.0, ...
+
+  gompic: gompic/2017.01
+    GNU Compiler Collection (GCC) based compiler toolchain along with CUDA
+    toolkit, including OpenMPI for MPI support with CUDA features enabled. 
+
+  goolf: goolf/2015a
+
+  goolfc: goolfc/2017.01
+    GCC based compiler toolchain __with CUDA support__, and including
+    OpenMPI for MPI support, OpenBLAS (BLAS and LAPACK support), FFTW and
+    ScaLAPACK. 
+
+  gperf: gperf/3.0.4-GCC-4.9.2, gperf/3.0.4-GCC-6.2.0, ...
+    GNU gperf is a perfect hash function generator. For a given list of
+    strings, it produces a hash function and hash table, in form of C or
+    C++ code, for looking up a value depending on the input string. The
+    hash function is perfect, which means that the hash table has no
+    collisions, and the hash table lookup needs a single string comparison
+    only. - Homepage: http://www.gnu.org/software/gperf/ 
+
+  grace: grace/5.1.25-intel-2016.u3
+    Grace is a WYSIWYG 2D plotting tool for X Windows System and Motif. -
+    Homepage: http://freecode.com/projects/grace
+
+  gtk-xfce-engine: gtk-xfce-engine/2.10.0-intel-2016.u3
+    - Homepage: http:/xfce.org/
+
+  gzip: gzip/1.8-goolf-2015a
+    gzip (GNU zip) is a popular data compression program as a replacement
+    for compress
+
+  gzstream: gzstream/1.5-GCC-4.9.2, gzstream/1.5-intel-2016.u3
+    Gzstream is a small C++ library, basically just a wrapper, that
+    provides the functionality of the zlib C-library in a C++ iostream. 
+
+  h2o4gpu: h2o4gpu/0.2.0-intel-2017.u2-GCC-6.2.0-CUDA9-Python-3.6.4-GPU
+    An open-source software library for Machine Intelligence
+
+  hdbscan: hdbscan/0.8.18-intel-2017.u2-Python-3.6.4
+    Hierarchical Density-Based Spatial Clustering of Applications with
+    Noise. Performs DBSCAN over varying epsilon values and integrates the
+    result to find a clustering that gives the best stability over epsilon.
+    This allows HDBSCAN to find clusters of varying densities (unlike
+    DBSCAN), and be more robust to parameter selection. 
+
+  help2man: help2man/1.47.4-GCCcore-6.3.0, help2man/1.47.4-GCCcore-6.4.0, ...
+    help2man produces simple manual pages from the '--help' and '--version'
+    output of other commands.
+
+  hwloc: hwloc/1.10.0-GCC-4.9.2, hwloc/1.10.1-GCC-4.6.4, ...
+    The Portable Hardware Locality (hwloc) software package provides a
+    portable abstraction (across OS, versions, architectures, ...) of the
+    hierarchical topology of modern architectures, including NUMA memory
+    nodes, sockets, shared caches, cores and simultaneous multithreading.
+    It also gathers various system attributes such as cache and memory
+    information as well as the locality of I/O devices such as network
+    interfaces, InfiniBand HCAs or GPUs. It primarily aims at helping
+    applications with gathering information about modern computing hardware
+    so as to exploit it accordingly and efficiently. 
+
+  iCP: iCP/1.4
+    interface Comsol PhreeqC
+
+  ibverbs: ibverbs/current
+
+  icc: icc/2016.u3-GCC-4.9.2, icc/2017.u2-GCC-5.4.0, icc/2017.u2-GCC-6.2.0, ...
+
+  iccifort: iccifort/2016.u3-GCC-4.9.2, iccifort/2017.u2-GCC-5.4.0, ...
+
+  iccifortcuda: iccifortcuda/2018.u4-GCC-8.2.0
+    Intel C, C++ & Fortran compilers with CUDA toolkit
+
+  iceauth: iceauth/1.0.5-intel-2016.u3
+    - Homepage: http://www.x.org 
+
+  ifort: ifort/2016.u3-GCC-4.9.2, ifort/2017.u2-GCC-5.4.0, ...
+
+  iimpi: iimpi/2016.u3-GCC-4.9.2, iimpi/2017.u2-GCC-5.4.0, ...
+    Intel C/C++ and Fortran compilers, alongside Intel MPI.
+
+  imake: imake/1.0.5-goolf-2015a
+    imake is a Makefile-generator that is intended to make it easier to
+    develop software portably for multiple systems. - Homepage:
+    http://www.x.org/ 
+
+  imkl: imkl/11.3.3.210-iimpi-2016.u3-GCC-4.9.2, ...
+    Intel Math Kernel Library is a library of highly optimized, extensively
+    threaded math routines for science, engineering, and financial
+    applications that require maximum performance. Core math functions
+    include BLAS, LAPACK, ScaLAPACK, Sparse Solvers, Fast Fourier
+    Transforms, Vector Math, and more. 
+
+  impi: impi/5.1.3.223-iccifort-2016.u3-GCC-4.9.2, ...
+    The Intel(R) MPI Library for Linux* OS is a multi-fabric message
+    passing library based on ANL MPICH2 and OSU MVAPICH2. The Intel MPI
+    Library for Linux OS implements the Message Passing Interface, version
+    2 (MPI-2) specification. 
+
+  inputproto: inputproto/2.3.1-GCC-4.9.2, inputproto/2.3.1-GCC-6.2.0, ...
+    X.org InputProto protocol headers. - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs
+
+  intel: intel/2016.u3-GCC-4.9.2-CUDA7.5, intel/2016.u3, ...
+    Intel Cluster Toolkit Compiler Edition provides Intel C/C++ and Fortran
+    compilers, Intel MPI & Intel MKL.
+
+  intltool: intltool/0.51.0-GCC-4.9.2, ...
+    intltool is a set of tools to centralize translation of many different
+    file formats using GNU gettext-compatible PO files. 
+
+  iomkl: iomkl/2016.u3
+    Intel Cluster Toolchain Compiler Edition provides Intel C/C++ and
+    Fortran compilers, Intel MKL & OpenMPI. - Homepage:
+    http://software.intel.com/en-us/intel-cluster-toolkit-compiler/ 
+
+  iomklc: iomklc/2018.u4
+    Intel Cluster Toolchain Compiler Edition Intel C/C++ and Fortran
+    compilers, Intel MKL, plus nVidia CUDA. With added OpenMPI, ucx tuned
+    for Spartan's gpgpu cluster. 
+
+  iompi: iompi/spartan_intel, iompi/2016.u3, iompi/2017.u2-cuda9.1, ...
+    Toolchain with Intel C, C++ and Fortran compilers, alongside OpenMPI. -
+    Homepage:
+    http://software.intel.com/en-us/intel-cluster-toolkit-compiler/
+
+  iompic: iompic/2018.u4
+    Intel C/C++ and Fortran compilers, alongside Open MPI.
+
+  iqtree: iqtree/1.4.2, iqtree/1.5.0a, iqtree/1.5.1-intel-2016.u3, ...
+    Efficient phylogenomic software by maximum likelihood
+
+  jsonschema: jsonschema/2.6.0-intel-2017.u2-Python-3.6.4
+    Python plotting library for collaborative, interactive,
+    publication-quality graphs.
+
+  kWIP: kWIP/0.2.0-intel-2016.u3
+    The k-mer Weighted Inner Product.
+
+  kbproto: kbproto/1.0.6-GCC-4.9.2, kbproto/1.0.6-GCC-6.2.0, ...
+    X.org KBProto protocol headers. - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs
+
+  kentUtils: kentUtils/302.1.0-GCC-4.9.2
+
+  khmer: khmer/2.0-intel-2016.u3-Python-2.7.10
+    The khmer software is a set of command-line tools for working with DNA
+    shotgun sequencing data from genomes, transcriptomes, metagenomes, and
+    single cells.
+
+  lasagne: lasagne/v0.2-dev-intel-2017.u2-Python-3.5.2-Tensorflow-1.10.0
+    Lasagne is a lightweight library to build and train neural networks in
+    Theano
+
+  leveldb: leveldb/1.19-GCC-4.9.2, leveldb/1.19-intel-2016.u3, ...
+    LevelDB is a fast key-value storage library written at Google that
+    provides an ordered mapping from string keys to string values. -
+    Homepage: https://github.com/google/leveldb/
+
+  libGLU: libGLU/9.0.0-GCC-4.9.2, libGLU/9.0.0-GCC-6.2.0-Mesa-17.2.8, ...
+    The OpenGL Utility Library (GLU) is a computer graphics library for
+    OpenGL. - Homepage: ftp://ftp.freedesktop.org/pub/mesa/glu/
+
+  libICE: libICE/1.0.9-GCC-6.2.0, libICE/1.0.9-goolf-2015a, ...
+    X Inter-Client Exchange library for freedesktop.org
+
+  libSM: libSM/1.2.2-GCC-6.2.0, libSM/1.2.2-goolf-2015a, ...
+    X11 Session Management library, which allows for applications to both
+    manage sessions, and make use of session managers to save and restore
+    their state for later use. 
+
+  libX11: libX11/1.6.3-GCC-4.9.2-Python-2.7.9, ...
+    X11 client-side library
+
+  libXau: libXau/1.0.8-GCC-4.9.2, libXau/1.0.8-GCC-6.2.0, ...
+    The libXau package contains a library implementing the X11
+    Authorization Protocol. This is useful for restricting client access to
+    the display. - Homepage: http://www.freedesktop.org/wiki/Software/xlibs
+    
+
+  libXaw: libXaw/1.0.12-goolf-2015a
+    libXaw provides the Athena Widgets toolkit - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs
+
+  libXcursor: libXcursor/1.1.14-intel-2016.u3, ...
+    X Cursor management library - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs
+
+  libXdamage: libXdamage/1.1.4-GCC-4.9.2, libXdamage/1.1.4-goolf-2015a, ...
+    X Damage extension library - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs
+
+  libXdmcp: libXdmcp/1.1.2-GCC-4.9.2, libXdmcp/1.1.2-GCC-6.2.0, ...
+    The libXdmcp package contains a library implementing the X Display
+    Manager Control Protocol. This is useful for allowing clients to
+    interact with the X Display Manager. - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs 
+
+  libXext: libXext/1.3.3-GCC-4.9.2, libXext/1.3.3-GCC-6.2.0, ...
+    Common X Extensions library - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs
+
+  libXfixes: libXfixes/5.0.1-GCC-4.9.2, libXfixes/5.0.1-goolf-2015a, ...
+    X Fixes extension library - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs
+
+  libXfont: libXfont/1.5.1-GCC-4.9.2-Python-2.7.9, ...
+    X font libary - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs
+
+  libXft: libXft/2.3.2-GCC-4.9.2, libXft/2.3.2-GCC-6.2.0, ...
+    
+
+  libXi: libXi/1.7.4-goolf-2015a, libXi/1.7.4-intel-2016.u3-Python-2.7.11, ...
+    LibXi provides an X Window System client interface to the XINPUT
+    extension to the X protocol. - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs
+
+  libXinerama: libXinerama/1.1.3-intel-2016.u3, ...
+    Xinerama multiple monitor library - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs
+
+  libXmu: libXmu/1.1.2-goolf-2015a, libXmu/1.1.2-intel-2016.u3
+    libXmu provides a set of miscellaneous utility convenience functions
+    for X libraries to use. libXmuu is a lighter-weight version that does
+    not depend on libXt or libXext - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs 
+
+  libXp: libXp/1.0.3-intel-2016.u3, libXp/1.0.3-spartan_intel-2017.u2
+    libXp provides the X print library. - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs
+
+  libXpm: libXpm/3.5.11-goolf-2015a, libXpm/3.5.11-intel-2016.u3
+    libXp provides the X print library. - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs
+
+  libXrandr: libXrandr/1.5.0-intel-2016.u3, libXrandr/1.5.0-intel-2017.u2
+    X Resize, Rotate and Reflection extension library - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs
+
+  libXrender: libXrender/0.9.9-intel-2016.u3-Python-2.7.9, ...
+    X11 client-side library - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs
+
+  libXt: libXt/1.1.5-goolf-2015a, libXt/1.1.5-intel-2016.u3-Python-2.7.9, ...
+    libXt provides the X Toolkit Intrinsics, an abstract widget library
+    upon which other toolkits are based. Xt is the basis for many toolkits,
+    including the Athena widgets (Xaw), and LessTif (a Motif
+    implementation). - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs 
+
+  libXxf86vm: libXxf86vm/1.1.4-GCC-6.2.0
+    X11 XFree86 video mode extension library
+
+  libcanberra: libcanberra/0.30-GCC-6.2.0, libcanberra/0.30-intel-2016.u3, ...
+    
+
+  libdap: libdap/3.19.1-intel-2016.u3, libdap/3.19.1-intel-2017.u2
+    A C++ SDK which contains an implementation of DAP 2.0 and the
+    development versions of DAP3, up to 3.4. This includes both Client- and
+    Server-side support classes. 
+
+  libdrm: libdrm/2.4.27-GCC-4.9.2, libdrm/2.4.27-intel-2016.u3, ...
+
+  libelf: libelf/0.8.13-GCC-4.9.2
+
+  libepoxy: libepoxy/1.4.3-intel-2016.u3
+    Epoxy is a library for handling OpenGL function pointer management for
+    you
+
+  libexif: libexif/0.6.21-intel-2016.u3
+    The libexif package contains a library for parsing, editing, and saving
+    EXIF data. Most digital cameras produce EXIF files, which are JPEG
+    files with extra tags that contain information about the image. All
+    EXIF tags described in EXIF standard 2.1 are supported. - Homepage:
+    http://libexif.sourceforge.net/
+
+  libffcall: libffcall/1.13-GCCcore-6.4.0
+    GNU Libffcall is a collection of four libraries which can be used to
+    build foreign function call interfaces in embedded interpreters 
+
+  libffi: libffi/3.1-intel-2016.u3, libffi/3.1-iomkl-2016.u3, ...
+    The libffi library provides a portable, high level programming
+    interface to various calling conventions. This allows a programmer to
+    call any function specified by a call interface description at
+    run-time. - Homepage: http://sourceware.org/libffi/ 
+
+  libfontenc: libfontenc/1.1.3-GCC-4.9.2, libfontenc/1.1.3-goolf-2015a, ...
+    X11 font encoding library - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs/
+
+  libgd: libgd/2.1.0-GCC-4.9.2, libgd/2.1.0-intel-2016.u3, ...
+
+  libgladeui: libgladeui/3.8.5-intel-2016.u3GTK+2
+    - Homepage: https://glade.gnome.org
+
+  libgpuarray: libgpuarray/0.7.6-intel-2017.u2-Python-2.7.11-CUDA9, ...
+    Library to manipulate tensors on the GPU.
+
+  libgtextutils: libgtextutils/0.6.1-intel-2016.u3
+
+  libgudev: libgudev/230-intel-2016.u3
+    libgudev is a library with GObject bindings to libudev - Homepage:
+    https://wiki.gnome.org/Projects/libgudev
+
+  libharu: libharu/2.2.0-intel-2016.u3
+
+  libjpeg: libjpeg/9c-intel-2016.u3
+    This package contains C software to implement JPEG image encoding,
+    decoding, and transcoding. JPEG is a standardized compression method
+    for full-color and grayscale images. 
+
+  libjpeg-turbo: libjpeg-turbo/1.4.0-GCC-4.9.2, ...
+
+  libmaus: libmaus/0.0.99-intel-2016.u3
+
+  libmaus2: libmaus2/2.0.9-intel-2016.u3
+
+  libmng: libmng/2.0.3-intel-2016.u3
+    libmng -THE reference library for reading, displaying, writing and
+    examining Multiple-Image Network Graphics. MNG is the animation
+    extension to the popular PNG image-format. - Homepage:
+    https://sourceforge.net/projects/libmng/ 
+
+  libogg: libogg/1.3.2-GCC-6.2.0, libogg/1.3.2-intel-2016.u3, ...
+    
+
+  libpciaccess: libpciaccess/0.13.1-GCC-4.9.2, ...
+
+  libpng: libpng/1.6.6-goolf-2015a, libpng/1.6.12-GCC-4.9.2, ...
+    libpng is the official PNG reference library
+
+  libpthread-stubs: libpthread-stubs/0.3-GCC-4.9.2, ...
+
+  libreadline: libreadline/6.3-GCC-4.6.4, libreadline/6.3-GCC-4.9.2, ...
+
+  libsigc++: libsigc++/2.6.1-intel-2017.u2-GCC-6.2.0-CUDA9
+    libsigc++ implements a typesafe callback system for standard C++. It
+    allows you to define signals and to connect those signals to any
+    callback function, either global or a member function, regardless of
+    whether it is static or virtual. 
+
+  libsigsegv: libsigsegv/2.11-GCCcore-6.4.0, libsigsegv/2.11-intel-2016.u3
+    GNU libsigsegv is a library for handling page faults in user mode.
+
+  libsndfile: libsndfile/1.0.28-intel-2017.u2, ...
+    Libsndfile is a C library for reading and writing files containing
+    sampled sound (such as MS Windows WAV and the Apple/SGI AIFF format)
+    through one standard library interface. 
+
+  libtool: libtool/2.4.5-GCC-4.9.2, libtool/2.4.6-GCC-4.6.4, ...
+    GNU libtool is a generic library support script. Libtool hides the
+    complexity of using shared libraries behind a consistent, portable
+    interface. 
+
+  libunwind: libunwind/1.1-goolf-2015a
+    The primary goal of libunwind is to define a portable and efficient C
+    programming interface (API) to determine the call-chain of a program.
+    The API additionally provides the means to manipulate the preserved
+    (callee-saved) state of each call-frame and to resume execution at any
+    point in the call-chain (non-local goto). The API supports both local
+    (same-process) and remote (across-process) operation. As such, the API
+    is useful in a number of applications 
+
+  libvorbis: libvorbis/1.3.5-GCC-6.2.0, libvorbis/1.3.5-intel-2016.u3, ...
+    
+
+  libwnck: libwnck/2.26.2-intel-2016.u3, libwnck/2.30.7-intel-2016.u3
+    - Homepage: https://download.gnome.org/sources/libwnck/
+
+  libxc: libxc/3.0.0-intel-2016.u3
+    Libxc is a library of exchange-correlation functionals for
+    density-functional theory. The aim is to provide a portable, well
+    tested and reliable set of exchange and correlation functionals. -
+    Homepage: http://www.tddft.org/programs/octopus/wiki/index.php/Libxc 
+
+  libxcb: libxcb/1.11-intel-2016.u3-Python-2.7.9, ...
+    The X protocol C-language Binding (XCB) is a replacement for Xlib
+    featuring a small footprint, latency hiding, direct access to the
+    protocol, improved threading support, and extensibility. - Homepage:
+    http://xcb.freedesktop.org/ 
+
+  libxfce4ui: libxfce4ui/4.12.0-intel-2016.u3, ...
+    - Homepage: https://xfce.org/
+
+  libxfce4util: libxfce4util/4.12.1-intel-2016.u3
+    libxfce4util is part of xfce4 desktop - Homepage: http://xfce.org/
+
+  libxkbcommon: libxkbcommon/0.5.0-intel-2016.u3-Python-2.7.11, ...
+    xkbcommon is a library to handle keyboard descriptions, including
+    loading them from disk, parsing them and handling their state. It's
+    mainly meant for client toolkits, window systems, and other system
+    applications. - Homepage: http://xkbcommon.org/ 
+
+  libxml2: libxml2/2.7.8-GCC-4.9.2, libxml2/2.9.2-GCC-4.6.4, ...
+    Libxml2 is the XML C parser and toolchain developed for the Gnome
+    project (but usable outside of the Gnome platform). - Homepage:
+    http://xmlsoft.org/ 
+
+  libxslt: libxslt/1.1.26-GCC-4.9.2, libxslt/1.1.28-GCC-4.9.2, ...
+    Libxslt is the XSLT C library developed for the GNOME project (but
+    usable outside of the Gnome platform). - Homepage: http://xmlsoft.org/ 
+
+  libyaml: libyaml/0.1.6-intel-2016.u3
+    LibYAML is a YAML 1.1 parser and emitter written in C. - Homepage:
+    http://pyyaml.org/wiki/LibYAML
+
+  libzip: libzip/1.1.2-GCC-6.2.0, libzip/1.1.2-intel-2016.u3
+    libzip is a C library for reading, creating, and modifying zip
+    archives.. - Homepage: https://nih.at/libzip/
+
+  likwid: likwid/4.2.0-foss-2017b, likwid/4.2.0-intel-2016.u3, ...
+    Likwid stands for 'Like I knew what I am doing'. Likwid is a simple to
+    install and use toolsuite of command line applications for performance
+    oriented programmers. It works for Intel and AMD processors on the
+    Linux operating system. 
+
+  llvmlite: llvmlite/0.22.0-intel-2017.u2-Python-3.6.4
+    A lightweight LLVM python binding for writing JIT compilers 
+
+  lmod: lmod
+    Lmod: An Environment Module System
+
+  lmoments3: lmoments3/1.0.4-intel-2017.u2-Python-3.6.4
+    rpy2 is Python 3.x library to estimate linear moments for statistical
+    distribution functions. 
+
+  lobSTR: lobSTR/3.0.3-intel-2016.u3
+
+  lpsolve: lpsolve/5.5.2.5-intel-2016.u3
+    Mixed Integer Linear Programming (MILP) solver
+
+  lsd: lsd/0.3-GCC-4.9.2
+    LSD: LEAST-SQUARES METHODS TO ESTIMATE RATES AND DATES FROM SERIAL
+    PHYLOGENIES
+
+  lua: lua/5.3.1-GCC-4.9.2
+
+  lxde-icon-theme: lxde-icon-theme/0.5.1-intel-2016.u3
+    The LXDE Icon Theme package contains nuoveXT 2.2 Icon Theme for LXDE. -
+    Homepage: http://lxde.org/
+
+  lxml: lxml/3.6.0-intel-2016.u3-Python-2.7.9, ...
+    The lxml XML toolkit is a Pythonic binding for the C libraries libxml2
+    and libxslt.
+
+  lynx: lynx/2.8.7-goolf-2015a
+    lynx is an alphanumeric display oriented World-Wide Web Client -
+    Homepage: http://lynx.isc.org/
+
+  lz4: lz4/1.8.2-goolf-2015a
+    LZ4 is lossless compression algorithm, providing compression speed at
+    400 MB/s per core. It features an extremely fast decoder, with speed in
+    multiple GB/s per core. 
+
+  lzma: lzma/4.32.7-intel-2016.u3
+    LZMA Utils are based on LZMA SDK 4.32. LZMA Utils. - Homepage:
+    http://tukaani.org/lzma/
+
+  magma: magma/2.2.0-intel-2017.u2-GCC-5.4.0-CUDA8
+    The MAGMA project aims to develop a dense linear algebra library
+    similar to LAPACK but for heterogeneous/hybrid architectures, starting
+    with current Multicore+GPU systems. 
+
+  make: make/4.1-GCC-4.9.2, make/4.1-GCC-6.2.0, make/4.1-gompi-2017.u1
+    GNU version of make utility - Homepage:
+    http://www.gnu.org/software/make/make.html
+
+  makedepend: makedepend/1.0.4-goolf-2015a, makedepend/1.0.5-GCC-4.9.2, ...
+    The makedepend package contains a C-preprocessor like utility to
+    determine build-time dependencies. - Homepage:
+    http://www.linuxfromscratch.org/blfs/view/svn/x/makedepend.html
+
+  matplotlib: matplotlib/1.5.1-intel-2016.u3-Python-2.7.9, ...
+    matplotlib is a python 2D plotting library which produces publication
+    quality figures in a variety of hardcopy formats and interactive
+    environments across platforms. matplotlib can be used in python
+    scripts, the python and ipython shell, web application servers, and six
+    graphical user interface toolkits. - Homepage: http://matplotlib.org 
+
+  mccortex: mccortex/0.0.3
+    McCortex is a genome assembler and variant caller. It has a rich set of
+    features for representing and manipulating genomes as graphs. 
+
+  md5deep: md5deep/4.4-intel-2016.u3
+    - Homepage: https://github.com/jessek/hashdeep/releases/tag/release-4.4
+
+  mercury: mercury/14.01.1-GCC-4.9.2, mercury/14.01.1-intel-2016.u3
+    Mercury is a pure logic programming language intended for the creation
+    of large, fast, reliable programs. - Homepage:
+    https://www.mercurylang.org/
+
+  mindboggle: mindboggle/1.2.4-intel-2017.u2-Python-3.6.1
+    Mindboggle’s open source brain morphometry platform takes in
+    preprocessed T1-weighted MRI data, and outputs volume, surface, and
+    tabular data containing label, feature, and shape information for
+    further analysis. 
+
+  molcas: molcas/8.2.170401-OpenMPI-2.0.2-intel-2016.u3-imkl-11.3.3.210, ...
+    Molcas is an ab initio quantum chemistry software package developed by
+    scientists to be used by scientists. The basic philosophy is is to be
+    able to treat general electronic structures for molecules consisting of
+    atoms from most of the periodic table. As such, the primary focus of
+    the package is on multiconfigurational methods with applications
+    typically connected to the treatment of highly degenerate states. Key
+    aspects of Molcas: SCF/DFT, CASSCF/RASSCF, CASPT2/RASPT2 Fast,
+    accurate, and robust code Free support and updates Molcas is not a
+    black box tool. The user should be an educated quantum chemist, with
+    some knowledge about the different quantum chemical models in use
+    today, their application areas and their inherent accuracy. The MOLCAS
+    group arranges regular MOLCAS workshops, which teaches how to use the
+    software. 
+
+  motif: motif/2.3.5-goolf-2015a, motif/2.3.5-intel-2016.u3
+    Motif refers to both a graphical user interface (GUI) specification and
+    the widget toolkit for building applications that follow that
+    specification under the X Window System on Unix and other
+    POSIX-compliant systems. It was the standard toolkit for the Common
+    Desktop Environment and thus for Unix. - Homepage:
+    http://motif.ics.com/ 
+
+  mpj: mpj/0.44
+
+  mpmath: mpmath/0.19-intel-2016.u3-Python-2.7.11
+    mpmath can be used as an arbitrary-precision substitute for Python's
+    float/complex types and math/cmath modules, but also does much more
+    advanced mathematics. Almost any calculation can be performed just as
+    well at 10-digit or 1000-digit precision, with either real or complex
+    numbers, and in many cases mpmath implements efficient algorithms that
+    scale well for extremely high precision work. - Homepage:
+    http://mpmath.org/ 
+
+  ms: ms/08112017-GCC-4.9.3
+    The purpose of this program is to allow one to investigate the
+    statistical properties of such samples, to evaluate estimators or
+    statistical tests, and generally to aid in the interpretation of
+    polymorphism data sets. 
+
+  msms: msms/3.2rc-b163-Java-1.8.0_71
+    MSMS is a coalescent simulator that models itself off Hudsons ms in
+    usage and includes selection. It is fast, often faster than ms, and
+    portable running on Mac OSX, windows and Linux. By using this tool, one
+    can study the patterns of selection in complicated demographic
+    scenarios.
+
+  mykrobe: mykrobe/0.3.6-Python-2.7.10-bundle
+    The Mykrobe predictor is designed for use by microbiologists and
+    doctors, providing information needed in order to choose the best
+    treatment. It analyses the whole genome of a bacterial sample, all
+    within a couple of minutes, and predicts which drugs the infection is
+    resistant to. 
+
+  ncurses: ncurses/5.9-GCC-4.6.4, ncurses/5.9-GCC-4.9.2, ...
+    The Ncurses (new curses) library is a free software emulation of curses
+    in System V Release 4.0, and more. It uses Terminfo format, supports
+    pads and color and multiple highlights and forms characters and
+    function-key mapping, and has all the other SYSV-curses enhancements
+    over BSD Curses. - Homepage: http://www.gnu.org/software/ncurses/ 
+
+  ncview: ncview/2.1.7-intel-2016.u3
+    Ncview is a visual browser for netCDF format files. Typically you would
+    use ncview to get a quick and easy, push-button look at your netCDF
+    files. You can view simple movies of the data, view along various
+    dimensions, take a look at the actual data values, change color maps,
+    invert the data, etc. - Homepage:
+    http://meteora.ucsd.edu/~pierce/ncview_home_page.html 
+
+  netCDF: netCDF/4.3.2-GCC-4.9.2, netCDF/4.3.2-intel-2016.u3, ...
+    NetCDF (network Common Data Form) is a set of software libraries and
+    machine-independent data formats that support the creation, access, and
+    sharing of array-oriented scientific data. - Homepage:
+    http://www.unidata.ucar.edu/software/netcdf/ 
+
+  netCDF-Fortran: netCDF-Fortran/4.4.0-GCC-4.9.2, ...
+    NetCDF (network Common Data Form) is a set of software libraries and
+    machine-independent data formats that support the creation, access, and
+    sharing of array-oriented scientific data. 
+
+  netcdf4-python: ...
+    Python/numpy interface to netCDF.
+
+  nettle: nettle/3.2-GCC-4.9.2, nettle/3.2-GCC-6.2.0, ...
+    Nettle is a cryptographic library that is designed to fit easily in
+    more or less any context: In crypto toolkits for object-oriented
+    languages (C++, Python, Pike, ...), in applications like LSH or GNUPG,
+    or even in kernel space. - Homepage:
+    http://www.lysator.liu.se/~nisse/nettle/ 
+
+  networkx: networkx/2.2-intel-2017.u2-Python-3.6.4
+    NetworkX is a Python package for the creation, manipulation, and study
+    of the structure, dynamics, and functions of complex networks. 
+
+  ns: ns/3.27-GCC-4.9.2
+    Ns-3 is a discrete event simulator targeted at networking research. 
+
+  numactl: numactl/2.0.10-GCC-4.6.4, numactl/2.0.10-GCC-4.9.2, ...
+
+  numba: numba/0.36.2-intel-2017.u2-Python-3.6.4
+    
+
+  numpy: numpy/1.8.2-intel-2016.u3-Python-2.7.9, ...
+    NumPy is the fundamental package for scientific computing with Python.
+    It contains among other things: a powerful N-dimensional array object,
+    sophisticated (broadcasting) functions, tools for integrating C/C++ and
+    Fortran code, useful linear algebra, Fourier transform, and random
+    number capabilities. Besides its obvious scientific uses, NumPy can
+    also be used as an efficient multi-dimensional container of generic
+    data. Arbitrary data-types can be defined. This allows NumPy to
+    seamlessly and speedily integrate with a wide variety of databases. 
+
+  orfm: orfm/0.7.1
+    A simple and not slow open reading frame (ORF) caller. No bells or
+    whistles like frameshift detection, just a straightforward goal of
+    returning a FASTA file of open reading frames over a certain length
+    from a FASTA/Q file of nucleotide sequences.
+
+  pandas: pandas/0.18.1-intel-2016.u3-Python-3.5.2
+    Powerful data structures for data analysis, time series,and statistics
+
+  pandoc: pandoc/2.0.3
+    Parsnp was designed to align the core genome of hundreds to thousands
+    of bacterial genomes within a few minutes to few hours.
+
+  parallel: parallel/20141122-GCC-4.9.2, parallel/20141122-intel-2016.u3, ...
+
+  parsnp: parsnp/1.2
+    Parsnp was designed to align the core genome of hundreds to thousands
+    of bacterial genomes within a few minutes to few hours.
+
+  patchelf: patchelf/0.8-GNU-4.9.2-2.25
+    PatchELF is a small utility to modify the dynamic linker and RPATH of
+    ELF executables. - Homepage: http://nixos.org/patchelf.html
+
+  petsc4py: petsc4py/3.6.0-intel-2016.u3-Python-2.7.9, ...
+    petsc4py are Python bindings for PETSc, the Portable, Extensible
+    Toolchain for Scientific Computation. - Homepage:
+    https://bitbucket.org/petsc/petsc4py
+
+  picard: picard/1.127, picard/2.3.0
+    A set of tools (in Java) for working with next generation sequencing
+    data in the BAM format.
+
+  pilon: pilon/1.21-Java-1.8.0_71
+    Pilon is a software tool which can be used to: Automatically improve
+    draft assemblies Find variation among strains, including large event
+    detection 
+
+  pixman: pixman/0.32.6-GCC-4.9.2, pixman/0.32.6-GCC-6.2.0, ...
+
+  pkg-config: pkg-config/0.29-GCC-4.9.2, pkg-config/0.29-goolf-2015a, ...
+    pkg-config is a helper tool used when compiling applications and
+    libraries. It helps you insert the correct compiler options on the
+    command line so an application can use gcc -o test test.c `pkg-config
+    --libs --cflags glib-2.0` for instance, rather than hard-coding values
+    on where to find glib (or other libraries). - Homepage:
+    http://www.freedesktop.org/wiki/Software/pkg-config/ 
+
+  plotly: plotly/1.12.2-intel-2016.u3-Python-3.5.2, ...
+    Python plotting library for collaborative, interactive,
+    publication-quality graphs.
+
+  plumed: plumed/2.2.3-intel-2016.u3
+    PLUMED is an open source library for free energy calculations in
+    molecular systems which works together with some of the most popular
+    molecular dynamics engines. Free energy calculations can be performed
+    as a function of many order parameters with a particular focus on
+    biological problems, using state of the art methods such as
+    metadynamics, umbrella sampling and Jarzynski-equation based steered
+    MD. The software, written in C++, can be easily interfaced with both
+    fortran and C/C++ codes.
+
+  pplacer: pplacer/1.1
+    Pplacer places query sequences on a fixed reference phylogenetic tree
+    to maximize phylogenetic likelihood or posterior probability according
+    to a reference alignment.
+
+  printproto: printproto/1.0.5-intel-2016.u3, ...
+    X.org PrintProto protocol headers. - Homepage:
+    http://xorg.freedesktop.org/
+
+  protobuf: protobuf/2.6.1-GCC-4.9.2, protobuf/2.6.1-GCC-6.2.0, ...
+
+  protobuf-python: protobuf-python/3.3.0-intel-2016.u3-Python-3.5.2, ...
+    Python Protocol Buffers runtime library. - Homepage:
+    https://github.com/google/protobuf/
+
+  pyMESS: pyMESS/0.32.1-spartan_intel-2017.u2-Python-2.7.13
+    pyMESS is python package for MESS
+
+  pybedtools: pybedtools/0.7.10-intel-2017.u2-Python-3.6.4
+    Wrapper around BEDTools for bioinformatics work 
+
+  pydicom: pydicom/0.9.9-intel-2016.u3-Python-2.7.9
+    Read, modify and write DICOM files with python code - Homepage:
+    https://github.com/darcymason/pydicom
+
+  pyseer: pyseer/1.1.2-intel-2017.u2-Python-3.6.4
+    SEER, reimplemented in python 
+
+  pyshp: pyshp/1.2.12-goolf-2015a-Python-2.7.12
+    The dateutil module provides powerful extensions to the datetime module
+    available in the Python standard library. - Homepage:
+    https://pypi.python.org/pypi/python-dateutil
+
+  pysqlite: pysqlite/2.6.3-intel-2016.u3-Python-2.7.9
+    pysqlite is an interface to the SQLite 3.x embedded relational database
+    engine. It is almost fully compliant with the Python database API
+    version 2.0 also exposes the unique features of SQLite. - Homepage:
+    https://pypi.python.org/pypi/pysqlite 
+
+  python-dateutil: python-dateutil/2.6.1-goolf-2015a-Python-2.7.12
+    The dateutil module provides powerful extensions to the datetime module
+    available in the Python standard library. - Homepage:
+    https://pypi.python.org/pypi/python-dateutil
+
+  randrproto: randrproto/1.5.0-intel-2016.u3, ...
+    Xrandr protocol and ancillary headers - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs
+
+  recentrifuge: recentrifuge/20181019-intel-2017.u2
+    Robust comparative analysis and contamination removal for metagenomics
+
+  renderproto: renderproto/0.11-intel-2016.u3, ...
+    Xrender protocol and ancillary headers - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs
+
+  requests: requests/2.7.0-intel-2016.u3-Python-2.7.9, ...
+    Python http for humans
+
+  rpy2: rpy2/2.9.4-intel-2017.u2-Python-3.6.4
+    rpy2 is a redesign and rewrite of rpy. It is providing a low-level
+    interface to R from Python, a proposed high-level interface, including
+    wrappers to graphical libraries, as well as R-like structures and
+    functions. 
+
+  ruffus: ruffus/2.6.3-intel-2016.u3-Python-2.7.10
+    The Ruffus module is a lightweight way to add support for running
+    computational pipelines.
+
+  scikit-learn: scikit-learn/0.18-intel-2016.u3-Python-2.7.9, ...
+    Scikit-learn integrates machine learning algorithms in the tightly-knit
+    scientific Python world, building upon numpy, scipy, and matplotlib. As
+    a machine-learning module, it provides versatile tools for data mining
+    and analysis in any field of science and engineering. It strives to be
+    simple and efficient, accessible to everybody, and reusable in various
+    contexts. - Homepage: http://scikit-learn.org/stable/index.html 
+
+  scrm: scrm/1.7.2-GCC-4.9.2
+    scrm simulates the evolution of genetic sequences. It takes a neutral
+    evolutionary model as input, and generates random sequences that
+    evolved under the model. As coalescent simulator, it traces the
+    ancestry of the sampled sequences backwards in time and is therefore
+    extremely efficient. Compared to other coalescent simulators, it can
+    simulate chromosome-scale sequences without a measureable reduction of
+    genetic linkage between different sites.
+
+  seqtk: seqtk/1.2-r94-intel-2016.u3
+    Seqtk is a fast and lightweight tool for processing sequences in the
+    FASTA or FASTQ format. 
+
+  settarg: settarg
+
+  sharedmem: sharedmem/0.3.5-intel-2017.u2-Python-3.6.4
+    A different flavor of multiprocessing in Python 
+
+  showq: showq/0.12, showq/0.15
+
+  slepc4py: slepc4py/3.6.0-intel-2016.u3-Python-2.7.9, ...
+    Python bindings for SLEPc, the Scalable Library for Eigenvalue Problem
+    Computations. - Homepage: https://bitbucket.org/slepc/slepc4py
+
+  slurm: slurm/latest
+
+  slurm_drmaa: slurm_drmaa/1.0.7-GCC-4.9.2
+
+  snappy: snappy/1.1.6-intel-2017.u2-GCC-5.4.0-CUDA8, snappy/1.1.6
+    Snappy is a compression/decompression library. It does not aim for
+    maximum compression, or compatibility with any other compression
+    library; instead, it aims for very high speeds and reasonable
+    compression. 
+
+  snpEff: snpEff/4.1d-Java-1.7.0_80, snpEff/4.2-Java-1.8.0_71, ...
+    SnpEff is a variant annotation and effect prediction tool. It annotates
+    and predicts the effects of genetic variants (such as amino acid
+    changes). 
+
+  sparsehash: sparsehash/2.0.2-goolf-2015a, sparsehash/2.0.3-intel-2016.u3
+    An extremely memory-efficient hash_map implementation. 2 bits/entry
+    overhead! The SparseHash library contains several hash-map
+    implementations, including implementations that optimize for space or
+    speed. 
+
+  spartan: spartan/2016-03
+
+  spartan-gpgpu: spartan-gpgpu/2018.u4
+    Intel Cluster Toolchain Compiler Edition Intel C/C++ and Fortran
+    compilers, Intel MKL, plus nVidia CUDA. With added OpenMPI using ucx,
+    tuned for Spartan's gpgpu cluster. 
+
+  spartan_gcc: spartan_gcc/6.2.0, spartan_gcc/8.1.0
+    Spartan GNU Compiler Collection (GCC) based compiler toolchain,
+    including OpenMPI for MPI support, OpenBLAS (BLAS and LAPACK support),
+    FFTW and ScaLAPACK. 
+
+  spartan_gompi: spartan_gompi/GCC-6.2.0-OpenMPI-3.0.0, ...
+    GNU Compiler Collection (GCC) based compiler toolchain, including
+    OpenMPI for MPI support. 
+
+  spartan_intel: spartan_intel/2017.u2-cuda9.1, spartan_intel/2017.u2
+    Intel Cluster Toolchain Compiler Edition provides Intel C/C++ and
+    Fortran compilers, Intel MKL & OpenMPI.
+
+  startup-notification: startup-notification/0.12-intel-2016.u3
+    startup-notification contains a reference implementation of the startup
+    notification protocol. The reference implementation is mostly under an
+    X Window System style license, and has no special dependencies. -
+    Homepage: http://www.freedesktop.org/wiki/Software/startup-notification
+
+  statsmodels: statsmodels/0.9.0-intel-2017.u2-Python-3.6.4
+    statsmodels is a Python module that provides classes and functions for
+    the estimation of many different statistical models, as well as for
+    conducting statistical tests, and statistical data exploration. 
+
+  sympy: sympy/0.7.6-goolf-2015a-Python-2.7.10, ...
+    SymPy is a Python library for symbolic mathematics. It aims to become a
+    full-featured computer algebra system (CAS) while keeping the code as
+    simple as possible in order to be comprehensible and easily extensible.
+    SymPy is written entirely in Python and does not require any external
+    libraries. 
+
+  tabix: tabix/0.2.6-intel-2016.u3
+
+  tbl2asn: tbl2asn/24.3, tbl2asn/24.9, tbl2asn/25.0
+
+  tcsh: tcsh/6.18.01-intel-2016.u3, tcsh/6.20.00-intel-2017.u2, ...
+    Tcsh is an enhanced, but completely compatible version of the Berkeley
+    UNIX C shell (csh). It is a command language interpreter usable both as
+    an interactive login shell and a shell script command processor. It
+    includes a command-line editor, programmable word completion, spelling
+    correction, a history mechanism, job control and a C-like syntax. -
+    Homepage: http://www.tcsh.org 
+
+  texinfo: texinfo/6.5-GCC-6.2.0
+    Texinfo is the official documentation format of the GNU project.
+
+  texlive: texlive/2017-GCC-6.2.0
+    TeX Live is an easy way to get up and running with the TeX document
+    production system. It provides a comprehensive TeX system with binaries
+    for most flavors of Unix, including GNU/Linux, and also Windows. It
+    includes all the major TeX-related programs, macro packages, and fonts
+    that are free software, including support for many languages around the
+    world.
+
+  trimAI: trimAI/1.4.1-spartan_gcc-6.2.0
+    Multiple sequence alignments (MSA) are central to many areas of
+    bioinformatics and evolutionary biology.
+
+  tumbler: tumbler/0.1.31-intel-2016.u3
+    - Homepage: http:/xfce.org/
+
+  unimelb-mf-clients: unimelb-mf-clients/current
+
+  unixODBC: unixODBC/2.3.4-GCC-4.9.2
+
+  util-linux: util-linux/2.26.1-intel-2016.u3, util-linux/2.28-goolf-2015a, ...
+    Set of Linux utilities - Homepage:
+    http://www.kernel.org/pub/linux/utils/util-linux
+
+  vsearch: vsearch/2.0.3-intel-2016.u3, vsearch/2.4.3-intel-2016.u3
+    The aim of this project is to create an alternative to the USEARCH tool
+    developed by Robert C. Edgar (2010).
+
+  vtk_cpp_tools: vtk_cpp_tools/7.1.1-intel-2017.u2
+    
+
+  wheel: wheel/0.32.1-spartan_intel-2017.u2-Python-2.7.13
+    This library is the reference implementation of the Python wheel
+    packaging standard, as defined in PEP 427.
+
+  wxPython: wxPython/3.0.2.0-intel-2017.u2-Python-2.7.13
+    wxPython is a GUI toolkit for the Python programming language. It
+    allows Python programmers to create programs with a robust, highly
+    functional graphical user interface, simply and easily. It is
+    implemented as a Python extension module (native code) that wraps the
+    popular wxWidgets cross platform GUI library, which is written in C++. 
+
+  wxWidgets: wxWidgets/3.1.0-GCC-4.9.2
+
+  x264: x264/20160614-GCC-4.9.2, x264/20160614-intel-2016.u3, ...
+    x264 is a free software library and application for encoding video
+    streams into the H.264/MPEG-4 AVC compression format, and is released
+    under the terms of the GNU GPL. 
+
+  xbitmaps: xbitmaps/1.1.1-goolf-2015a, xbitmaps/1.1.1-intel-2016.u3
+    provides bitmaps for x - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs
+
+  xcb-proto: xcb-proto/1.11-GCC-4.9.2-Python-2.7.9, ...
+    The X protocol C-language Binding (XCB) is a replacement for Xlib
+    featuring a small footprint, latency hiding, direct access to the
+    protocol, improved threading support, and extensibility. 
+
+  xcb-util: xcb-util/0.4.0-intel-2016.u3-Python-2.7.11, ...
+    The xcb-util package provides additional extensions to the XCB library,
+    many that were previously found in Xlib, but are not part of core X
+    protocol - Homepage: http://xcb.freedesktop.org/ 
+
+  xcb-util-image: xcb-util-image/0.4.0-intel-2016.u3-Python-2.7.11, ...
+    The xcb-util-image package provides additional extensions to the XCB
+    library. - Homepage: http://xcb.freedesktop.org/
+
+  xcb-util-keysyms: xcb-util-keysyms/0.4.0-intel-2016.u3, ...
+    The xcb-util-keysyms package contains a library for handling standard X
+    key constants and conversion to/from keycodes. - Homepage:
+    http://xcb.freedesktop.org/ 
+
+  xcb-util-renderutil: ...
+    The xcb-util-renderutil package provides additional extensions to the
+    XCB library. - Homepage: http://xcb.freedesktop.org/
+
+  xcb-util-wm: xcb-util-wm/0.4.1-intel-2016.u3-Python-2.7.11, ...
+    The xcb-util-wm package contains libraries which provide client and
+    window-manager helpers for EWMH and ICCCM. - Homepage:
+    http://xcb.freedesktop.org/ 
+
+  xextproto: xextproto/7.3.0-GCC-4.9.2, xextproto/7.3.0-GCC-6.2.0, ...
+    XExtProto protocol headers. - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs
+
+  xf86vidmodeproto: xf86vidmodeproto/2.3.1-GCC-6.2.0
+    X11 XFree86 video mode extension protocol headers.
+
+  xfce4: xfce4/4.12-intel-2016.u3
+    
+
+  xfce4-appfinder: xfce4-appfinder/4.12.0-intel-2016.u3
+    - Homepage: http:/xfce.org/
+
+  xfce4-panel: xfce4-panel/4.12.0-intel-2016.u3
+    - Homepage: http:/xfce.org/
+
+  xfce4-session: xfce4-session/4.12.1-intel-2016.u3
+    - Homepage: http://xfce.org
+
+  xfce4-settings: xfce4-settings/4.12.1-intel-2016.u3
+    - Homepage: http://xfce.com
+
+  xfconf: xfconf/4.12.0-intel-2016.u3
+    - Homepage: https://xfce.org/
+
+  xfdesktop: xfdesktop/4.12.0-intel-2016.u3
+    xfce4 Desktop - Homepage: http://xfce.org
+
+  xfwm4: xfwm4/4.12.0-intel-2016.u3
+    xfce4 Window Manager - Homepage: http://xfce.org
+
+  xineramaproto: xineramaproto/1.2.1-intel-2016.u3, ...
+    X protocol and ancillary headers for xinerama - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs
+
+  xorg-macros: xorg-macros/1.17-GCC-4.9.2, xorg-macros/1.17-GCC-6.2.0, ...
+
+  xplor-nih: xplor-nih/2.47
+    XPLOR-NIH is a structure determination program which builds on the
+    X-PLOR program, including additional tools developed at the NIH.
+
+  xprop: xprop/1.2.2-intel-2016.u3, xprop/1.2.2-intel-2017.u2
+    The xprop utility is for displaying window and font properties in an X
+    server. One window or font is selected using the command line arguments
+    or possibly in the case of a window, by clicking on the desired window.
+    A list of properties is then given, possibly with formatting
+    information. - Homepage: http://www.x.org/wiki/ 
+
+  xproto: xproto/7.0.27-GCC-4.9.2, xproto/7.0.27-intel-2016.u3, ...
+    X protocol and ancillary headers - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs
+
+  xtrans: xtrans/1.3.5-GCC-4.9.2, xtrans/1.3.5-GCC-6.2.0, ...
+    xtrans includes a number of routines to make X implementations
+    transport-independent; at time of writing, it includes support for UNIX
+    sockets, IPv4, IPv6, and DECnet. - Homepage:
+    http://www.freedesktop.org/wiki/Software/xlibs 
+
+  zlib: zlib/1.2.7-intel-2016.u3, zlib/1.2.8-GCC-4.6.4, ...
+    zlib is designed to be a free, general-purpose, legally unencumbered --
+    that is, not covered by any patents -- lossless data-compression
+    library for use on virtually any computer hardware and operating
+    system. 
+
+  zsh: zsh/5.2
+    Zsh is a shell designed for interactive use, although it is also a
+    powerful scripting language.
+
+  zstd: zstd/1.3.4-goolf-2015a
+    Zstandard is a real-time compression algorithm, providing high
+    compression ratios. It offers a very wide range of compression/speed
+    trade-off, while being backed by a very fast decoder. It also offers a
+    special mode for small data, called dictionary compression, and can
+    create dictionaries from any sample set. 
+
+  zsync: zsync/0.6.2-goolf-2015a
+    zsync-0.6.2: Optimising file distribution program, a 1-to-many rsync
+
+----------------------------------------------------------------------------
+
+To learn more about a package execute:
+
+   $ module spider Foo
+
+where "Foo" is the name of a module.
+
+To find detailed information about a particular package you
+must specify the version if there is more than one version:
+
+   $ module spider Foo/11.1
+
+----------------------------------------------------------------------------
+
+ 
+

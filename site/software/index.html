@@ -125,16 +125,18 @@
 <p>Spartan uses a modules system (<a href="http://lmod.readthedocs.io/en/latest/">lmod</a>) to load and unload different packages, including different versions of the same software. This allows many different software packages to be installed on Spartan at once without interfering with each other</p>
 <p>You can check what's currently installed using the <code>module avail</code> command, search using <code>module spider</code>, and load a particular module with the <code>module load</code> command. For example, to load MATLAB 2016a, use <code>module load MATLAB/2016a</code>.</p>
 <p>Generally you shouldn't load modules from the login node, instead working on a compute node, either via an interactive session (launched with <code>sinteractive</code>), or from within your Slurm script.</p>
-<h2 id="job-script-examples">Job Script Examples</h2>
-<p>We maintain example job scripts for various software packages on Spartan. You can browse these at <code>/usr/local/common</code> or at <a href="https://github.com/resbaz/spartan-examples">https://github.com/resbaz/spartan-examples</a></p>
+<h2 id="software-list">Software List</h2>
+<p>Every day a list of <a href="../softwarelist.txt">software installed</a> on Spartan is regenerated from <code>module spider</code> and added to this page. </p>
 <h2 id="python">Python</h2>
 <p>There are multiple versions of Python installed on Spartan, which you can check using <code>module spider Python</code>. </p>
 <p>Common packages like numpy are already installed with some versions, but may be missing from others. If a Python package is missing, let us know, and we can install it for you. Alternatively, you can install additional packages locally using <code>pip install --user &lt;package name&gt;</code>. This works well for pure-python packages, but you may encounter errors for those that link to other binary packages.</p>
 <h2 id="r">R</h2>
-<p>R version 3.2.1 and 3.4.0 are installed on Spartan, along with some common packages. If a package you need is missing, you can either install it locally, or contact us to install it system-wide.</p>
+<p>R versions from the 2.x and 3x series are installed on Spartan, along with some common packages. If a package you need is missing, you can either install it locally, or contact us to install it system-wide.</p>
 <h2 id="matlab">MATLAB</h2>
 <p>MATLAB 2016a is installed on Spartan, along with all of the standard toolboxes. </p>
 <p>MATLAB can be invoked with a particular script using <code>matlab -nodisplay -nodesktop -r "run my_script.m"</code>. You may need to add particular working directories so MATLAB can find all the scripts necessary for your job.</p>
+<h2 id="job-script-examples">Job Script Examples</h2>
+<p>We maintain example job scripts for various software packages on Spartan. You can browse these at <code>/usr/local/common</code> or at <a href="https://github.com/resbaz/spartan-examples">https://github.com/resbaz/spartan-examples</a></p>
         
         </p>
 
