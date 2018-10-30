@@ -13,7 +13,7 @@ Use of this service is governed by the University's [general regulations for IT 
 * Spartan is less busy on cloud partition, with close to 88% node allocation.
 * Spartan is busy on physical partition, with close to 90% node allocation.
 * Spartan is very less busy on the GPGPU partition with 100% node allocation.
-* Many cloud nodes out (135), mainly due to qh2-uom migration and allocated state.
+* Many cloud nodes out (93), mainly due to qh2-uom migration.
 
 ## Getting Help
 
