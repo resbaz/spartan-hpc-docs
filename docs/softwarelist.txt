@@ -1012,6 +1012,12 @@ The following is a list of the modules currently available:
   MrBayes: MrBayes/3.2.6-intel-2016.u3
     MrBayes is a program for the Bayesian estimation of phylogeny.
 
+  MultiQC: MultiQC/1.6-intel-2017.u2-Python-3.6.4
+    Aggregate results from bioinformatics analyses across many samples into
+    a single report. MultiQC searches a given directory for analysis logs
+    and compiles a HTML report. It's a general use tool, perfect for
+    summarising the output from numerous bioinformatics tools.
+
   Multiwell: Multiwell/2016-intel-2016.u3
     Calculates time dependent concentrations, reaction yields, vibrational
     distributions, and rate constants as functions of temperature and
@@ -1406,6 +1412,10 @@ The following is a list of the modules currently available:
     PyVCF is a VCFv4.0 and 4.1 parser for Python. This is a bundle of
     PyVCF, which includes dependencies pbr, linecache2, and whatever else
     comes up. 
+
+  PyYAML: PyYAML/3.12-intel-2017.u2-Python-3.6.4
+    PyYAML is a YAML parser and emitter for the Python programming
+    language.
 
   PyZMQ: PyZMQ/14.7.0-intel-2016.u3-Python-2.7.9-zmq3, ...
     Python bindings for ZeroMQ - Homepage:
@@ -2517,7 +2527,7 @@ The following is a list of the modules currently available:
     Libxslt is the XSLT C library developed for the GNOME project (but
     usable outside of the Gnome platform). - Homepage: http://xmlsoft.org/
 
-  libyaml: libyaml/0.1.6-intel-2016.u3
+  libyaml: libyaml/0.1.6-intel-2016.u3, libyaml/0.1.7-intel-2017.u2
     LibYAML is a YAML 1.1 parser and emitter written in C. - Homepage:
     http://pyyaml.org/wiki/LibYAML
 
@@ -2611,6 +2621,16 @@ The following is a list of the modules currently available:
     preprocessed T1-weighted MRI data, and outputs volume, surface, and
     tabular data containing label, feature, and shape information for
     further analysis. 
+
+  minimap2: minimap2/2.11-intel-2017.u2
+    Minimap2 is a fast sequence mapping and alignment program that can find
+    overlaps between long noisy reads, or map long reads or their
+    assemblies to a reference genome optionally with detailed alignment
+    (i.e. CIGAR). At present, it works efficiently with query sequences
+    from a few kilobases to ~100 megabases in length at an error rate ~15%.
+    Minimap2 outputs in the PAF or the SAM format. On limited test data
+    sets, minimap2 is over 20 times faster than most other long-read
+    aligners. It will replace BWA-MEM for long reads and contig alignment.
 
   molcas: molcas/8.2.170401-OpenMPI-2.0.2-intel-2016.u3-imkl-11.3.3.210, ...
     Molcas is an ab initio quantum chemistry software package developed by
@@ -2727,6 +2747,10 @@ The following is a list of the modules currently available:
     also be used as an efficient multi-dimensional container of generic
     data. Arbitrary data-types can be defined. This allows NumPy to
     seamlessly and speedily integrate with a wide variety of databases.
+
+  nvptx-tools: nvptx-tools/1.0-GCCcore-8.2.0
+    nvptx-tools: a collection of tools for use with nvptx-none GCC
+    toolchains.
 
   orfm: orfm/0.7.1
     A simple and not slow open reading frame (ORF) caller. No bells or
@@ -2904,6 +2928,10 @@ The following is a list of the modules currently available:
   smafa: smafa/0.1.2
     Smafa attempts to align or cluster pre-aligned biological sequences,
     handling sequences which are all the same length.
+
+  snakemake: snakemake/5.3.0-intel-2017.u2-Python-3.6.4
+    The Snakemake workflow management system is a tool to create
+    reproducible and scalable data analyses.
 
   snappy: snappy/1.1.6-intel-2017.u2-GCC-5.4.0-CUDA8, snappy/1.1.6
     Snappy is a compression/decompression library. It does not aim for
