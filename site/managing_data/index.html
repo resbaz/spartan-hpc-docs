@@ -129,7 +129,11 @@
 <p>To increase your project storage space from more than 1TB up to 10TB please fill in a <a href="https://dashboard.hpc.unimelb.edu.au/20180912ComputeStorageExtensionRequest.docx">Compute Storage Extension Request</a> form and send to the Head of Research Compute Services, <a href="mailto:bmeade@unimelb.edu.au">Dr. Bernard Meade</a>.</p>
 <p><strong>Home Directory</strong></p>
 <p>Your home directory, i.e. <code>/home/yourusername</code> can be used to store small amounts of data, however this is generally discouraged. It's best suited to short-lived and non-critical data, for example while working through our <a href="../getting_started/">getting started</a> tutorial or testing out new software.</p>
-<p>Others in your project won't have access, and you're limited to 50GB of storage.</p>
+<p>Others in your project won't have access, and you're limited to 50GB of storage. You can check your quota with the command <code>check_home_usage</code> e.g.,</p>
+<pre><code>[scrosby@spartan ~]$ check_home_usage
+scrosby has used 4GB out of 50GB in /home/scrosby
+</code></pre>
+
 <p><strong>Scratch Space</strong></p>
 <p>You can store temporary working data while your job is running at <code>/tmp</code>. This will map to a directory on our fast scratch network storage specific to your job ID, and clean up once your job is complete. It's also possible to write directly to <code>/scratch/</code>, for instance if you would like to share your working files across multiple nodes. In this case it's your own responsibility to avoid collisions (i.e. two processes writing to the same file at the same time), and clean up afterwards.</p>
 <p><strong>N.B.</strong> Note that home, project and scratch are all network-based storage that can be accessed by multiple nodes and processes at the same time. Take care that you don't inadvertently write to the same file from multiple jobs at the same time.</p>

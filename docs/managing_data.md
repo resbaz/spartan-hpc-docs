@@ -15,7 +15,12 @@ To increase your project storage space from more than 1TB up to 10TB please fill
 
 Your home directory, i.e. `/home/yourusername` can be used to store small amounts of data, however this is generally discouraged. It's best suited to short-lived and non-critical data, for example while working through our [getting started](getting_started.md) tutorial or testing out new software.
 
-Others in your project won't have access, and you're limited to 50GB of storage.
+Others in your project won't have access, and you're limited to 50GB of storage. You can check your quota with the command `check_home_usage` e.g.,
+
+```
+[scrosby@spartan ~]$ check_home_usage
+scrosby has used 4GB out of 50GB in /home/scrosby
+```
 
 **Scratch Space**
 
